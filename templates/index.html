@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Jogos da Copa 🏆</h1>
+
+{% for jogo in jogos %}
+
+<div>
+
+    <h2>
+        {{ jogo.casa }}
+        {{ jogo.gols_casa }}
+
+        x
+
+        {{ jogo.gols_fora }}
+        {{ jogo.fora }}
+    </h2>
+
+</div>
+
+{% endfor %}
+
+{% endblock %}
