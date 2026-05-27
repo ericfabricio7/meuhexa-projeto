@@ -1,47 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/styles.css">
-    <title>MeuHexa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>MeuHexa</title>
+
+  <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
+
 <body>
-    <header class="header">
 
-        <div class="logo">
-            <img src="../static/images/logo-meuhexa.jpg" alt="Meu Hexa">
-        </div>
+{% extends "base.html" %}
 
-        <nav class="menu">
-            <a href="#">Início</a>
-            <a href="#">História da copa</a>
-            <a href="#">Estatísticas</a>
-            <a href="#">Meus craques</a>
-            <a href="#">Minigames</a>
-            <a href="#">Sobre</a>
-        </nav>
+{% block homepage %}
 
-    </header>
-    <section class="hero">
+<section class="hero">
 
-    <div class="overlay"></div>
+  <div class="overlay"></div>
 
-    <div class="content">
+  <div class="content">
 
-        <span class="small-text">OS</span>
+    <span class="small-text">
+      OS
+    </span>
 
-        <h1 class="gold">
-            CAMPEÕES
-        </h1>
+    <h1 class="gold">
+      CAMPEÕES
+    </h1>
 
-        <h2>
-            NASCEM ANTES <br>
-            DO APITO
-        </h2>
+    <h2>
+      NASCEM ANTES <br>
+      DO APITO
+    </h2>
 
-    </div>
+  </div>
 
 </section>
-</body>
-</html>
+{% endblock %}
