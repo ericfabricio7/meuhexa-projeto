@@ -1,25 +1,42 @@
-{% extends 'base.html' %}
+<!doctype html>
+<html lang="pt-br">
 
-{% block content %}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<h1>Jogos da Copa 🏆</h1>
+  <title>MeuHexa</title>
 
-{% for jogo in jogos %}
+  <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
 
-<div>
+<body>
+
+{% extends "base.html" %}
+
+{% block homepage %}
+
+<section class="hero">
+
+  <div class="overlay"></div>
+
+  <div class="content">
+
+    <span class="small-text">
+      OS
+    </span>
+
+    <h1 class="gold">
+      CAMPEÕES
+    </h1>
 
     <h2>
-        {{ jogo.casa }}
-        {{ jogo.gols_casa }}
-
-        x
-
-        {{ jogo.gols_fora }}
-        {{ jogo.fora }}
+      NASCEM ANTES <br>
+      DO APITO
     </h2>
 
-</div>
+  </div>
 
-{% endfor %}
-
+</section>
 {% endblock %}

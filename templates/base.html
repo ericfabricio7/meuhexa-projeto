@@ -1,11 +1,30 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="pt-br">
 <head>
-    <title>World Cup Hub</title>
+  <meta charset="utf-8">
+  <title>MeuHexa</title>
+
+  <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
+
 <body>
 
-{% block content %}{% endblock %}
+<header class="header">
+    
+  <nav class="menu">
+    <a href="#">Início</a>
+    <a href="#">História da Copa</a>
+    <a href="#">Álbum</a>
+    <a href="#">Minigame</a>
+    <a href="#">Sobre</a>
+  </nav>
+
+</header>
+
+{% block homepage %}
+
+{% endblock %}
 
 </body>
 </html>
