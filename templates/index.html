@@ -1,20 +1,4 @@
-<!doctype html>
-<html lang="pt-br">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>MeuHexa</title>
-
-  <link rel="stylesheet"
-        href="{{ url_for('static', filename='css/styles.css') }}">
-</head>
-
-<body>
-
 {% extends "base.html" %}
-
 {% block homepage %}
 
 <section class="hero">
@@ -35,6 +19,173 @@
       NASCEM ANTES <br>
       DO APITO
     </h2>
+
+  </div>
+
+</section>
+{% endblock %}
+{% block historiadacopa %}
+    
+{% endblock %}
+
+{% block album %}
+<section class="painel">
+
+  <div class="painel-overlay"></div>
+
+  <div class="acoes">
+
+    <button class="btn abrir-pacote">
+      Abrir pacote (5)
+    </button>
+
+    <button class="btn btn-bonus">
+      Resgatar bônus diário
+    </button>
+
+    <button class="btn btn-reiniciar">
+      Reiniciar
+    </button>
+
+  </div>
+
+</section>
+
+<section class="card">
+
+  <h2 class="titulo">
+    Meu Álbum
+  </h2>
+
+  <div class="album-grid">
+    <div class="slot rar-rara">
+      <div class="slot-numero">
+        #001
+      </div>
+
+      <div class="colada">
+
+        <div class="fig-img"
+             style="background-image:url('../static/img/img-figurinhas/neymar.jpg')">
+        </div>
+
+        <div class="fig-info">
+
+          <strong>Neymar Jr</strong>
+
+          <span>Brasil</span>
+
+        </div>
+
+      </div>
+
+    </div>
+    <div class="slot rar-comum">
+      <div class="slot-numero">
+        #002
+      </div>
+      <div class="vazio">
+        <span class="silhueta"></span>
+        <small>Argentina</small>
+        <button class="btn btn-mini">
+          +
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- Figurinha preenchida -->
+    <div class="slot rar-epica">
+
+      <div class="slot-numero">
+        #003
+      </div>
+
+      <div class="figurinha colada">
+
+        <div class="fig-img"
+             style="background-image:url('../static/img/img-figurinhas/messi.jpeg')">
+        </div>
+
+        <div class="fig-info">
+
+          <strong>Messi</strong>
+
+          <span>Argentina</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Figurinha vazia -->
+    <div class="slot rar-comum">
+
+      <div class="slot-numero">
+        #004
+      </div>
+
+      <div class="vazio">
+
+        <span class="silhueta"></span>
+
+        <small>Portugal</small>
+
+        <button class="btn btn-mini">
+          +
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- Figurinha vazia -->
+    <div class="slot rar-rara">
+
+      <div class="slot-numero">
+        #005
+      </div>
+
+      <div class="vazio">
+
+        <span class="silhueta"></span>
+
+        <small>França</small>
+
+        <button class="btn btn-mini">
+          +
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- Figurinha preenchida -->
+    <div class="slot rar-lendaria">
+
+      <div class="slot-numero">
+        #006
+      </div>
+
+      <div class="figurinha colada">
+
+        <div class="fig-img"
+             style="background-image:url('../static/img/img-figurinhas/cr7.jpg')">
+        </div>
+
+        <div class="fig-info">
+
+          <strong>Cristiano Ronaldo</strong>
+
+          <span>Portugal</span>
+
+        </div>
+
+      </div>
+
+    </div>
 
   </div>
 
