@@ -1,12 +1,10 @@
-from flask import Flask, render_template
+from flask import Flask
+from app.copa.routes import registrar_rotas
+
 
 app = Flask(__name__)
 
-@app.route("/")
-def index():
-    return render_template(
-        "index.html"
-    )
+registrar_rotas(app)
 
 if __name__ == "__main__":
     app.run(

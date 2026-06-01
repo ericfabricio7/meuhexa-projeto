@@ -36,9 +36,6 @@ body{
   overflow-x:hidden;
 }
 
-
-/* HEADER */
-
 .header{
   position:fixed;
 
@@ -91,6 +88,57 @@ body{
   width:100%;
 }
 
+.menu-hamburguer{
+  margin-left: auto;
+  z-index: 1002;
+  display:none;
+  background:none;
+  text-align: right;
+  border:none;
+  color:white;
+  font-size:2rem;
+  cursor:pointer;
+}
+
+@media (max-width: 768px){
+
+  .header{
+    padding:0 25px;
+  }
+
+  .menu-hamburguer{
+    display:block;
+    z-index:1001;
+  }
+
+  .menu{
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:250px;
+    height:100vh;
+    background:#0a0a0a;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    transition:.4s ease;
+  }
+
+  .menu a:hover{
+    color:var(--amarelo);
+  }
+
+  .menu a:hover::after{
+    width:100%;
+  }
+
+  .menu.ativo{
+  right:0;
+  background:linear-gradient(to bottom, var(--azul), var(--card));
+}
+
+}
+
 .hero{
   position:relative;
   width:100%;
@@ -131,12 +179,11 @@ body{
 }
 
 .small-text{
-  font-size:3rem;
-  font-weight:700;
+  font-size:clamp(1.5rem, 4vw, 3rem);
 }
 
 .gold{
-  font-size:7rem;
+  font-size:clamp(3rem, 10vw, 7rem);
   font-weight:900;
   color:var(--amarelo);
   line-height:1;
@@ -144,10 +191,10 @@ body{
 
 .content h2{
   margin-top:12px;
-  font-size:3.5rem;
+  font-size:clamp(1.5rem, 5vw, 3.5rem);
 }
 
-.painel{
+#painel{
   position:relative;
   width:70%;
   display:flex;
@@ -196,7 +243,7 @@ body{
   flex-wrap:wrap;
 }
 
-.painel .btn{
+#painel .btn{
   font-family:"Outfit",sans-serif;
   padding:14px 24px;
   border:none;
@@ -206,7 +253,7 @@ body{
   transition:.3s;
 }
 
-.painel .btn:hover{
+#painel .btn:hover{
   transform:translateY(-3px);
 }
 
@@ -217,6 +264,7 @@ body{
     var(--verde),
     #056a2f
   );
+  text-decoration: none;
 
   color:rgb(234,237,188);
 }
@@ -305,7 +353,7 @@ body{
 }
 
 
-/* RARIDADES */
+
 
 .rar-rara .colada{
   background:
@@ -335,8 +383,6 @@ body{
 }
 
 
-/* IMAGEM */
-
 .fig-img{
   width:100%;
 
@@ -351,8 +397,6 @@ body{
   border:2px solid rgba(255,255,255,0.08);
 }
 
-
-/* INFO */
 
 .fig-info{
   margin-top:12px;
