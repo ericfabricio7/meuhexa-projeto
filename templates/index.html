@@ -29,15 +29,15 @@
 {% endblock %}
 
 {% block album %}
-<section class="painel">
+<section id="painel">
 
   <div class="painel-overlay"></div>
 
   <div class="acoes">
 
-    <button class="btn abrir-pacote">
-      Abrir pacote (5)
-    </button>
+      <a href="/abrir_pacote" class="btn abrir-pacote">
+        Abrir pacote ({{ pacotes_disponiveis }})
+      </a>
 
     <button class="btn btn-bonus">
       Resgatar bônus diário
