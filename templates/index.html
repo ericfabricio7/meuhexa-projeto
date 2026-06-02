@@ -1,43 +1,39 @@
 {% extends "base.html" %}
+
 {% block homepage %}
 
 <section class="hero">
-
   <div class="overlay"></div>
 
   <div class="content">
+    <span class="small-text">OS</span>
 
-    <span class="small-text">
-      OS
-    </span>
-
-    <h1 class="gold">
-      CAMPEÕES
-    </h1>
+    <h1 class="gold">CAMPEÕES</h1>
 
     <h2>
       NASCEM ANTES <br>
       DO APITO
     </h2>
-
   </div>
-
 </section>
+
 {% endblock %}
+
+
 {% block historiadacopa %}
-    
 {% endblock %}
+
 
 {% block album %}
-<section id="painel">
 
+<section id="painel">
   <div class="painel-overlay"></div>
 
   <div class="acoes">
 
-      <a href="/abrir_pacote" class="btn abrir-pacote">
-        Abrir pacote ({{ pacotes_disponiveis }})
-      </a>
+    <a href="{{ url_for('abrir_pacote') }}" class="btn abrir-pacote">
+      Abrir pacote ({{ pacotes_disponiveis }})
+    </a>
 
     <button class="btn btn-bonus">
       Resgatar bônus diário
@@ -48,146 +44,45 @@
     </button>
 
   </div>
-
 </section>
 
 <section class="card">
 
-  <h2 class="titulo">
-    Meu Álbum
-  </h2>
+  <h2 class="titulo">Meu Álbum</h2>
 
   <div class="album-grid">
-    <div class="slot rar-rara">
-      <div class="slot-numero">
-        #001
-      </div>
 
-      <div class="colada">
+    {% for figurinha in figurinhas %}
 
-        <div class="fig-img"
-             style="background-image:url('../static/img/img-figurinhas/neymar.jpg')">
-        </div>
+      <div class="slot">
+        
+        {% if figurinha.numero in coladas %}
 
-        <div class="fig-info">
+          <img id="fig-{{ figurinha.numero }}" class="fig-img"
+               src="{{ url_for('static', filename='img/img-figurinhas/' + figurinha.imagem) }}">
 
-          <strong>Neymar Jr</strong>
+          <p id="fig-nome"class="fig-nome">{{ figurinha.nome }}</p>
 
-          <span>Brasil</span>
+        {% elif figurinha.numero in sorteadas %}
 
-        </div>
+          <div class="btn-mini">
+            <a href="{{ url_for('colar', jogador=figurinha.numero) }}">+</a>
+          </div>
 
-      </div>
+          <p class="fig-nome">{{ figurinha.nome }}</p>
 
-    </div>
-    <div class="slot rar-comum">
-      <div class="slot-numero">
-        #002
-      </div>
-      <div class="vazio">
-        <span class="silhueta"></span>
-        <small>Argentina</small>
-        <button class="btn btn-mini">
-          +
-        </button>
+        {% else %}
+
+          <p class="fig-nome">{{ figurinha.selecao }}</p>
+
+        {% endif %}
 
       </div>
 
-    </div>
-
-    <!-- Figurinha preenchida -->
-    <div class="slot rar-epica">
-
-      <div class="slot-numero">
-        #003
-      </div>
-
-      <div class="figurinha colada">
-
-        <div class="fig-img"
-             style="background-image:url('../static/img/img-figurinhas/messi.jpeg')">
-        </div>
-
-        <div class="fig-info">
-
-          <strong>Messi</strong>
-
-          <span>Argentina</span>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- Figurinha vazia -->
-    <div class="slot rar-comum">
-
-      <div class="slot-numero">
-        #004
-      </div>
-
-      <div class="vazio">
-
-        <span class="silhueta"></span>
-
-        <small>Portugal</small>
-
-        <button class="btn btn-mini">
-          +
-        </button>
-
-      </div>
-
-    </div>
-
-    <!-- Figurinha vazia -->
-    <div class="slot rar-rara">
-
-      <div class="slot-numero">
-        #005
-      </div>
-
-      <div class="vazio">
-
-        <span class="silhueta"></span>
-
-        <small>França</small>
-
-        <button class="btn btn-mini">
-          +
-        </button>
-
-      </div>
-
-    </div>
-
-    <!-- Figurinha preenchida -->
-    <div class="slot rar-lendaria">
-
-      <div class="slot-numero">
-        #006
-      </div>
-
-      <div class="figurinha colada">
-
-        <div class="fig-img"
-             style="background-image:url('../static/img/img-figurinhas/cr7.jpg')">
-        </div>
-
-        <div class="fig-info">
-
-          <strong>Cristiano Ronaldo</strong>
-
-          <span>Portugal</span>
-
-        </div>
-
-      </div>
-
-    </div>
+    {% endfor %}
 
   </div>
 
 </section>
+
 {% endblock %}
