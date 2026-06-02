@@ -19,3 +19,7 @@ def registrar_rotas(app):
             pacotes_disponiveis -= 1
 
         return redirect(url_for("index") + "#painel")
+    
+    @app.route("/historia")
+    def historia():
+     return render_template("historia.html")

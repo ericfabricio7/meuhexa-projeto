@@ -1,361 +1,185 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+{% extends 'base.html' %}
 
-<head>
+{% block css %}
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='css/historia.css') }}">
+{% endblock %}
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block historiadacopa %}
 
-    <title>História da Copa do Mundo</title>
+<main class="world-cup">
 
-    <link rel="stylesheet" href="/meuhexa/static/css/historia.css">
+    <!-- HERO -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <section class="hero">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <div class="hero-content">
 
-</head>
+            <span class="mini-title">
+                FIFA WORLD CUP 2026
+            </span>
 
-<body>
+            <h1>
+                HISTÓRIA<br>
+                DA COPA<br>
+                DO MUNDO
+            </h1>
 
-    <main class="world-cup">
+            <p>
+                A maior competição de futebol do planeta atravessa gerações,
+                cria lendas eternas e transforma partidas em momentos históricos.
+            </p>
 
-        <!-- HERO -->
+            <div class="hero-buttons">
 
-        <section class="hero">
+                <a href="#historias" class="hero-btn">
+                    Explorar História
+                </a>
 
-            <div class="hero-content">
+                <a href="#campeoes" class="hero-btn secondary-btn">
+                    Ver Campeões
+                </a>
 
-                <span class="mini-title">
-                    FIFA WORLD CUP 2026
-                </span>
+            </div>
 
-                <h1>
-                    HISTÓRIA<br>
-                    DA COPA<br>
-                    DO MUNDO
-                </h1>
+        </div>
 
-                <p>
-                    A maior competição de futebol do planeta atravessa gerações,
-                    cria lendas eternas e transforma partidas em momentos históricos.
-                </p>
+    </section>
 
-                <div class="hero-buttons">
+    <!-- HISTÓRIA -->
 
-                    <a href="#historias" class="hero-btn">
-                        Explorar História
-                    </a>
+    <section class="history" id="historias">
 
-                    <a href="#campeoes" class="hero-btn secondary-btn">
-                        Ver Campeões
-                    </a>
+        <div class="section-title">
 
+            <span>Linha do Tempo</span>
+
+            <h2>Momentos Históricos</h2>
+
+        </div>
+
+        <div class="timeline-grid">
+
+            <article class="timeline-card">
+                <div class="card-image copa1930"></div>
+                <div class="card-content">
+                    <h3>1930</h3>
+                    <p>
+                        O Uruguai recebe a primeira Copa do Mundo da FIFA,
+                        iniciando a história do maior torneio do planeta.
+                    </p>
                 </div>
-
-            </div>
-
-        </section>
-
-        <!-- HISTÓRIA -->
-
-        <section class="history" id="historias">
-
-            <div class="section-title">
-
-                <span>Linha do Tempo</span>
-
-                <h2>Momentos Históricos</h2>
-
-            </div>
-
-            <div class="timeline-grid">
-
-                <article class="timeline-card">
-
-                    <div class="card-image copa1930"></div>
-
-                    <div class="card-content">
-
-                        <h3>1930</h3>
-
-                        <p>
-                            O Uruguai recebe a primeira Copa do Mundo da FIFA,
-                            iniciando a história do maior torneio do planeta.
-                        </p>
-
-                    </div>
-
-                </article>
-
-                <article class="timeline-card">
-
-                    <div class="card-image copa1958"></div>
-
-                    <div class="card-content">
-
-                        <h3>1958</h3>
-
-                        <p>
-                            Pelé conquista o mundo aos 17 anos e leva
-                            o Brasil ao primeiro título mundial.
-                        </p>
-
-                    </div>
-
-                </article>
-
-                <article class="timeline-card">
-
-                    <div class="card-image copa1970"></div>
-
-                    <div class="card-content">
-
-                        <h3>1970</h3>
-
-                        <p>
-                            O Brasil encanta o mundo com um dos maiores
-                            times da história do futebol.
-                        </p>
-
-                    </div>
-
-                </article>
-
-                <article class="timeline-card">
-
-                    <div class="card-image copa1986"></div>
-
-                    <div class="card-content">
-
-                        <h3>1986</h3>
-
-                        <p>
-                            Maradona domina a Copa do México
-                            e marca o lendário Gol do Século.
-                        </p>
-
-                    </div>
-
-                </article>
-
-                <article class="timeline-card">
-
-                    <div class="card-image copa2002"></div>
-
-                    <div class="card-content">
-
-                        <h3>2002</h3>
-
-                        <p>
-                            Ronaldo Fenômeno lidera o Brasil
-                            rumo ao pentacampeonato mundial.
-                        </p>
-
-                    </div>
-
-                </article>
-
-                <article class="timeline-card">
-
-                    <div class="card-image copa2022"></div>
-
-                    <div class="card-content">
-
-                        <h3>2022</h3>
-
-                        <p>
-                            Messi conquista o mundo em uma das finais
-                            mais históricas da Copa do Mundo.
-                        </p>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-        <!-- CAMPEÕES -->
-
-        <section class="champions" id="campeoes">
-
-            <div class="section-title">
-
-                <span>Seleções Históricas</span>
-
-                <h2>Maiores Campeões</h2>
-
-            </div>
-
-            <div class="champions-grid">
-
-                <div class="champion-card brazil">
-
-                    <div class="champion-info">
-
-                        <h3>Brasil</h3>
-
-                        <span>5 títulos</span>
-
-                    </div>
-
+            </article>
+
+            <article class="timeline-card">
+                <div class="card-image copa1958"></div>
+                <div class="card-content">
+                    <h3>1958</h3>
+                    <p>
+                        Pelé conquista o mundo aos 17 anos e leva
+                        o Brasil ao primeiro título mundial.
+                    </p>
                 </div>
+            </article>
 
-                <div class="champion-card germany">
-
-                    <div class="champion-info">
-
-                        <h3>Alemanha</h3>
-
-                        <span>4 títulos</span>
-
-                    </div>
-
+            <article class="timeline-card">
+                <div class="card-image copa1970"></div>
+                <div class="card-content">
+                    <h3>1970</h3>
+                    <p>
+                        O Brasil encanta o mundo com um dos maiores
+                        times da história do futebol.
+                    </p>
                 </div>
+            </article>
 
-                <div class="champion-card italy">
-
-                    <div class="champion-info">
-
-                        <h3>Itália</h3>
-
-                        <span>4 títulos</span>
-
-                    </div>
-
+            <article class="timeline-card">
+                <div class="card-image copa1986"></div>
+                <div class="card-content">
+                    <h3>1986</h3>
+                    <p>
+                        Maradona domina a Copa do México
+                        e marca o lendário Gol do Século.
+                    </p>
                 </div>
+            </article>
 
-                <div class="champion-card argentina">
-
-                    <div class="champion-info">
-
-                        <h3>Argentina</h3>
-
-                        <span>3 títulos</span>
-
-                    </div>
-
+            <article class="timeline-card">
+                <div class="card-image copa2002"></div>
+                <div class="card-content">
+                    <h3>2002</h3>
+                    <p>
+                        Ronaldo Fenômeno lidera o Brasil
+                        rumo ao pentacampeonato mundial.
+                    </p>
                 </div>
+            </article>
 
-                <div class="champion-card france">
-
-                    <div class="champion-info">
-
-                        <h3>França</h3>
-
-                        <span>2 títulos</span>
-
-                    </div>
-
+            <article class="timeline-card">
+                <div class="card-image copa2022"></div>
+                <div class="card-content">
+                    <h3>2022</h3>
+                    <p>
+                        Messi conquista o mundo em uma das finais
+                        mais históricas da Copa do Mundo.
+                    </p>
                 </div>
+            </article>
 
+        </div>
+
+    </section>
+
+    <!-- CAMPEÕES -->
+
+    <section class="champions" id="campeoes">
+
+        <div class="section-title">
+            <span>Seleções Históricas</span>
+            <h2>Maiores Campeões</h2>
+        </div>
+
+        <div class="champions-grid">
+
+            <div class="champion-card brazil">
+                <div class="champion-info">
+                    <h3>Brasil</h3>
+                    <span>5 títulos</span>
+                </div>
             </div>
 
-        </section>
-
-        <!-- ARTILHEIROS -->
-
-        <section class="scorers" id="artilheiros">
-
-            <div class="section-title">
-
-                <span>Lendas da Copa</span>
-
-                <h2>Maiores Artilheiros</h2>
-
+            <div class="champion-card germany">
+                <div class="champion-info">
+                    <h3>Alemanha</h3>
+                    <span>4 títulos</span>
+                </div>
             </div>
 
-            <div class="scorers-grid">
-
-                <article class="scorer-card">
-
-                    <div class="scorer-image klose"></div>
-
-                    <div class="scorer-content">
-
-                        <h3>Miroslav Klose</h3>
-
-                        <p>Alemanha</p>
-
-                        <span>16 gols</span>
-
-                    </div>
-
-                </article>
-
-                <article class="scorer-card">
-
-                    <div class="scorer-image ronaldo"></div>
-
-                    <div class="scorer-content">
-
-                        <h3>Ronaldo</h3>
-
-                        <p>Brasil</p>
-
-                        <span>15 gols</span>
-
-                    </div>
-
-                </article>
-
-                <article class="scorer-card">
-
-                    <div class="scorer-image gerd"></div>
-
-                    <div class="scorer-content">
-
-                        <h3>Gerd Müller</h3>
-
-                        <p>Alemanha</p>
-
-                        <span>14 gols</span>
-
-                    </div>
-
-                </article>
-
-                <article class="scorer-card">
-
-                    <div class="scorer-image fontaine"></div>
-
-                    <div class="scorer-content">
-
-                        <h3>Just Fontaine</h3>
-
-                        <p>França</p>
-
-                        <span>13 gols</span>
-
-                    </div>
-
-                </article>
-
-                <article class="scorer-card">
-
-                    <div class="scorer-image pele"></div>
-
-                    <div class="scorer-content">
-
-                        <h3>Pelé</h3>
-
-                        <p>Brasil</p>
-
-                        <span>12 gols</span>
-
-                    </div>
-
-                </article>
-
+            <div class="champion-card italy">
+                <div class="champion-info">
+                    <h3>Itália</h3>
+                    <span>4 títulos</span>
+                </div>
             </div>
 
-        </section>
+            <div class="champion-card argentina">
+                <div class="champion-info">
+                    <h3>Argentina</h3>
+                    <span>3 títulos</span>
+                </div>
+            </div>
 
-    </main>
+            <div class="champion-card france">
+                <div class="champion-info">
+                    <h3>França</h3>
+                    <span>2 títulos</span>
+                </div>
+            </div>
 
-</body>
+        </div>
 
-</html>
+    </section>
+
+</main>
+
+{% endblock %}

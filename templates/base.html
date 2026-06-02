@@ -1,57 +1,72 @@
 <!doctype html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MeuHexa</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>MeuHexa</title>
 
-  <link rel="stylesheet"
-        href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/styles.css') }}">
+
+    {% block css %}
+    {% endblock %}
+
 </head>
 
 <body>
 
 <header class="header">
-    
-  <nav class="menu" id="menu">
-    <a href="#">Início</a>
-    <a href="#">História da Copa</a>
-    <a href="#painel">Álbum</a>
-    <a href="#">Minigame</a>
-    <a href="#">Sobre</a>
-  </nav>
 
-  <button class="menu-hamburguer" id="menu-hamburguer">
-    ☰
-  </button>
+    <nav class="menu" id="menu">
+
+        <a href="{{ url_for('index') }}">
+            Início
+        </a>
+
+        <a href="{{ url_for('historia') }}">
+            História da Copa
+        </a>
+
+        <a href="{{ url_for('index') }}#painel">
+            Álbum
+        </a>
+
+        <a href="#">
+            Minigame
+        </a>
+
+        <a href="#">
+            Sobre
+        </a>
+
+    </nav>
+
+    <button class="menu-hamburguer" id="menu-hamburguer">
+        ☰
+    </button>
 
 </header>
 
 {% block homepage %}
-
 {% endblock %}
 
 {% block historiadacopa %}
-
 {% endblock %}
 
 {% block album %}
-
 {% endblock %}
 
 <script>
 const hamburguer = document.getElementById("menu-hamburguer");
 const menu = document.getElementById("menu");
 
-console.log(hamburguer);
-console.log(menu);
-
 hamburguer.addEventListener("click", () => {
-    console.log("clicou");
     menu.classList.toggle("ativo");
 });
 </script>
 
 </body>
+
 </html>
