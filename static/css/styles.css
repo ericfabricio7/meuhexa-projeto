@@ -140,37 +140,73 @@ body{
 }
 
 .hero{
-  position:relative;
-  width:100%;
-  height:100vh;
-  display:flex;
-  align-items:center;
-  padding-left:8%;
-  overflow:hidden;
-  background-image:url("../img/fundo-home.png");
+    position:relative;
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    padding-left:8%;
+    overflow:hidden;
 
-  background-size:cover;
-  background-position:center top;
-  background-repeat:no-repeat;
+    background:
+    radial-gradient(
+        circle at center,
+        rgba(0,0,0,0.10) 0%,
+        rgba(0,0,0,0.40) 65%,
+        rgba(0,0,0,0.75) 100%
+    ),
+    url("../img/fundo-home1.png");
+
+    background-size:cover;
+    background-position:center top;
+    background-repeat:no-repeat;
+}
+
+/* TRANSIÇÃO PARA A PRÓXIMA SEÇÃO */
+
+.hero::after{
+    content:"";
+
+    position:absolute;
+    left:0;
+    bottom:0;
+
+    width:100%;
+    height:280px;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(5,5,5,0) 0%,
+        rgba(5,5,5,.25) 30%,
+        rgba(5,5,5,.65) 70%,
+        #050505 100%
+    );
+
+    pointer-events:none;
 }
 
 .overlay{
-  position:absolute;
-  inset:0;
-  background:
-  radial-gradient(
-    circle at center,
-    rgba(0,0,0,0.15) 0%,
-    rgba(0,0,0,0.45) 55%,
-    rgba(0,0,0,0.88) 100%
-  ),
+    position:absolute;
+    inset:0;
 
-  linear-gradient(
-    to right,
-    rgba(0,0,0,0.92) 0%,
-    rgba(0,0,0,0.45) 50%,
-    rgba(0,0,0,0.70) 100%
-  );
+    background:
+
+    radial-gradient(
+        ellipse at center,
+        rgba(0,0,0,0.25) 0%,
+        rgba(0,0,0,0.55) 55%,
+        rgba(0,0,0,0.90) 100%
+    ),
+
+    linear-gradient(
+        to right,
+        rgba(0,0,0,0.92) 0%,
+        rgba(0,0,0,0.45) 50%,
+        rgba(0,0,0,0.75) 100%
+    );
+
+    pointer-events:none;
 }
 
 .content{
@@ -194,18 +230,547 @@ body{
   font-size:clamp(1.5rem, 5vw, 3.5rem);
 }
 
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* HISTÓRIA */
+
+
+/* =========================
+   HERO HISTÓRIA DA COPA
+========================= */
+
+.hist{
+    position:relative;
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+
+    padding:80px 8%;
+    overflow:hidden;
+
+    background:
+
+    linear-gradient(
+        to bottom,
+        rgba(5,5,5,1) 0%,
+        rgba(5,5,5,.70) 15%,
+        rgba(0,0,0,.45) 40%,
+        rgba(0,0,0,.35) 100%
+    ),
+
+    radial-gradient(
+        circle at center,
+        rgba(0,0,0,.15) 0%,
+        rgba(0,0,0,.35) 75%,
+        rgba(0,0,0,.65) 100%
+    ),
+
+    url("../img/copa2026.jpeg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.hist::before{
+    content:"";
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:220px;
+
+    background:
+    linear-gradient(
+        to bottom,
+        #050505,
+        rgba(5,5,5,.75),
+        rgba(5,5,5,0)
+    );
+
+    pointer-events:none;
+}
+.hist::after{
+    content:"";
+
+    position:absolute;
+    left:0;
+    bottom:0;
+
+    width:100%;
+    height:250px;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(5,5,5,0) 0%,
+        rgba(5,5,5,.25) 30%,
+        rgba(5,5,5,.60) 70%,
+        #050505 100%
+    );
+
+    pointer-events:none;
+    z-index:1;
+}
+
+.hist-content{
+    position:relative;
+    z-index:2;
+    max-width:700px;
+}
+
+.hist h1{
+    font-size:clamp(3rem,8vw,6rem);
+    line-height:1;
+    font-weight:900;
+    color:var(--amarelo);
+
+    margin-bottom:20px;
+
+    text-shadow:
+        0 2px 10px rgba(0,0,0,.5);
+}
+
+.hist p{
+    font-size:1.2rem;
+    line-height:1.8;
+
+    color:white;
+
+    text-shadow:
+        0 2px 8px rgba(0,0,0,.5);
+}
+
+.hist-buttons{
+    display:flex;
+    gap:20px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.hist-btn{
+    text-decoration:none;
+
+    padding:18px 34px;
+
+    border-radius:50px;
+
+    background:var(--amarelo);
+
+    color:#000;
+
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.hist-btn:hover{
+    transform:translateY(-5px);
+}
+
+.secondary-btn{
+    background:rgba(0,0,0,.35);
+
+    color:white;
+
+    border:1px solid rgba(255,216,77,.4);
+
+    backdrop-filter:blur(8px);
+}
+
+/* SEÇÕES */
+
+.history,
+.champions,
+.scorers{
+    padding:100px 8%;
+    background:var(--bg);;
+}
+
+/* TÍTULOS */
+
+.section-title{
+    margin-bottom: 55px;
+}
+
+.section-title span{
+    color: #ffd447;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.section-title h2{
+    font-size: 52px;
+    margin-top: 12px;
+}
+
+/* GRID */
+
+/* GRID */
+
+.timeline-grid,
+.champions-grid,
+.scorers-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:32px;
+}
+
+/* CARDS */
+
+
+
+
+/* =========================
+   CARDS
+========================= */
+
+.timeline-card,
+.scorer-card{
+    overflow:hidden;
+
+    border-radius:20px;
+
+    background:
+    linear-gradient(
+        to bottom,
+        #171717,
+        #0f0f0f
+    );
+
+    border:1px solid rgba(255,255,255,.06);
+
+    transition:.3s;
+}
+
+.timeline-card:hover,
+.scorer-card:hover{
+    transform:translateY(-8px);
+
+    border-color:rgba(255,216,77,.3);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.45);
+}
+
+.card-image,
+.scorer-image{
+    position:relative;
+
+    width:100%;
+    height:320px;
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.card-image::after,
+.scorer-image::after{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        to top,
+        rgba(5,5,5,.85),
+        rgba(5,5,5,0)
+    );
+}
+
+.card-content,
+.scorer-content{
+    padding:30px;
+}
+
+.card-content h3{
+    color:var(--amarelo);
+
+    font-size:2rem;
+
+    margin-bottom:12px;
+}
+
+.scorer-content h3{
+    color:white;
+
+    font-size:1.8rem;
+
+    margin-bottom:12px;
+}
+
+.card-content p,
+.scorer-content p{
+    color:var(--muted);
+
+    line-height:1.8;
+}
+
+.scorer-content span{
+    color:var(--amarelo);
+
+    font-size:1.3rem;
+
+    font-weight:700;
+}
+/* CAMPEÕES */
+
+.champion-card{
+    position:relative;
+
+    min-height:260px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    display:flex;
+    align-items:flex-end;
+
+    padding:25px;
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    transition:.3s;
+
+    border:2px solid rgba(255,216,77,.15);
+}
+
+.champion-card::before{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:
+    radial-gradient(
+        circle at center,
+        rgba(255,255,255,0.02),
+        rgba(0,0,0,0.55)
+    ),
+
+    linear-gradient(
+        to top,
+        rgba(0,0,0,.95),
+        rgba(0,0,0,.25)
+    );
+}
+
+.champion-card:hover{
+    transform:translateY(-8px);
+    border-color:var(--amarelo);
+}
+
+.champion-info{
+    position:relative;
+    z-index:2;
+}
+
+.champion-info h3{
+    font-size:2rem;
+    margin-bottom:8px;
+}
+
+.champion-info span{
+    color:var(--amarelo);
+    font-size:1.2rem;
+    font-weight:700;
+}
+/* BANDEIRAS */
+
+.brazil{
+    background-image: url('/static/img/bandeirabrasil.jpg');
+}
+
+.germany{
+    background-image: url('/static/img/bandeiraalemanha.jpg');
+}
+
+.italy{
+    background-image: url('/static/img/bandeiraitalia.jpg');
+}
+
+.argentina{
+    background-image: url('/static/img/bandeiraargentina.jpg');
+}
+
+.france{
+    background-image: url('/static/img/bandeirafrança.jpg');
+}
+
+/* HISTÓRIA */
+
+.copa1930{
+    background-image: url('/static/img/1930-estadio-centenario-ap.jpg');
+}
+
+.copa1958{
+    background-image: url('/static/img/pele.jpg');
+}
+
+.copa1970{
+    background-image: url('/static/img/timedream brasil.jpg');
+}
+
+.copa1986{
+    background-image: url('/static/img/maradona.jpg');
+}
+
+.copa2002{
+    background-image: url('/static/img/ronaldo.jpg');
+}
+
+.copa2022{
+    background-image: url('/static/img/messi1.jpg');
+}
+
+/* ARTILHEIROS */
+
+.klose{
+    background-image: url('/static/img/miroslav.jpg');
+}
+
+.ronaldo{
+    background-image: url('/static/img/ronaldo_get62.jpg');
+}
+
+.gerd{
+    background-image: url('/static/img/gerd muller.jpg');
+}
+
+.fontaine{
+    background-image: url('/static/img/just fontaine.jpg');
+}
+
+.pele{
+    background-image: url('/static/img/pelevitoria.jpeg');
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width:992px){
+
+    .hist h1{
+        font-size:60px;
+    }
+
+    .section-title h2{
+        font-size:42px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .history,
+    .champions,
+    .scorers,
+    .hist{
+        padding-left:6%;
+        padding-right:6%;
+    }
+
+    .hist h1{
+        font-size:46px;
+    }
+
+    .timeline-grid,
+    .champions-grid,
+    .scorers-grid{
+        grid-template-columns:1fr;
+    }
+
+    .card-image,
+    .scorer-image{
+        height:260px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .hist h1{
+        font-size:34px;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+    .hist-buttons{
+        flex-direction:column;
+    }
+
+    .hist-btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .card-content,
+    .scorer-content{
+        padding:24px;
+    }
+
+    .card-content h3{
+        font-size:30px;
+    }
+
+    .scorer-content h3{
+        font-size:26px;
+    }
+
+    .card-image,
+    .scorer-image{
+        height:220px;
+    }
+
+    .champion-card{
+        min-height:220px;
+    }
+
+}
+
 #painel{
   position:relative;
   width:70%;
+  min-height:140px;
+
   display:flex;
   justify-content:center;
+  align-items:center;
+
   margin:2% auto;
   padding:3%;
-  border-radius:12px;
-  background-image:url("../img/painel.jpg");
 
+  border-radius:12px;
+
+  background-image:url("../img/painel.jpeg");
   background-size:cover;
-  background-position:center right;
+  background-position:center;
+  background-repeat:no-repeat;
+
+  overflow:hidden;
 }
 
 .painel-overlay{

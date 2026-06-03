@@ -1,22 +1,8 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
-{% block homepage %}
-
-<section class="hero">
-  <div class="overlay"></div>
-
-  <div class="content">
-    <span class="small-text">OS</span>
-
-    <h1 class="gold">CAMPEÕES</h1>
-
-    <h2>
-      NASCEM ANTES <br>
-      DO APITO
-    </h2>
-  </div>
-</section>
-
+{% block css %}
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='css/historia.css') }}">
 {% endblock %}
 
 {% block historiadacopa %}
@@ -26,9 +12,9 @@
 
     <!-- HERO -->
 
-    <section class="hist">
+    <section class="hero">
 
-        <div class="hist-content">
+        <div class="hero-content">
 
             <span class="mini-title">
                 FIFA WORLD CUP 2026
@@ -45,13 +31,13 @@
                 cria lendas eternas e transforma partidas em momentos históricos.
             </p>
 
-            <div class="hist-buttons">
+            <div class="hero-buttons">
 
-                <a href="#historias" class="hist-btn">
+                <a href="#historias" class="hero-btn">
                     Explorar História
                 </a>
 
-                <a href="#campeoes" class="hist-btn secondary-btn">
+                <a href="#campeoes" class="hero-btn secondary-btn">
                     Ver Campeões
                 </a>
 
@@ -196,69 +182,5 @@
     </section>
 
 </main>
-
-{% endblock %}
-
-
-{% block album %}
-
-<section id="painel">
-  <div class="painel-overlay"></div>
-
-  <div class="acoes">
-
-    <a href="{{ url_for('abrir_pacote') }}" class="btn abrir-pacote">
-      Abrir pacote ({{ pacotes_disponiveis }})
-    </a>
-
-    <button class="btn btn-bonus">
-      Resgatar bônus diário
-    </button>
-
-    <a href="{{ url_for('reiniciar') }}" class="btn btn-reiniciar">
-      Reiniciar
-    </a>
-
-  </div>
-</section>
-
-<section class="card">
-
-  <h2 class="titulo">Meu Álbum</h2>
-
-  <div class="album-grid">
-
-    {% for figurinha in figurinhas %}
-
-      <div class="slot">
-        
-        {% if figurinha.numero in coladas %}
-
-          <img id="fig-{{ figurinha.numero }}" class="fig-img"
-               src="{{ url_for('static', filename='img/img-figurinhas/' + figurinha.imagem) }}">
-
-          <p id="fig-nome"class="fig-nome">{{ figurinha.nome }}</p>
-
-        {% elif figurinha.numero in sorteadas %}
-
-          <div class="btn-mini">
-            <a href="{{ url_for('colar', jogador=figurinha.numero) }}">+</a>
-          </div>
-
-          <p class="fig-nome">{{ figurinha.nome }}</p>
-
-        {% else %}
-
-          <p class="fig-nome">{{ figurinha.selecao }}</p>
-
-        {% endif %}
-
-      </div>
-
-    {% endfor %}
-
-  </div>
-
-</section>
 
 {% endblock %}
