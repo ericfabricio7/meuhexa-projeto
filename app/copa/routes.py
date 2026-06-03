@@ -47,3 +47,13 @@ def registrar_rotas(app):
             sorteadas.remove(jogador)
 
         return redirect(url_for("index")+f"#fig-{jogador}")
+    
+    @app.route("/reiniciar")
+    def reiniciar():
+        global pacotes_disponiveis, sorteadas, coladas
+
+        pacotes_disponiveis=5
+        coladas=[]
+        sorteadas=[]
+
+        return redirect(url_for("index"))
