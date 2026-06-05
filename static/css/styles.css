@@ -13,6 +13,9 @@
   --azul:#002e86;
   --azul2:#1952c4;
 
+  --azul-degrade: #002f8615;
+  --azul-degrade2: #1e58cd5a;
+
   --amarelo:#ffd84d;
   --amarelo2:#c7a219;
 
@@ -134,7 +137,7 @@ body{
 
   .menu.ativo{
   right:0;
-  background:linear-gradient(to bottom, var(--azul), var(--card));
+  background:linear-gradient(to bottom, var(--azul-degrade), var(--azul-degrade2));
 }
 
 }
@@ -161,8 +164,6 @@ body{
     background-position:center top;
     background-repeat:no-repeat;
 }
-
-/* TRANSIÇÃO PARA A PRÓXIMA SEÇÃO */
 
 .hero::after{
     content:"";
@@ -230,8 +231,6 @@ body{
   font-size:clamp(1.5rem, 5vw, 3.5rem);
 }
 
-/* RESET */
-
 *{
     margin: 0;
     padding: 0;
@@ -244,11 +243,6 @@ html{
 
 
 /* HISTÓRIA */
-
-
-/* =========================
-   HERO HISTÓRIA DA COPA
-========================= */
 
 .hist{
     position:relative;
@@ -393,16 +387,12 @@ html{
     backdrop-filter:blur(8px);
 }
 
-/* SEÇÕES */
-
 .history,
 .champions,
 .scorers{
     padding:100px 8%;
     background:var(--bg);;
 }
-
-/* TÍTULOS */
 
 .section-title{
     margin-bottom: 55px;
@@ -421,10 +411,6 @@ html{
     margin-top: 12px;
 }
 
-/* GRID */
-
-/* GRID */
-
 .timeline-grid,
 .champions-grid,
 .scorers-grid{
@@ -432,15 +418,6 @@ html{
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:32px;
 }
-
-/* CARDS */
-
-
-
-
-/* =========================
-   CARDS
-========================= */
 
 .timeline-card,
 .scorer-card{
@@ -532,7 +509,6 @@ html{
 
     font-weight:700;
 }
-/* CAMPEÕES */
 
 .champion-card{
     position:relative;
@@ -597,7 +573,6 @@ html{
     font-size:1.2rem;
     font-weight:700;
 }
-/* BANDEIRAS */
 
 .brazil{
     background-image: url('/static/img/bandeirabrasil.jpg');
@@ -773,26 +748,24 @@ html{
   overflow:hidden;
 }
 
-.painel-overlay{
-  position:absolute;
+#painel::before{
+  content:"";
 
-  inset:0;
+    position:absolute;
+    inset:0;
 
-  background:
-  radial-gradient(
-    circle at center,
-    rgba(255,255,255,0.02) 0%,
-    rgba(0,0,0,0.35) 55%,
-    rgba(0,0,0,0.75) 100%
-  ),
+    background:
+    radial-gradient(
+        circle at center,
+        rgba(255,255,255,0.02),
+        rgba(0,0,0,0.55)
+    ),
 
-  linear-gradient(
-    to right,
-    rgba(0,0,0,1),
-    rgba(0,0,0,0.20)
-  );
-
-  pointer-events:none;
+    linear-gradient(
+        to top,
+        rgba(0,0,0,.95),
+        rgba(0,0,0,.25)
+    );
 }
 
 .acoes{
@@ -835,6 +808,7 @@ html{
 }
 
 .btn-bonus{
+  text-decoration: none;
   background:
   linear-gradient(
     var(--azul),
@@ -844,12 +818,27 @@ html{
   color:rgb(234,237,188);
 }
 
+.indisponivel{
+  background: #0c47b55b;
+}
+
 .btn-reiniciar{
+  text-decoration: none;
   background:
   linear-gradient(
     to right,
     var(--vermelho),
     var(--vermelho2)
+  );
+
+  color:rgb(234,237,188);
+}
+.btn-teste{
+  text-decoration: none;
+  background:
+  linear-gradient(
+    to right,
+    #f8b60e, #a48d09
   );
 
   color:rgb(234,237,188);
@@ -927,44 +916,27 @@ html{
   border-radius:18px;
 }
 
-
-
-
-.rar-rara .colada{
-  background:
-  linear-gradient(
-    to bottom,
-    rgba(0,102,255,1),
-    rgba(0,20,60,1)
-  );
-}
-
-.rar-epica .colada{
-  background:
-  linear-gradient(
-    to bottom,
-    rgba(140,0,255,1),
-    rgba(40,0,70,1)
-  );
-}
-
-.rar-lendaria .colada{
-  background:
-  linear-gradient(
-    to bottom,
-    rgba(255,191,0,1),
-    rgba(90,45,0,1)
-  );
-}
-
-
 .fig-img{
   width:100%;
-  height:220px;
-  object-fit: cover;
-  object-position: center;
-  border-radius:14px;
-  border:2px solid rgba(255,255,255,0.08);
+  height:100%;
+  object-fit:cover;
+  border-radius:18px;
+}
+
+
+.rar-rara{
+  border:3px solid #2e7fff;
+  box-shadow:0 0 15px rgba(46,127,255,.5);
+}
+
+.rar-epica{
+  border:3px solid #a53cff;
+  box-shadow:0 0 15px rgba(165,60,255,.5);
+}
+
+.rar-lendaria{
+  border:3px solid #ffd84d;
+  box-shadow:0 0 20px rgba(255,216,77,.7);
 }
 
 

@@ -184,7 +184,7 @@
                 </div>
             </div>
 
-            <div class="champion-card france">
+            <div class="champion-card france" id="ponto-retorno">
                 <div class="champion-info">
                     <h3>França</h3>
                     <span>2 títulos</span>
@@ -210,13 +210,22 @@
     <a href="{{ url_for('abrir_pacote') }}" class="btn abrir-pacote">
       Abrir pacote ({{ pacotes_disponiveis }})
     </a>
-
-    <button class="btn btn-bonus">
-      Resgatar bônus diário
-    </button>
+    {% if tem_bonus %}
+    <a href="{{ url_for('bonus') }}" class="btn btn-bonus">
+      Resgatar Bônus
+    </a>
+    {% else %}
+    <a class="btn btn-bonus indisponivel">
+      Resgatar Bônus
+    </a>
+    {% endif %}
 
     <a href="{{ url_for('reiniciar') }}" class="btn btn-reiniciar">
       Reiniciar
+    </a>
+
+    <a href="{{ url_for('colartudo') }}" class="btn btn-teste">
+      Colagem automática
     </a>
 
   </div>
@@ -231,25 +240,47 @@
     {% for figurinha in figurinhas %}
 
       <div class="slot">
+        <div class="slot-numero">{{ "%03d"|format(figurinha.numero) }}</div>
         
-        {% if figurinha.numero in coladas %}
+       {% if figurinha.numero in coladas %}
 
-          <img id="fig-{{ figurinha.numero }}" class="fig-img"
-               src="{{ url_for('static', filename='img/img-figurinhas/' + figurinha.imagem) }}">
+            {% set classe_raridade = "" %}
 
-          <p id="fig-nome"class="fig-nome">{{ figurinha.nome }}</p>
+            {% if figurinha.raridade == "Epica" %}
+                {% set classe_raridade = "rar-epica" %}
+            {% elif figurinha.raridade == "Rara" %}
+                {% set classe_raridade = "rar-rara" %}
+            {% elif figurinha.raridade == "Lendaria" %}
+                {% set classe_raridade = "rar-lendaria" %}
+            {% endif %}
+
+            <div class="colada {{ classe_raridade }}">
+
+                <img id="fig-{{ figurinha.numero }}"
+                    class="fig-img"
+                    src="{{ url_for('static', filename='img/img-figurinhas/' + figurinha.imagem) }}">
+
+                <p class="fig-nome">
+                    {{ figurinha.nome }}
+                </p>
+
+            </div>
 
         {% elif figurinha.numero in sorteadas %}
 
-          <div class="btn-mini">
-            <a href="{{ url_for('colar', jogador=figurinha.numero) }}">+</a>
-          </div>
+            <div class="btn-mini">
+                <a href="{{ url_for('colar', jogador=figurinha.numero) }}">+</a>
+            </div>
 
-          <p class="fig-nome">{{ figurinha.nome }}</p>
+            <p class="fig-nome">
+                {{ figurinha.nome }}
+            </p>
 
         {% else %}
 
-          <p class="fig-nome">{{ figurinha.selecao }}</p>
+            <p class="fig-nome">
+                {{ figurinha.selecao }}
+            </p>
 
         {% endif %}
 

@@ -8,6 +8,8 @@ BASE_DIR = os.path.join(BASE,"data")
 
 FIGURINHAS_CSV = os.path.join(BASE_DIR, "figurinhas.csv")
 
+USUARIO_CSV = os.path.join(BASE_DIR, "usuario.csv")
+
 
 def carregar_figurinhas():
     figurinhas = []
