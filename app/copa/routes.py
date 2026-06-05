@@ -38,7 +38,7 @@ def registrar_rotas(app):
         if pacotes_disponiveis > 0:
             pacotes_disponiveis -= 1
 
-            nova = random.sample(figurinhas, k=10)
+            nova = random.sample(figurinhas, k=50)
             nova_ids = [int(f["numero"]) for f in nova]
 
             sorteadas.extend(nova_ids)
@@ -70,7 +70,6 @@ def registrar_rotas(app):
 
     @app.route("/bonus")
     def bonus():
-        global pacotes_disponiveis
         global repetidas_usadas
         global tem_bonus
 
@@ -78,7 +77,17 @@ def registrar_rotas(app):
         repetidas = len(tudo) - len(set(tudo))
 
         if repetidas - repetidas_usadas >= 20:
-            pacotes_disponiveis += 1
+
+            faltantes = [
+                int(f["numero"])
+                for f in figurinhas
+                if int(f["numero"]) not in coladas
+            ]
+
+            if faltantes:
+                figurinha_bonus = random.choice(faltantes)
+                coladas.append(figurinha_bonus)
+
             repetidas_usadas += 20
 
         tem_bonus = (repetidas - repetidas_usadas) >= 20
