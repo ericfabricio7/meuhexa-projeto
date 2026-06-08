@@ -7,7 +7,7 @@ A plataforma oferece uma experiência gamificada em torno do futebol mundial, co
 ## Funcionalidades
 
 - **Álbum de figurinhas** - abra pacotes, cole figurinhas e troque repetidas por bônus
-- **AkinaCopa** - minigame que tenta adivinhar em qual jogador você está pensando, usando perguntas progressivas (escopo de jogadores limitado para as copas modernas: 2002–2022)
+- **AkinaCopa** - minigame que tenta adivinhar em qual jogador você está pensando, usando perguntas progressivas (escopo de jogadores limitado para as copas modernas da seleção brasileira: 2002–2022)
 - **Histórico de partidas** - cada jogo é registrado automaticamente
 - **Sugestão de jogadores** - quando o motor erra, o usuário pode sugerir o jogador para expandir a base
 
