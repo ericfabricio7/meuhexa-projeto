@@ -1,0 +1,364 @@
+{% extends "base.html" %}
+{% block minigame %}
+
+<section class="ak-page">
+
+  <!-- INTRO -->
+  <div class="ak-state ativo" id="state-intro">
+    <h1 class="ak-titulo gold">AkinaCopa</h1>
+    <p class="ak-subtitulo">
+      Pense em um jogador da Seleção Brasileira<br>em uma Copa específica...
+    </p>
+    <button class="btn ak-btn-comecar" onclick="iniciarJogo()">
+      Começar
+    </button>
+  </div>
+
+  <!-- PERGUNTA -->
+  <div class="ak-state" id="state-pergunta">
+
+    <div class="ak-progress-wrap">
+      <span class="ak-rodada-label">Pergunta <strong id="num-rodada">1</strong> de <strong id="num-total">22</strong></span>
+      <div class="ak-progress-bar">
+        <div class="ak-progress-fill" id="progress-fill"></div>
+      </div>
+    </div>
+
+    <div class="ak-question-card">
+      <p id="texto-pergunta">...</p>
+    </div>
+
+    <div class="ak-respostas">
+      <button class="ak-resp ak-sim"     onclick="responder(1)">Sim</button>
+      <button class="ak-resp ak-provsim" onclick="responder(2)">Provavelmente Sim</button>
+      <button class="ak-resp ak-naosei"  onclick="responder(3)">Não Sei</button>
+      <button class="ak-resp ak-provnao" onclick="responder(4)">Provavelmente Não</button>
+      <button class="ak-resp ak-nao"     onclick="responder(5)">Não</button>
+    </div>
+
+  </div>
+
+  <!-- PALPITE INTERMEDIÁRIO -->
+  <div class="ak-state" id="state-palpite-mid">
+
+    <p class="ak-pensando-label">Estou pensando em...</p>
+
+    <div class="ak-palpite-card-wrap" id="mid-card-wrap">
+      <!-- card injetado via JS -->
+    </div>
+
+    <div class="ak-respostas ak-palpite-acoes">
+      <button class="ak-resp ak-sim"     onclick="confirmar(true)">É esse!</button>
+      <button class="ak-resp ak-naosei"  onclick="confirmar(null)">Continuar...</button>
+      <button class="ak-resp ak-nao"     onclick="confirmar(false)">Não é</button>
+    </div>
+
+  </div>
+
+  <!-- PALPITE FINAL -->
+  <div class="ak-state" id="state-palpite-final">
+
+    <p class="ak-pensando-label">Meu palpite final é...</p>
+
+    <div class="ak-palpite-card-wrap" id="final-card-wrap">
+      <!-- card injetado via JS -->
+    </div>
+
+    <div class="ak-top3" id="ak-top3"></div>
+
+    <div class="ak-respostas ak-palpite-acoes">
+      <button class="ak-resp ak-sim" onclick="confirmar(true)">Acertou!</button>
+      <button class="ak-resp ak-nao" onclick="confirmar(false)">Errou</button>
+    </div>
+
+  </div>
+
+  <!-- FIM: acerto -->
+  <div class="ak-state" id="state-fim-acerto">
+    <div class="ak-resultado" id="ak-resultado-acerto"></div>
+    <button class="btn ak-btn-comecar" onclick="iniciarJogo()">Jogar de novo</button>
+  </div>
+
+  <!-- FIM: erro — passo 1 (quem era?) -->
+  <div class="ak-state" id="state-fim-erro">
+    <div class="ak-resultado" id="ak-resultado-erro"></div>
+
+    <div class="ak-question-card ak-form-quem">
+      <p class="ak-form-titulo">Quem era o jogador?</p>
+      <input  id="err-nome" class="ak-input" type="text"
+              placeholder="Nome ou apelido" autocomplete="off">
+      <select id="err-ano"  class="ak-input ak-select">
+        <option value="">Copa...</option>
+        <option value="2022">2022</option>
+        <option value="2018">2018</option>
+        <option value="2014">2014</option>
+        <option value="2010">2010</option>
+        <option value="2006">2006</option>
+        <option value="2002">2002</option>
+      </select>
+      <div class="ak-form-acoes">
+        <button class="ak-resp ak-sim" onclick="registrarErro()">Confirmar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FIM: erro — passo 2 (sugestão de novo jogador) -->
+  <div class="ak-state" id="state-fim-sugestao">
+    <div class="ak-question-card ak-form-sugestao">
+      <p class="ak-form-titulo">Ajude a expandir a base!</p>
+      <p class="ak-form-sub" id="sug-descricao"></p>
+
+      <input  id="sug-nome"    class="ak-input" type="text" placeholder="Nome completo">
+      <input  id="sug-apelido" class="ak-input" type="text" placeholder="Apelido / Nome de guerra">
+      <select id="sug-copa"    class="ak-input ak-select">
+        <option value="">Copa...</option>
+        <option value="2022">2022</option>
+        <option value="2018">2018</option>
+        <option value="2014">2014</option>
+        <option value="2010">2010</option>
+        <option value="2006">2006</option>
+        <option value="2002">2002</option>
+      </select>
+      <select id="sug-posicao" class="ak-input ak-select">
+        <option value="">Posição...</option>
+        <option>Goleiro</option>
+        <option>Lateral</option>
+        <option>Zagueiro</option>
+        <option>Volante</option>
+        <option>Meia-atacante</option>
+        <option>Ponta</option>
+        <option>Centroavante</option>
+      </select>
+      <input  id="sug-clube"   class="ak-input" type="text"
+              placeholder="Clube (ex: Flamengo, Barcelona)">
+      <div class="ak-form-row">
+        <select id="sug-titular" class="ak-input ak-select">
+          <option value="">Titular?</option>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+        <input  id="sug-gols" class="ak-input" type="number"
+                min="0" max="20" placeholder="Gols na Copa">
+      </div>
+      <textarea id="sug-obs" class="ak-input ak-textarea"
+                placeholder="Informações extras (opcional)" rows="2"></textarea>
+
+      <div class="ak-form-acoes">
+        <button class="ak-resp ak-sim"    onclick="enviarSugestao()">Enviar sugestão</button>
+        <button class="ak-resp ak-naosei" onclick="pularSugestao()">Pular</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FIM: obrigado -->
+  <div class="ak-state" id="state-fim-obrigado">
+    <div class="ak-resultado" id="ak-obrigado-texto"></div>
+    <button class="btn ak-btn-comecar" onclick="iniciarJogo()">Jogar de novo</button>
+  </div>
+
+  <!-- LOADING -->
+  <div class="ak-loading" id="ak-loading">
+    <div class="ak-spinner"></div>
+  </div>
+
+</section>
+
+<script>
+// Estado corrente da pergunta exibida
+let perguntaAtualId = null;
+let palpiteAtualId  = null;
+
+// Utilitários
+
+function mostrarState(id) {
+  document.querySelectorAll('.ak-state').forEach(el => el.classList.remove('ativo'));
+  const el = document.getElementById(id);
+  if (el) el.classList.add('ativo');
+}
+
+function setLoading(on) {
+  document.getElementById('ak-loading').style.display = on ? 'flex' : 'none';
+}
+
+function buildCard(palpite) {
+  return `
+    <div class="slot ${palpite.rarity} ak-palpite-slot">
+      <div class="colada ak-colada-palpite">
+        <div class="ak-silhueta-wrap">
+          <div class="ak-placeholder-img"></div>
+        </div>
+        <div class="fig-info ak-fig-info-palpite">
+          <strong>${palpite.apelido}</strong>
+          <span class="ak-copa-ano">Copa de ${palpite.ano}</span>
+          <small class="ak-fato">${palpite.fato}</small>
+        </div>
+      </div>
+    </div>`;
+}
+
+function buildTop3(top3) {
+  if (!top3 || top3.length === 0) return '';
+  const items = top3.map((c, i) =>
+    `<div class="ak-top3-item">
+       <span class="ak-top3-pos">${i + 1}.</span>
+       <span class="ak-top3-nome">${c.apelido} <small>(${c.ano})</small></span>
+       <span class="ak-top3-erro">err: ${c.erro.toFixed(2)}</span>
+     </div>`
+  ).join('');
+  return `<p class="ak-top3-titulo">Top 3 candidatos</p>${items}`;
+}
+
+// Atualiza a UI com base no estado retornado pelo servidor
+
+function atualizarUI(data) {
+  setLoading(false);
+
+  if (data.fase === 'pergunta') {
+    perguntaAtualId = data.pergunta.id;
+    document.getElementById('num-rodada').textContent  = data.rodada;
+    document.getElementById('num-total').textContent   = data.total;
+    document.getElementById('texto-pergunta').textContent = data.pergunta.texto;
+    const pct = Math.min((data.rodada / data.total) * 100, 100);
+    document.getElementById('progress-fill').style.width = pct + '%';
+    mostrarState('state-pergunta');
+
+  } else if (data.fase === 'palpite_mid') {
+    palpiteAtualId = data.palpite.id;
+    document.getElementById('mid-card-wrap').innerHTML = buildCard(data.palpite);
+    mostrarState('state-palpite-mid');
+
+  } else if (data.fase === 'palpite_final') {
+    palpiteAtualId = data.palpite.id;
+    document.getElementById('final-card-wrap').innerHTML = buildCard(data.palpite);
+    document.getElementById('ak-top3').innerHTML         = buildTop3(data.top3);
+    mostrarState('state-palpite-final');
+
+  } else if (data.fase === 'fim') {
+    const nome = data.palpite ? data.palpite.apelido : '???';
+    const ano  = data.palpite ? data.palpite.ano     : '';
+
+    if (data.acertou) {
+      document.getElementById('ak-resultado-acerto').innerHTML =
+        `<span class="ak-result-acerto">Acertei!</span>
+         <span class="ak-result-jogador">${nome}</span>
+         <span class="ak-result-copa">Copa de ${ano}</span>`;
+      mostrarState('state-fim-acerto');
+    } else {
+      _palpiteParaRegistro = data.palpite;
+      document.getElementById('ak-resultado-erro').innerHTML =
+        `<span class="ak-result-erro">Errei desta vez.</span>
+         <span class="ak-result-jogador">${nome}</span>
+         <span class="ak-result-copa">Copa de ${ano}</span>`;
+      mostrarState('state-fim-erro');
+    }
+  }
+}
+
+// Ações
+
+async function iniciarJogo() {
+  setLoading(true);
+  const res  = await fetch('/minigame/novo', { method: 'POST' });
+  const data = await res.json();
+  atualizarUI(data);
+}
+
+async function responder(codigo) {
+  if (perguntaAtualId === null) return;
+  setLoading(true);
+  const res  = await fetch('/minigame/responder', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ pergunta_id: perguntaAtualId, resposta: String(codigo) }),
+  });
+  const data = await res.json();
+  atualizarUI(data);
+}
+
+async function confirmar(confirmado) {
+  const stateAtivo = document.querySelector('.ak-state.ativo');
+  const fasePalpite = stateAtivo?.id === 'state-palpite-final' ? 'final' : 'mid';
+  setLoading(true);
+  const res  = await fetch('/minigame/confirmar', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ confirmado, palpite_id: palpiteAtualId, fase_palpite: fasePalpite }),
+  });
+  const data = await res.json();
+  atualizarUI(data);
+}
+
+// Fluxo pós-erro 
+
+let _palpiteParaRegistro = null;
+
+async function registrarErro() {
+  const nome = document.getElementById('err-nome').value.trim();
+  const ano  = document.getElementById('err-ano').value;
+  if (!nome || !ano) {
+    alert('Informe o nome e a Copa do jogador.');
+    return;
+  }
+
+  setLoading(true);
+  const res  = await fetch('/minigame/registrar_erro', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ nome, ano: parseInt(ano), palpite: _palpiteParaRegistro }),
+  });
+  const data = await res.json();
+  setLoading(false);
+
+  if (data.erro) { alert(data.erro); return; }
+
+  if (data.encontrado) {
+    // Jogador está na base — só agradece
+    mostrarObrigado(data.mensagem);
+  } else {
+    // Jogador não existe — oferece formulário de sugestão
+    document.getElementById('sug-descricao').textContent = data.mensagem;
+    document.getElementById('sug-nome').value    = nome;
+    document.getElementById('sug-apelido').value = nome;
+    document.getElementById('sug-copa').value    = ano;
+    mostrarState('state-fim-sugestao');
+  }
+}
+
+async function enviarSugestao() {
+  const dados = {
+    nome:        document.getElementById('sug-nome').value.trim(),
+    apelido:     document.getElementById('sug-apelido').value.trim(),
+    ano_copa:    document.getElementById('sug-copa').value,
+    posicao:     document.getElementById('sug-posicao').value,
+    clube:       document.getElementById('sug-clube').value.trim(),
+    titular:     document.getElementById('sug-titular').value,
+    gols:        document.getElementById('sug-gols').value || '0',
+    observacoes: document.getElementById('sug-obs').value.trim(),
+  };
+
+  setLoading(true);
+  const res  = await fetch('/minigame/sugerir', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(dados),
+  });
+  const data = await res.json();
+  setLoading(false);
+
+  if (data.erro) { alert(data.erro); return; }
+  mostrarObrigado(data.mensagem);
+}
+
+function pularSugestao() {
+  mostrarObrigado('Tudo bem! Obrigada por jogar.');
+}
+
+function mostrarObrigado(mensagem) {
+  document.getElementById('ak-obrigado-texto').innerHTML =
+    `<span class="ak-result-acerto" style="font-size:1.4rem">Obrigada!</span>
+     <span class="ak-result-jogador" style="font-size:1rem;opacity:.85">${mensagem}</span>`;
+  mostrarState('state-fim-obrigado');
+}
+</script>
+
+{% endblock %}
