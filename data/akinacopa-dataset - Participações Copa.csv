@@ -1,0 +1,490 @@
+id_participacao,id_jogador,id_selecao,ano_copa,linha_campo,posicao_especifica,clube_no_ano,capitao,clube_pais,lado_campo,titular,gols_na_copa,expulso_ou_suspenso,artilheiro_destaque,faixa_etaria
+1,1,1,1930,Atacante,Centroavante,Flamengo / Santos,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+2,2,1,1930,Defensor,Zagueiro,Vasco da Gama,Não,Brasil,Direito,Sim,0,Não,Não,Auge
+3,3,1,1930,Atacante,Centroavante,Botafogo,Não,Brasil,Centro,Sim,0,Não,Não,Sub-23
+4,4,1,1930,Atacante,Ponta,São Cristóvão,Não,Brasil,Esquerdo,Não,0,Não,Não,Auge
+5,5,1,1930,Meio-campista,Meio-campista,Vasco da Gama,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+6,6,1,1930,Meio-campista,Meio-campista,Fluminense,Não,Brasil,Direito,Sim,0,Não,Não,Auge
+7,7,1,1930,Meio-campista,Meio-campista,Fluminense,Não,Brasil,Esquerdo,Não,0,Não,Não,Auge
+8,8,1,1930,Meio-campista,Meio-campista,América-RJ,Não,Brasil,Direito,Sim,0,Não,Não,Sub-23
+9,9,1,1930,Defensor,Zagueiro,Vasco da Gama,Não,Brasil,Esquerdo,Sim,0,Não,Não,Auge
+10,10,1,1930,Meio-campista,Meio-campista,Fluminense,Não,Brasil,Centro,Não,0,Não,Não,Sub-23
+11,11,1,1930,Goleiro,Goleiro,América-RJ,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+12,12,1,1930,Atacante,Atacante,Ypiranga de Niterói,Não,Brasil,Direito,Não,0,Não,Não,Auge
+13,13,1,1930,Atacante,Ponta,Flamengo,Não,Brasil,Direito,Sim,2,Não,Não,Auge
+14,14,1,1930,Atacante,Atacante,Botafogo,Não,Brasil,Esquerdo,Sim,0,Não,Não,Auge
+15,15,1,1930,Defensor,Zagueiro,Ypiranga de Niterói,Não,Brasil,Centro,Não,0,Não,Não,Auge
+16,16,1,1930,Meio-campista,Meio-campista,Botafogo,Não,Brasil,Esquerdo,Sim,0,Não,Não,Auge
+17,17,1,1930,Atacante,Ponta,Americano de Campos,Não,Brasil,Direito,Sim,0,Não,Não,Sub-23
+18,18,1,1930,Atacante,Centroavante,Fluminense,Sim,Brasil,Centro,Sim,3,Não,Sim,Auge
+19,19,1,1930,Atacante,Centroavante,Vasco da Gama,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+20,20,1,1930,Atacante,Atacante,São Cristóvão,Não,Brasil,Centro,Sim,0,Não,Não,Experiente
+21,21,1,1930,Goleiro,Goleiro,Fluminense,Não,Brasil,Centro,Sim,0,Não,Não,Sub-23
+22,22,1,1930,Defensor,Zagueiro,São Cristóvão,Não,Brasil,Direito,Sim,0,Não,Não,Auge
+23,23,1,1930,Atacante,Ponta,Botafogo,Não,Brasil,Esquerdo,Sim,0,Não,Não,Auge
+24,24,1,1930,Meio-campista,Meio-campista,Flamengo,Não,Brasil,Centro,Não,0,Não,Não,Auge
+25,25,1,1934,Goleiro,Goleiro,Botafogo,Não,Brasil,Centro,Sim,0,Não,Não,Sub-23
+26,26,1,1934,Goleiro,Goleiro,Botafogo,Não,Brasil,Centro,Não,0,Não,Não,Auge
+27,27,1,1934,Defensor,Zagueiro,Botafogo,Não,Brasil,Direito,Sim,0,Não,Não,Auge
+28,28,1,1934,Defensor,Zagueiro,Americano-RS,Não,Brasil,Esquerdo,Sim,0,Não,Não,Auge
+29,29,1,1934,Defensor,Zagueiro,Botafogo,Não,Brasil,Esquerdo,Não,0,Não,Não,Auge
+30,30,1,1934,Meio-campista,Meio-campista,Botafogo,Não,Brasil,Esquerdo,Sim,0,Não,Não,Auge
+31,31,1,1934,Meio-campista,Meio-campista,Botafogo,Não,Brasil,Direito,Sim,0,Não,Não,Auge
+32,32,1,1934,Meio-campista,Meio-campista,Botafogo,Sim,Brasil,Centro,Sim,0,Não,Não,Auge
+33,33,1,1934,Meio-campista,Meio-campista,Vasco da Gama,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+34,34,1,1934,Meio-campista,Meio-campista,Botafogo,Não,Brasil,Direito,Não,0,Não,Não,Sub-23
+35,35,1,1934,Atacante,Atacante,São Paulo da Floresta,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+36,3,1,1934,Atacante,Centroavante,Botafogo,Não,Brasil,Centro,Não,0,Não,Não,Sub-23
+37,36,1,1934,Atacante,Centroavante,Vasco da Gama,Não,Brasil,Centro,Sim,1,Não,Sim,Sub-23
+38,37,1,1934,Atacante,Atacante,São Paulo da Floresta,Não,Brasil,Direito,Sim,0,Não,Não,Auge
+39,38,1,1934,Atacante,Ponta,Nacional (Uruguai),Não,Uruguai,Esquerdo,Sim,0,Não,Não,Auge
+40,39,1,1934,Atacante,Centroavante,São Paulo da Floresta,Não,Brasil,Direito,Sim,0,Não,Não,Sub-23
+41,40,1,1934,Atacante,Ponta,Botafogo,Não,Brasil,Centro,Não,0,Não,Não,Auge
+42,41,1,1938,Goleiro,Goleiro,Fluminense,Não,Brasil,Centro,Sim,0,Sim,Não,Auge
+43,42,1,1938,Goleiro,Goleiro,Flamengo,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+44,43,1,1938,Defensor,Zagueiro,Flamengo,Não,Brasil,Direito,Sim,0,Não,Não,Auge
+45,44,1,1938,Defensor,Zagueiro,Fluminense,Não,Brasil,Esquerdo,Sim,0,Sim,Não,Auge
+46,45,1,1938,Defensor,Zagueiro,Vasco da Gama,Não,Brasil,Esquerdo,Sim,0,Não,Não,Auge
+47,46,1,1938,Defensor,Zagueiro,Botafogo,Não,Brasil,Direito,Não,0,Não,Não,Auge
+48,47,1,1938,Meio-campista,Meio-campista,São Cristóvão,Não,Brasil,Centro,Não,0,Não,Não,Auge
+49,48,1,1938,Meio-campista,Meio-campista,Portuguesa Santista,Não,Brasil,Esquerdo,Sim,0,Não,Não,Auge
+50,49,1,1938,Meio-campista,Meio-campista,Corinthians,Não,Brasil,Esquerdo,Sim,0,Não,Não,Sub-23
+51,50,1,1938,Meio-campista,Meio-campista,América-RJ,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+52,51,1,1938,Meio-campista,Meio-campista,Botafogo,Não,Brasil,Direito,Sim,0,Não,Não,Auge
+53,52,1,1938,Atacante,Atacante,Botafogo,Não,Brasil,Esquerdo,Sim,3,Não,Não,Sub-23
+54,53,1,1938,Atacante,Meia-atacante,Fluminense,Não,Brasil,Direito,Sim,0,Não,Não,Auge
+55,54,1,1938,Atacante,Atacante,Fluminense,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+56,55,1,1938,Atacante,Ponta,Fluminense,Não,Brasil,Esquerdo,Sim,2,Não,Não,Auge
+57,56,1,1938,Atacante,Ponta,São Cristóvão,Não,Brasil,Direito,Sim,1,Não,Não,Auge
+58,57,1,1938,Atacante,Centroavante,Vasco da Gama,Não,Brasil,Centro,Não,0,Não,Não,Auge
+59,32,1,1938,Meio-campista,Meio-campista,Botafogo,Sim,Brasil,Direito,Sim,0,Não,Não,Auge
+60,36,1,1938,Atacante,Centroavante,Flamengo,Não,Brasil,Centro,Sim,7,Sim,Sim,Auge
+61,37,1,1938,Atacante,Atacante,Estudantes Paulista,Não,Brasil,Direito,Sim,0,Não,Não,Auge
+62,38,1,1938,Atacante,Ponta,Botafogo,Não,Brasil,Esquerdo,Sim,1,Não,Não,Auge
+63,58,1,1950,Goleiro,Goleiro,Vasco da Gama,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+64,59,1,1950,Goleiro,Goleiro,Fluminense,Não,Brasil,Centro,Não,0,Não,Não,Auge
+65,60,1,1950,Defensor,Zagueiro,Vasco da Gama,Sim,Brasil,Direito,Sim,0,Não,Não,Experiente
+66,61,1,1950,Defensor,Zagueiro,Flamengo,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+67,62,1,1950,Defensor,Zagueiro,Internacional,Não,Brasil,Centro,Não,0,Não,Não,Auge
+68,63,1,1950,Defensor,Lateral,Botafogo,Não,Brasil,Esquerdo,Sim,0,Não,Não,Auge
+69,64,1,1950,Defensor,Lateral,Fluminense,Não,Brasil,Esquerdo,Não,0,Não,Não,Auge
+70,65,1,1950,Meio-campista,Meio-campista,Vasco da Gama,Não,Brasil,Direito,Sim,0,Não,Não,Auge
+71,66,1,1950,Meio-campista,Meio-campista,Vasco da Gama,Não,Brasil,Centro,Sim,0,Não,Não,Experiente
+72,67,1,1950,Meio-campista,Meio-campista,São Paulo,Não,Brasil,Direito,Sim,0,Não,Não,Auge
+73,68,1,1950,Meio-campista,Meio-campista,São Paulo,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+74,69,1,1950,Meio-campista,Meio-campista,São Paulo,Não,Brasil,Esquerdo,Não,0,Não,Não,Experiente
+75,70,1,1950,Meio-campista,Meio-campista,Vasco da Gama,Não,Brasil,Esquerdo,Sim,0,Não,Não,Experiente
+76,71,1,1950,Atacante,Meia-atacante,Bangu,Não,Brasil,Direito,Sim,2,Não,Não,Auge
+77,72,1,1950,Atacante,Centroavante,Vasco da Gama,Não,Brasil,Centro,Sim,9,Não,Sim,Auge
+78,73,1,1950,Atacante,Meia-atacante,Palmeiras,Não,Brasil,Esquerdo,Sim,2,Não,Não,Auge
+79,74,1,1950,Atacante,Ponta,Vasco da Gama,Não,Brasil,Esquerdo,Sim,4,Não,Não,Auge
+80,75,1,1950,Atacante,Ponta,São Paulo,Não,Brasil,Direito,Sim,0,Não,Não,Auge
+81,76,1,1950,Atacante,Atacante,Vasco da Gama,Não,Brasil,Direito,Sim,2,Não,Não,Auge
+82,77,1,1950,Atacante,Centroavante,Corinthians,Não,Brasil,Centro,Não,0,Não,Não,Auge
+83,78,1,1950,Atacante,Ponta,Palmeiras,Não,Brasil,Esquerdo,Sim,2,Não,Não,Auge
+84,79,1,1950,Atacante,Centroavante,Internacional,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+85,59,1,1954,Goleiro,Goleiro,Fluminense,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+86,80,1,1954,Goleiro,Goleiro,Fluminense,Não,Brasil,Direito,Sim,1,Não,Não,Auge
+87,81,1,1954,Goleiro,Goleiro,Corinthians,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+88,82,1,1954,Defensor,Lateral,Portuguesa,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+89,63,1,1954,Defensor,Lateral,Botafogo,Não,Brasil,Esquerdo,Sim,1,Sim,Não,Auge
+90,83,1,1954,Defensor,Zagueiro,Fluminense,Não,Brasil,Centro,Sim,0,Não,Não,Sub-23
+91,84,1,1954,Defensor,Zagueiro,São Paulo,Não,Brasil,Direito,Sim,0,Não,Não,Auge
+92,85,1,1954,Defensor,Lateral,São Paulo,Não,Brasil,Centro,Sim,0,Não,Não,Experiente
+93,86,1,1954,Defensor,Lateral,Vasco da Gama,Não,Brasil,Esquerdo,Sim,0,Não,Não,Sub-23
+94,67,1,1954,Meio-campista,Meio-campista,São Paulo,Sim,Brasil,Direito,Sim,0,Não,Não,Auge
+95,87,1,1954,Meio-campista,Meio-campista,Fluminense,Não,Brasil,Esquerdo,Sim,2,Não,Sim,Auge
+96,65,1,1954,Meio-campista,Meio-campista,Vasco da Gama,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+97,88,1,1954,Meio-campista,Meio-campista,Flamengo,Não,Brasil,Centro,Sim,0,Sim,Não,Auge
+98,89,1,1954,Defensor,Zagueiro,Portuguesa,Não,Brasil,Centro,Não,0,Não,Não,Auge
+99,90,1,1954,Atacante,Ponta,Portuguesa,Não,Brasil,Centro,Não,2,Não,Sim,Auge
+100,91,1,1954,Atacante,Centroavante,Corinthians,Não,Brasil,Direito,Não,0,Não,Não,Auge
+101,92,1,1954,Atacante,Centroavante,Palmeiras,Não,Brasil,Esquerdo,Não,0,Não,Não,Sub-23
+102,93,1,1954,Atacante,Ponta,São Paulo,Não,Brasil,Centro,Não,0,Não,Não,Sub-23
+103,94,1,1954,Atacante,Meia-atacante,Vasco da Gama,Não,Brasil,Centro,Não,2,Não,Sim,Experiente
+104,95,1,1954,Atacante,Centroavante,Flamengo,Não,Brasil,Centro,Não,0,Não,Não,Auge
+105,96,1,1954,Atacante,Meia-atacante,Flamengo,Não,Brasil,Direito,Não,0,Não,Não,Auge
+106,97,1,1954,Atacante,Ponta,Palmeiras,Não,Brasil,Centro,Não,0,Não,Não,Auge
+107,59,1,1958,Goleiro,Goleiro,Fluminense,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+108,98,1,1958,Goleiro,Goleiro,Corinthians,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+109,82,1,1958,Defensor,Lateral,Portuguesa,Não,Brasil,Centro,Não,0,Não,Não,Auge
+110,63,1,1958,Defensor,Lateral,Botafogo,Não,Brasil,Esquerdo,Sim,1,Não,Não,Experiente
+111,99,1,1958,Defensor,Zagueiro,Vasco da Gama,Sim,Brasil,Centro,Sim,0,Não,Não,Auge
+112,84,1,1958,Defensor,Zagueiro,São Paulo,Não,Brasil,Centro,Não,0,Não,Não,Auge
+113,100,1,1958,Defensor,Zagueiro,Vasco da Gama,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+114,101,1,1958,Defensor,Lateral,Corinthians,Não,Brasil,Centro,Sim,0,Não,Não,Sub-23
+115,102,1,1958,Defensor,Zagueiro,Bangu,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+116,87,1,1958,Meio-campista,Meio-campista,Botafogo,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+117,103,1,1958,Meio-campista,Volante,São Paulo,Não,Brasil,Direito,Sim,0,Não,Não,Auge
+118,104,1,1958,Meio-campista,Meio-campista,Flamengo,Não,Brasil,Direito,Sim,0,Não,Não,Sub-23
+119,105,1,1958,Meio-campista,Volante,Santos,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+120,106,1,1958,Atacante,Ponta,Botafogo,Não,Brasil,Centro,Sim,1,Não,Não,Auge
+121,107,1,1958,Atacante,Centroavante,Santos,Não,Brasil,Centro,Sim,6,Não,Sim,Sub-23
+122,108,1,1958,Atacante,Ponta,Botafogo,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+123,109,1,1958,Atacante,Centroavante,Palmeiras,Não,Brasil,Esquerdo,Sim,3,Não,Não,Sub-23
+124,110,1,1958,Atacante,Centroavante,Vasco da Gama,Não,Brasil,Centro,Não,5,Não,Não,Auge
+125,111,1,1958,Atacante,Ponta,Flamengo,Não,Brasil,Esquerdo,Não,0,Não,Não,Auge
+126,112,1,1958,Atacante,Meia-atacante,Flamengo,Não,Brasil,Centro,Não,0,Não,Não,Auge
+127,113,1,1958,Atacante,Ponta,Santos,Não,Brasil,Esquerdo,Não,0,Não,Não,Auge
+128,98,1,1962,Goleiro,Goleiro,Santos,Não,Brasil,Centro,Sim,0,Não,Não,Experiente
+129,114,1,1962,Goleiro,Goleiro,Fluminense,Não,Brasil,Centro,Sim,0,Não,Não,Experiente
+130,82,1,1962,Defensor,Lateral,Palmeiras,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+131,63,1,1962,Defensor,Lateral,Botafogo,Não,Brasil,Esquerdo,Sim,0,Não,Não,Experiente
+132,99,1,1962,Defensor,Zagueiro,Vasco da Gama,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+133,84,1,1962,Defensor,Zagueiro,Santos,Sim,Brasil,Centro,Não,0,Não,Não,Experiente
+134,102,1,1962,Defensor,Zagueiro,Bangu,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+135,115,1,1962,Defensor,Lateral,Fluminense,Não,Brasil,Direito,Não,0,Não,Não,Auge
+136,116,1,1962,Defensor,Zagueiro,Fluminense,Não,Brasil,Esquerdo,Não,0,Não,Não,Auge
+137,101,1,1962,Defensor,Lateral,Corinthians,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+138,117,1,1962,Defensor,Zagueiro,São Paulo,Não,Brasil,Centro,Não,0,Não,Não,Sub-23
+139,87,1,1962,Meio-campista,Meio-campista,Botafogo,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+140,105,1,1962,Meio-campista,Volante,Santos,Não,Brasil,Centro,Não,1,Não,Não,Experiente
+141,103,1,1962,Meio-campista,Volante,Boca Juniors (Argentina),Não,Argentina,Direito,Sim,0,Não,Não,Experiente
+142,118,1,1962,Meio-campista,Meio-campista,Santos,Não,Brasil,Centro,Não,0,Não,Não,Auge
+143,106,1,1962,Atacante,Ponta,Botafogo,Não,Brasil,Centro,Sim,1,Não,Não,Experiente
+144,107,1,1962,Atacante,Centroavante,Santos,Não,Brasil,Centro,Sim,1,Não,Não,Sub-23
+145,108,1,1962,Atacante,Ponta,Botafogo,Não,Brasil,Centro,Sim,4,Sim,Sim,Auge
+146,110,1,1962,Atacante,Centroavante,Palmeiras,Não,Brasil,Centro,Não,4,Não,Sim,Auge
+147,113,1,1962,Atacante,Ponta,Santos,Não,Brasil,Esquerdo,Não,0,Não,Não,Auge
+148,119,1,1962,Atacante,Atacante,Botafogo,Não,Brasil,Centro,Não,3,Não,Não,Sub-23
+149,120,1,1962,Atacante,Centroavante,Santos,Não,Brasil,Centro,Não,0,Não,Não,Sub-23
+150,121,1,1962,Atacante,Ponta,Portuguesa,Não,Brasil,Centro,Não,0,Não,Não,Sub-23
+151,98,1,1966,Goleiro,Goleiro,Santos,Não,Brasil,Centro,Sim,0,Não,Não,Experiente
+152,122,1,1966,Goleiro,Goleiro,Botafogo,Não,Brasil,Centro,Não,0,Não,Não,Auge
+153,82,1,1966,Defensor,Lateral,Palmeiras,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+154,99,1,1966,Defensor,Zagueiro,São Paulo,Sim,Brasil,Centro,Não,0,Não,Não,Experiente
+155,123,1,1966,Defensor,Zagueiro,Vasco da Gama,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+156,116,1,1966,Defensor,Zagueiro,Fluminense,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+157,124,1,1966,Defensor,Lateral,Bangu,Não,Brasil,Direito,Sim,0,Não,Não,Sub-23
+158,100,1,1966,Defensor,Zagueiro,Santos,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+159,125,1,1966,Defensor,Lateral,Botafogo,Não,Brasil,Centro,Sim,1,Não,Sim,Auge
+160,105,1,1966,Meio-campista,Volante,Santos,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+161,126,1,1966,Meio-campista,Meio-campista,Botafogo,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+162,127,1,1966,Meio-campista,Volante,Fluminense,Não,Brasil,Esquerdo,Sim,0,Não,Não,Auge
+163,128,1,1966,Meio-campista,Meio-campista,Santos,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+164,107,1,1966,Atacante,Centroavante,Santos,Não,Brasil,Centro,Sim,1,Não,Sim,Auge
+165,108,1,1966,Atacante,Ponta,Corinthians,Não,Brasil,Centro,Não,1,Não,Sim,Experiente
+166,129,1,1966,Atacante,Ponta,Botafogo,Não,Brasil,Centro,Sim,0,Não,Não,Sub-23
+167,130,1,1966,Atacante,Centroavante,Grêmio,Não,Brasil,Centro,Sim,0,Não,Não,Sub-23
+168,131,1,1966,Atacante,Centroavante,Flamengo,Não,Brasil,Direito,Sim,0,Não,Não,Auge
+169,132,1,1966,Atacante,Ponta,Santos,Não,Brasil,Centro,Sim,0,Não,Não,Sub-23
+170,133,1,1966,Atacante,Ponta,São Paulo,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+171,134,1,1966,Atacante,Atacante,Cruzeiro,Não,Brasil,Centro,Sim,1,Não,Sim,Sub-23
+172,135,1,1966,Atacante,Ponta,Palmeiras,Não,Brasil,Esquerdo,Sim,0,Não,Não,Auge
+173,136,1,1970,Goleiro,Goleiro,Fluminense,Não,Brasil,Centro,Sim,0,Não,Não,Experiente
+174,137,1,1970,Goleiro,Goleiro,Corinthians,Não,Brasil,Centro,Não,0,Não,Não,Auge
+175,138,1,1970,Goleiro,Goleiro,Palmeiras,Não,Brasil,Centro,Não,0,Não,Não,Sub-23
+176,139,1,1970,Defensor,Lateral,Santos,Sim,Brasil,Direito,Sim,1,Não,Não,Auge
+177,123,1,1970,Defensor,Zagueiro,Flamengo,Não,Brasil,Centro,Sim,0,Não,Não,Experiente
+178,140,1,1970,Defensor,Zagueiro,Cruzeiro,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+179,141,1,1970,Defensor,Lateral,Grêmio,Não,Brasil,Esquerdo,Sim,0,Não,Não,Auge
+180,142,1,1970,Defensor,Lateral,Fluminense,Não,Brasil,Esquerdo,Sim,0,Não,Não,Sub-23
+181,143,1,1970,Defensor,Zagueiro,Palmeiras,Não,Brasil,Centro,Não,0,Não,Não,Auge
+182,144,1,1970,Defensor,Zagueiro,Cruzeiro,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+183,145,1,1970,Defensor,Zagueiro,Santos,Não,Brasil,Centro,Não,0,Não,Não,Auge
+184,146,1,1970,Defensor,Lateral,Portuguesa,Não,Brasil,Direito,Não,0,Não,Não,Sub-23
+185,147,1,1970,Meio-campista,Volante,Santos,Não,Brasil,Centro,Sim,1,Não,Não,Sub-23
+186,126,1,1970,Meio-campista,Meio-campista,São Paulo,Não,Brasil,Centro,Sim,1,Não,Não,Auge
+187,148,1,1970,Meio-campista,Meio-campista,Corinthians,Não,Brasil,Esquerdo,Sim,3,Não,Não,Auge
+188,149,1,1970,Meio-campista,Meio-campista,Botafogo,Não,Brasil,Esquerdo,Sim,0,Não,Não,Sub-23
+189,107,1,1970,Atacante,Atacante,Santos,Não,Brasil,Centro,Sim,4,Não,Não,Experiente
+190,129,1,1970,Atacante,Ponta,Botafogo,Não,Brasil,Direito,Sim,7,Não,Sim,Auge
+191,134,1,1970,Atacante,Centroavante,Cruzeiro,Não,Brasil,Centro,Sim,2,Não,Não,Auge
+192,132,1,1970,Atacante,Ponta,Santos,Não,Brasil,Esquerdo,Não,0,Não,Não,Sub-23
+193,150,1,1970,Atacante,Centroavante,Botafogo,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+194,151,1,1970,Atacante,Centroavante,Atlético Mineiro,Não,Brasil,Centro,Não,0,Não,Não,Auge
+195,138,1,1974,Goleiro,Goleiro,Palmeiras,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+196,136,1,1974,Goleiro,Goleiro,Fluminense,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+197,152,1,1974,Goleiro,Goleiro,Botafogo,Não,Brasil,Centro,Não,0,Não,Não,Auge
+198,153,1,1974,Goleiro,Goleiro,Flamengo,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+199,154,1,1974,Defensor,Zagueiro,Santos,Sim,Brasil,Centro,Sim,0,Não,Não,Auge
+200,155,1,1974,Defensor,Zagueiro,Palmeiras,Não,Brasil,Centro,Sim,0,Sim,Não,Auge
+201,156,1,1974,Defensor,Lateral,Cruzeiro,Não,Brasil,Direito,Sim,0,Não,Não,Auge
+202,157,1,1974,Defensor,Lateral,Corinthians,Não,Brasil,Direito,Sim,0,Não,Não,Auge
+203,158,1,1974,Defensor,Lateral,Botafogo,Não,Brasil,Esquerdo,Sim,0,Não,Não,Sub-23
+204,142,1,1974,Defensor,Lateral,Fluminense,Não,Brasil,Esquerdo,Não,0,Não,Não,Auge
+205,159,1,1974,Defensor,Zagueiro,Palmeiras,Não,Brasil,Centro,Não,0,Não,Não,Auge
+206,140,1,1974,Meio-campista,Volante,Cruzeiro,Não,Brasil,Centro,Sim,0,Não,Não,Experiente
+207,147,1,1974,Meio-campista,Volante,Santos,Não,Brasil,Centro,Não,0,Não,Não,Auge
+208,160,1,1974,Meio-campista,Volante,Internacional,Não,Brasil,Centro,Não,0,Não,Não,Auge
+209,161,1,1974,Meio-campista,Meio-campista,Palmeiras,Não,Brasil,Centro,Sim,0,Não,Não,Experiente
+210,162,1,1974,Meio-campista,Meio-campista,Internacional,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+211,148,1,1974,Meio-campista,Meio-campista,Corinthians,Não,Brasil,Centro,Sim,3,Não,Sim,Auge
+212,149,1,1974,Meio-campista,Meio-campista,Flamengo,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+213,163,1,1974,Meio-campista,Meia-atacante,Palmeiras,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+214,129,1,1974,Atacante,Ponta,Botafogo,Não,Brasil,Centro,Sim,2,Não,Não,Experiente
+215,164,1,1974,Atacante,Ponta,Internacional,Não,Brasil,Direito,Sim,1,Não,Não,Auge
+216,165,1,1974,Meio-campista,Meio-campista,Botafogo,Não,Brasil,Esquerdo,Sim,0,Não,Não,Sub-23
+217,166,1,1974,Atacante,Centroavante,São Paulo,Não,Brasil,Centro,Sim,0,Não,Não,Sub-23
+218,132,1,1974,Atacante,Ponta,Santos,Não,Brasil,Esquerdo,Não,0,Não,Não,Auge
+219,167,1,1974,Atacante,Centroavante,Palmeiras,Não,Brasil,Centro,Não,0,Não,Não,Auge
+220,138,1,1978,Goleiro,Goleiro,Palmeiras,Sim,Brasil,Centro,Sim,0,Não,Não,Auge
+221,168,1,1978,Goleiro,Goleiro,Ponte Preta,Não,Brasil,Centro,Não,0,Não,Não,Sub-23
+222,169,1,1978,Goleiro,Goleiro,São Paulo,Não,Brasil,Centro,Não,0,Não,Não,Auge
+223,170,1,1978,Defensor,Zagueiro,Ponte Preta,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+224,171,1,1978,Defensor,Zagueiro,Corinthians,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+225,172,1,1978,Defensor,Zagueiro,Fluminense,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+226,173,1,1978,Defensor,Zagueiro,Vasco da Gama,Não,Brasil,Centro,Não,0,Não,Não,Auge
+227,174,1,1978,Defensor,Lateral,Flamengo,Não,Brasil,Direito,Sim,0,Não,Não,Experiente
+228,156,1,1978,Defensor,Lateral,Cruzeiro,Não,Brasil,Direito,Sim,1,Não,Não,Auge
+229,175,1,1978,Defensor,Lateral,Botafogo,Não,Brasil,Esquerdo,Sim,0,Não,Não,Auge
+230,157,1,1978,Defensor,Lateral,Corinthians,Não,Brasil,Direito,Não,0,Não,Não,Auge
+231,176,1,1978,Meio-campista,Volante,São Paulo,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+232,177,1,1978,Meio-campista,Volante,Internacional,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+233,178,1,1978,Meio-campista,Volante,Atlético Mineiro,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+234,179,1,1978,Meio-campista,Meio-campista,Flamengo,Não,Brasil,Centro,Sim,1,Não,Não,Auge
+235,180,1,1978,Meio-campista,Meia-atacante,Palmeiras,Não,Brasil,Centro,Sim,1,Não,Não,Auge
+236,148,1,1978,Meio-campista,Meio-campista,Fluminense,Não,Brasil,Esquerdo,Sim,0,Não,Não,Experiente
+237,165,1,1978,Meio-campista,Meio-campista,Vasco da Gama,Não,Brasil,Esquerdo,Sim,3,Não,Sim,Auge
+238,181,1,1978,Atacante,Centroavante,Atlético Mineiro,Não,Brasil,Centro,Sim,1,Não,Não,Sub-23
+239,182,1,1978,Atacante,Centroavante,Vasco da Gama,Não,Brasil,Centro,Sim,3,Não,Sim,Auge
+240,183,1,1978,Atacante,Ponta,Botafogo,Não,Brasil,Direito,Sim,0,Não,Não,Auge
+241,184,1,1978,Atacante,Ponta,São Paulo,Não,Brasil,Esquerdo,Sim,0,Não,Não,Sub-23
+242,169,1,1982,Goleiro,Goleiro,São Paulo,Não,Brasil,Centro,Sim,0,Não,Não,Experiente
+243,168,1,1982,Goleiro,Goleiro,Ponte Preta,Não,Brasil,Centro,Não,0,Não,Não,Auge
+244,185,1,1982,Goleiro,Goleiro,Botafogo,Não,Brasil,Centro,Não,0,Não,Não,Auge
+245,170,1,1982,Defensor,Zagueiro,São Paulo,Não,Brasil,Centro,Sim,1,Não,Não,Auge
+246,186,1,1982,Defensor,Zagueiro,Atlético Mineiro,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+247,172,1,1982,Defensor,Zagueiro,Udinese (Itália),Não,Itália,Centro,Não,0,Não,Não,Auge
+248,187,1,1982,Defensor,Zagueiro,Ponte Preta,Não,Brasil,Centro,Não,0,Não,Não,Auge
+249,188,1,1982,Defensor,Lateral,Flamengo,Não,Brasil,Direito,Sim,0,Não,Não,Auge
+250,189,1,1982,Defensor,Lateral,Flamengo,Não,Brasil,Esquerdo,Sim,1,Não,Não,Auge
+251,190,1,1982,Defensor,Lateral,Fluminense,Não,Brasil,Direito,Não,0,Não,Não,Auge
+252,191,1,1982,Defensor,Lateral,Vasco da Gama,Não,Brasil,Esquerdo,Não,0,Não,Não,Auge
+253,177,1,1982,Meio-campista,Volante,Palmeiras,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+254,178,1,1982,Meio-campista,Volante,Atlético Mineiro,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+255,192,1,1982,Meio-campista,Meio-campista,Roma (Itália),Não,Itália,Centro,Sim,3,Não,Não,Auge
+256,193,1,1982,Meio-campista,Meio-campista,Corinthians,Sim,Brasil,Centro,Sim,2,Não,Não,Auge
+257,179,1,1982,Meio-campista,Meio-campista,Flamengo,Não,Brasil,Centro,Sim,4,Não,Sim,Auge
+258,165,1,1982,Meio-campista,Meio-campista,Atlético de Madrid (Espanha),Não,Espanha,Esquerdo,Não,0,Não,Não,Experiente
+259,194,1,1982,Meio-campista,Meia-atacante,Grêmio,Não,Brasil,Direito,Não,0,Não,Não,Auge
+260,195,1,1982,Meio-campista,Meio-campista,São Paulo,Não,Brasil,Direito,Não,0,Não,Não,Auge
+261,196,1,1982,Atacante,Centroavante,São Paulo,Não,Brasil,Centro,Sim,2,Não,Não,Auge
+262,197,1,1982,Atacante,Ponta,Atlético Mineiro,Não,Brasil,Esquerdo,Sim,2,Não,Não,Auge
+263,182,1,1982,Atacante,Centroavante,Vasco da Gama,Não,Brasil,Centro,Não,0,Não,Não,Auge
+264,168,1,1986,Goleiro,Goleiro,Corinthians,Não,Brasil,Centro,Sim,0,Não,Não,Experiente
+265,198,1,1986,Goleiro,Goleiro,Fluminense,Não,Brasil,Centro,Não,0,Não,Não,Auge
+266,138,1,1986,Goleiro,Goleiro,Palmeiras,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+267,199,1,1986,Defensor,Zagueiro,Guarani,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+268,172,1,1986,Defensor,Zagueiro,Udinese (Itália),Sim,Itália,Centro,Sim,1,Não,Não,Experiente
+269,170,1,1986,Defensor,Zagueiro,São Paulo,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+270,200,1,1986,Defensor,Zagueiro,Internacional,Não,Brasil,Centro,Não,0,Não,Não,Auge
+271,201,1,1986,Defensor,Lateral,Botafogo,Não,Brasil,Direito,Sim,2,Não,Não,Auge
+272,202,1,1986,Defensor,Lateral,Fluminense,Não,Brasil,Esquerdo,Sim,0,Não,Não,Sub-23
+273,203,1,1986,Defensor,Lateral,Santos,Não,Brasil,Direito,Não,0,Não,Não,Auge
+274,204,1,1986,Meio-campista,Volante,Torino (Itália),Não,Itália,Centro,Sim,0,Não,Não,Experiente
+275,205,1,1986,Meio-campista,Volante,Atlético Mineiro,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+276,206,1,1986,Meio-campista,Volante,Botafogo,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+277,178,1,1986,Meio-campista,Volante,Roma (Itália),Não,Itália,Centro,Não,0,Não,Não,Experiente
+278,193,1,1986,Meio-campista,Meio-campista,Flamengo,Não,Brasil,Centro,Sim,2,Não,Não,Experiente
+279,179,1,1986,Meio-campista,Meio-campista,Flamengo,Não,Brasil,Centro,Sim,0,Não,Não,Experiente
+280,207,1,1986,Meio-campista,Meio-campista,São Paulo,Não,Brasil,Centro,Sim,0,Não,Não,Sub-23
+281,208,1,1986,Meio-campista,Meio-campista,Grêmio,Não,Brasil,Centro,Sim,0,Não,Não,Sub-23
+282,209,1,1986,Atacante,Centroavante,São Paulo,Não,Brasil,Centro,Sim,5,Não,Sim,Auge
+283,210,1,1986,Atacante,Ponta,São Paulo,Não,Brasil,Direito,Sim,0,Não,Não,Sub-23
+284,211,1,1986,Atacante,Centroavante,Corinthians,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+285,212,1,1986,Atacante,Ponta,Atlético Mineiro,Não,Brasil,Esquerdo,Não,0,Não,Não,Auge
+286,213,1,1990,Goleiro,Goleiro,Internacional,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+287,214,1,1990,Goleiro,Goleiro,Vasco da Gama,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+288,215,1,1990,Goleiro,Goleiro,Flamengo,Não,Brasil,Centro,Não,0,Não,Não,Auge
+289,216,1,1990,Defensor,Zagueiro,Benfica (Portugal),Sim,Portugal,Centro,Sim,0,Não,Não,Auge
+290,217,1,1990,Defensor,Zagueiro,São Paulo,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+291,218,1,1990,Defensor,Zagueiro,Benfica (Portugal),Não,Portugal,Centro,Sim,0,Não,Não,Experiente
+292,219,1,1990,Defensor,Zagueiro,Benfica (Portugal),Não,Portugal,Centro,Não,0,Não,Não,Auge
+293,200,1,1990,Defensor,Zagueiro,Botafogo,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+294,220,1,1990,Defensor,Lateral,Bayer Leverkusen (Alemanha),Não,Alemanha,Direito,Sim,0,Não,Não,Auge
+295,202,1,1990,Defensor,Lateral,Porto (Portugal),Não,Portugal,Esquerdo,Sim,0,Não,Não,Auge
+296,221,1,1990,Defensor,Lateral,Vasco da Gama,Não,Brasil,Direito,Não,0,Não,Não,Auge
+297,222,1,1990,Meio-campista,Volante,Fiorentina (Itália),Não,Itália,Centro,Sim,0,Não,Não,Auge
+298,206,1,1990,Meio-campista,Volante,Napoli (Itália),Não,Itália,Centro,Sim,0,Não,Não,Auge
+299,223,1,1990,Meio-campista,Meio-campista,Vasco da Gama,Não,Brasil,Centro,Não,0,Não,Não,Sub-23
+300,208,1,1990,Meio-campista,Meio-campista,Benfica (Portugal),Não,Portugal,Centro,Sim,0,Não,Não,Auge
+301,207,1,1990,Meio-campista,Meio-campista,Central Español (Uruguai),Não,Uruguai,Centro,Sim,0,Não,Não,Auge
+302,224,1,1990,Meio-campista,Meio-campista,Vasco da Gama,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+303,210,1,1990,Atacante,Ponta,Torino (Itália),Não,Itália,Centro,Sim,2,Não,Sim,Auge
+304,209,1,1990,Atacante,Centroavante,Napoli (Itália),Não,Itália,Centro,Sim,2,Não,Sim,Experiente
+305,225,1,1990,Atacante,Centroavante,Vasco da Gama,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+306,226,1,1990,Atacante,Ponta,Flamengo,Não,Brasil,Direito,Sim,0,Não,Não,Auge
+307,213,1,1994,Goleiro,Goleiro,Reggiana (Itália),Não,Itália,Centro,Sim,0,Não,Não,Auge
+308,227,1,1994,Goleiro,Goleiro,São Paulo,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+309,228,1,1994,Goleiro,Goleiro,Flamengo,Não,Brasil,Esquerdo,Sim,0,Não,Não,Experiente
+310,217,1,1994,Defensor,Zagueiro,Vasco da Gama,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+311,219,1,1994,Defensor,Zagueiro,Benfica (Portugal),Não,Portugal,Centro,Sim,0,Não,Não,Auge
+312,229,1,1994,Defensor,Zagueiro,Bordeaux (França),Não,França,Centro,Sim,1,Não,Não,Auge
+313,230,1,1994,Defensor,Zagueiro,Shimizu S-Pulse (Japão),Não,Japão,Esquerdo,Sim,0,Não,Não,Auge
+314,220,1,1994,Defensor,Lateral,Bayern de Munique (Alemanha),Não,Alemanha,Direito,Sim,0,Não,Não,Experiente
+315,231,1,1994,Defensor,Lateral,São Paulo,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+316,202,1,1994,Defensor,Lateral,Fluminense,Não,Brasil,Centro,Não,1,Não,Não,Experiente
+317,232,1,1994,Defensor,Lateral,São Paulo,Não,Brasil,Centro,Não,0,Sim,Não,Auge
+318,233,1,1994,Meio-campista,Volante,Deportivo La Coruña (Espanha),Não,Espanha,Centro,Não,0,Não,Não,Auge
+319,222,1,1994,Meio-campista,Volante,Stuttgart (Alemanha),Sim,Alemanha,Centro,Sim,0,Não,Não,Experiente
+320,221,1,1994,Meio-campista,Volante,Palmeiras,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+321,234,1,1994,Meio-campista,Meio-campista,Palmeiras,Não,Brasil,Direito,Não,0,Não,Não,Auge
+322,235,1,1994,Meio-campista,Meio-campista,Paris Saint-Germain (França),Não,França,Centro,Não,1,Não,Não,Auge
+323,185,1,1994,Atacante,Ponta,Bayer Leverkusen (Alemanha),Não,Alemanha,Centro,Não,0,Não,Não,Experiente
+324,210,1,1994,Atacante,Ponta,São Paulo,Não,Brasil,Centro,Não,0,Não,Não,Auge
+325,236,1,1994,Atacante,Centroavante,Corinthians,Não,Brasil,Centro,Não,0,Não,Não,Auge
+326,237,1,1994,Atacante,Centroavante,Cruzeiro,Não,Brasil,Centro,Não,0,Não,Não,Sub-23
+327,238,1,1994,Atacante,Centroavante,Barcelona (Espanha),Não,Espanha,Direito,Sim,5,Não,Sim,Auge
+328,225,1,1994,Atacante,Centroavante,Deportivo La Coruña (Espanha),Não,Espanha,Centro,Sim,3,Não,Não,Experiente
+329,213,1,1998,Goleiro,Goleiro,Atlético Mineiro,Não,Brasil,Centro,Sim,0,Não,Não,Experiente
+330,239,1,1998,Goleiro,Goleiro,Vasco da Gama,Não,Brasil,Centro,Não,0,Não,Não,Auge
+331,112,1,1998,Goleiro,Goleiro,Cruzeiro,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+332,219,1,1998,Defensor,Zagueiro,Roma (Itália),Não,Itália,Centro,Sim,0,Não,Não,Experiente
+333,123,1,1998,Defensor,Zagueiro,Flamengo,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+334,240,1,1998,Defensor,Zagueiro,Botafogo,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+335,241,1,1998,Defensor,Zagueiro,Milan (Itália),Não,Itália,Centro,Não,0,Não,Não,Experiente
+336,231,1,1998,Defensor,Lateral,Roma (Itália),Não,Itália,Centro,Não,0,Sim,Não,Auge
+337,215,1,1998,Defensor,Lateral,São Paulo,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+338,242,1,1998,Defensor,Lateral,Real Madrid (Espanha),Não,Espanha,Direito,Sim,0,Não,Não,Auge
+339,243,1,1998,Meio-campista,Volante,Yokohama Flügels (Japão),Não,Japão,Centro,Sim,3,Não,Não,Experiente
+340,222,1,1998,Meio-campista,Volante,Júbilo Iwata (Japão),Sim,Japão,Centro,Sim,0,Não,Não,Experiente
+341,244,1,1998,Meio-campista,Meio-campista,Flamengo,Não,Brasil,Esquerdo,Sim,0,Não,Não,Auge
+342,245,1,1998,Meio-campista,Volante,Porto (Portugal),Não,Portugal,Centro,Sim,0,Não,Não,Auge
+343,246,1,1998,Meio-campista,Meio-campista,Barcelona (Espanha),Não,Espanha,Esquerdo,Sim,0,Não,Não,Auge
+344,232,1,1998,Meio-campista,Meio-campista,Milan (Itália),Não,Itália,Centro,Não,0,Não,Não,Auge
+345,247,1,1998,Meio-campista,Meio-campista,Barcelona (Espanha),Não,Espanha,Centro,Sim,3,Não,Não,Auge
+346,248,1,1998,Meio-campista,Ponta,São Paulo,Não,Brasil,Centro,Sim,0,Não,Não,Sub-23
+347,237,1,1998,Atacante,Centroavante,Internazionale (Itália),Não,Itália,Centro,Não,4,Não,Sim,Sub-23
+348,225,1,1998,Atacante,Centroavante,Vitória,Não,Brasil,Centro,Sim,3,Não,Não,Experiente
+349,249,1,1998,Atacante,Centroavante,Fiorentina (Itália),Não,Itália,Centro,Não,0,Não,Não,Auge
+350,250,1,2002,Goleiro,Goleiro,Palmeiras,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+351,112,1,2002,Goleiro,Goleiro,Corinthians,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+352,251,1,2002,Goleiro,Goleiro,São Paulo,Não,Brasil,Centro,Não,0,Não,Não,Auge
+353,252,1,2002,Defensor,Zagueiro,Bayer Leverkusen (Alemanha),Não,Alemanha,Centro,Sim,0,Não,Não,Auge
+354,253,1,2002,Defensor,Zagueiro,Milan (Itália),Não,Itália,Centro,Sim,0,Não,Não,Auge
+355,254,1,2002,Defensor,Zagueiro,Lyon (França),Não,França,Centro,Sim,1,Não,Não,Auge
+356,255,1,2002,Defensor,Zagueiro,Grêmio,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+357,231,1,2002,Defensor,Lateral,Roma (Itália),Sim,Itália,Direito,Sim,0,Não,Não,Experiente
+358,256,1,2002,Defensor,Lateral,São Paulo,Não,Brasil,Direito,Não,0,Não,Não,Auge
+359,242,1,2002,Defensor,Lateral,Real Madrid (Espanha),Não,Espanha,Esquerdo,Sim,1,Não,Não,Auge
+360,189,1,2002,Defensor,Lateral,Parma (Itália),Não,Itália,Esquerdo,Não,1,Não,Não,Experiente
+361,257,1,2002,Meio-campista,Volante,Atlético Mineiro,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+362,258,1,2002,Meio-campista,Volante,Atlético Paranaense,Não,Brasil,Centro,Sim,0,Não,Não,Sub-23
+363,259,1,2002,Meio-campista,Volante,Corinthians,Não,Brasil,Centro,Não,0,Não,Não,Auge
+364,260,1,2002,Meio-campista,Meio-campista,Flamengo,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+365,261,1,2002,Meio-campista,Meio-campista,São Paulo,Não,Brasil,Centro,Não,0,Não,Não,Sub-23
+366,262,1,2002,Meio-campista,Meio-campista,Corinthians,Não,Brasil,Centro,Não,0,Não,Não,Auge
+367,247,1,2002,Meio-campista,Meio-campista,Barcelona (Espanha),Não,Espanha,Centro,Sim,5,Não,Não,Experiente
+368,263,1,2002,Meio-campista,Meio-campista,Paris Saint-Germain (França),Não,França,Centro,Sim,2,Sim,Não,Sub-23
+369,237,1,2002,Atacante,Centroavante,Internazionale (Itália),Não,Itália,Centro,Sim,8,Não,Sim,Auge
+370,264,1,2002,Atacante,Ponta,Betis (Espanha),Não,Espanha,Esquerdo,Não,0,Não,Não,Auge
+371,265,1,2002,Atacante,Ponta,Cruzeiro,Não,Brasil,Centro,Sim,0,Não,Não,Experiente
+372,266,1,2002,Atacante,Centroavante,Grêmio,Não,Brasil,Centro,Não,0,Não,Não,Auge
+373,112,1,2006,Goleiro,Goleiro,Milan (Itália),Não,Itália,Centro,Sim,0,Não,Não,Experiente
+374,251,1,2006,Goleiro,Goleiro,São Paulo,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+375,267,1,2006,Goleiro,Goleiro,PSV Eindhoven (Holanda),Não,Holanda,Centro,Não,0,Não,Não,Auge
+376,252,1,2006,Defensor,Zagueiro,Bayern de Munique (Alemanha),Não,Alemanha,Centro,Sim,0,Não,Não,Auge
+377,268,1,2006,Defensor,Zagueiro,Bayer Leverkusen (Alemanha),Não,Alemanha,Centro,Sim,0,Não,Não,Auge
+378,269,1,2006,Defensor,Zagueiro,Lyon (França),Não,França,Centro,Não,0,Não,Não,Auge
+379,270,1,2006,Defensor,Zagueiro,Benfica (Portugal),Não,Portugal,Centro,Não,0,Não,Não,Auge
+380,231,1,2006,Defensor,Lateral,Milan (Itália),Sim,Itália,Direito,Sim,0,Não,Não,Experiente
+381,271,1,2006,Defensor,Lateral,Real Madrid (Espanha),Não,Espanha,Direito,Sim,0,Não,Não,Auge
+382,242,1,2006,Defensor,Lateral,Real Madrid (Espanha),Não,Espanha,Esquerdo,Sim,0,Não,Não,Experiente
+383,272,1,2006,Defensor,Lateral,Hertha Berlin (Alemanha),Não,Alemanha,Esquerdo,Sim,1,Não,Não,Experiente
+384,273,1,2006,Meio-campista,Volante,Juventus (Itália),Não,Itália,Centro,Sim,0,Não,Não,Experiente
+385,257,1,2006,Meio-campista,Volante,Arsenal (Inglaterra),Não,Inglaterra,Centro,Sim,0,Não,Não,Experiente
+386,274,1,2006,Meio-campista,Volante,São Paulo,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+387,275,1,2006,Meio-campista,Meio-campista,Lyon (França),Não,França,Centro,Sim,1,Não,Não,Experiente
+388,261,1,2006,Meio-campista,Meio-campista,Milan (Itália),Não,Itália,Centro,Sim,1,Não,Não,Auge
+389,263,1,2006,Meio-campista,Meio-campista,Barcelona (Espanha),Não,Espanha,Centro,Sim,0,Não,Não,Auge
+390,244,1,2006,Meio-campista,Meio-campista,Bayern de Munique (Alemanha),Não,Alemanha,Centro,Sim,1,Não,Não,Experiente
+391,262,1,2006,Meio-campista,Meio-campista,Corinthians,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+392,237,1,2006,Atacante,Centroavante,Real Madrid (Espanha),Não,Espanha,Centro,Sim,3,Não,Sim,Experiente
+393,276,1,2006,Atacante,Centroavante,Internazionale (Itália),Não,Itália,Centro,Sim,2,Não,Não,Auge
+394,277,1,2006,Atacante,Ponta,Real Madrid (Espanha),Não,Espanha,Centro,Sim,0,Não,Não,Sub-23
+395,278,1,2006,Atacante,Centroavante,Lyon (França),Não,França,Centro,Não,1,Não,Não,Auge
+396,199,1,2010,Goleiro,Goleiro,Internazionale (Itália),Não,Itália,Centro,Sim,0,Não,Não,Experiente
+397,279,1,2010,Goleiro,Goleiro,Roma (Itália),Não,Itália,Centro,Não,0,Não,Não,Experiente
+398,267,1,2010,Goleiro,Goleiro,Tottenham (Inglaterra),Não,Inglaterra,Centro,Não,0,Não,Não,Auge
+399,252,1,2010,Defensor,Zagueiro,Internazionale (Itália),Sim,Itália,Centro,Sim,0,Não,Não,Experiente
+400,268,1,2010,Defensor,Zagueiro,Roma (Itália),Não,Itália,Centro,Sim,0,Não,Não,Experiente
+401,280,1,2010,Defensor,Zagueiro,Milan (Itália),Não,Itália,Centro,Não,0,Não,Não,Auge
+402,270,1,2010,Defensor,Zagueiro,Benfica (Portugal),Não,Portugal,Centro,Não,0,Não,Não,Auge
+403,281,1,2010,Defensor,Lateral,Internazionale (Itália),Não,Itália,Direito,Sim,1,Não,Não,Auge
+404,282,1,2010,Defensor,Lateral,Barcelona (Espanha),Não,Espanha,Direito,Sim,0,Não,Não,Auge
+405,283,1,2010,Defensor,Lateral,Lyon (França),Não,França,Esquerdo,Sim,0,Não,Não,Auge
+406,272,1,2010,Defensor,Lateral,Cruzeiro,Não,Brasil,Esquerdo,Não,0,Não,Não,Experiente
+407,284,1,2010,Meio-campista,Volante,Juventus (Itália),Não,Itália,Centro,Sim,0,Sim,Não,Auge
+408,257,1,2010,Meio-campista,Volante,Panathinaikos (Grécia),Não,Grécia,Centro,Sim,0,Não,Não,Experiente
+409,285,1,2010,Meio-campista,Volante,Wolfsburg (Alemanha),Não,Alemanha,Centro,Não,0,Não,Não,Experiente
+410,286,1,2010,Meio-campista,Volante,Benfica (Portugal),Não,Portugal,Centro,Sim,0,Não,Não,Auge
+411,287,1,2010,Meio-campista,Meio-campista,Galatasaray (Turquia),Não,Turquia,Direito,Sim,2,Não,Não,Auge
+412,261,1,2010,Meio-campista,Meio-campista,Real Madrid (Espanha),Não,Espanha,Centro,Sim,0,Sim,Não,Auge
+413,288,1,2010,Meio-campista,Meio-campista,Roma (Itália),Não,Itália,Centro,Não,0,Não,Não,Auge
+414,258,1,2010,Meio-campista,Volante,Flamengo,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+415,289,1,2010,Atacante,Centroavante,Sevilla (Espanha),Não,Espanha,Centro,Sim,3,Não,Sim,Experiente
+416,277,1,2010,Atacante,Ponta,Santos,Não,Brasil,Esquerdo,Sim,2,Não,Não,Auge
+417,290,1,2010,Atacante,Centroavante,Villarreal (Espanha),Não,Espanha,Centro,Não,0,Não,Não,Auge
+418,291,1,2010,Atacante,Centroavante,Wolfsburg (Alemanha),Não,Alemanha,Centro,Não,0,Não,Não,Experiente
+419,199,1,2014,Goleiro,Goleiro,Toronto FC (Canadá),Não,Canadá,Centro,Sim,0,Não,Não,Experiente
+420,292,1,2014,Goleiro,Goleiro,Botafogo,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+421,293,1,2014,Goleiro,Goleiro,Atlético Mineiro,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+422,280,1,2014,Defensor,Zagueiro,Paris Saint-Germain (França),Sim,França,Centro,Sim,1,Sim,Não,Experiente
+423,294,1,2014,Defensor,Zagueiro,Chelsea (Inglaterra),Não,Inglaterra,Centro,Sim,2,Não,Não,Auge
+424,295,1,2014,Defensor,Zagueiro,Bayern de Munique (Alemanha),Não,Alemanha,Centro,Sim,0,Não,Não,Experiente
+425,296,1,2014,Defensor,Zagueiro,Napoli (Itália),Não,Itália,Centro,Não,0,Não,Não,Auge
+426,282,1,2014,Defensor,Lateral,Barcelona (Espanha),Não,Espanha,Direito,Sim,0,Não,Não,Experiente
+427,281,1,2014,Defensor,Lateral,Roma (Itália),Não,Itália,Direito,Sim,0,Não,Não,Experiente
+428,297,1,2014,Defensor,Lateral,Real Madrid (Espanha),Não,Espanha,Esquerdo,Sim,0,Não,Não,Auge
+429,298,1,2014,Defensor,Lateral,Paris Saint-Germain (França),Não,França,Esquerdo,Não,0,Não,Não,Experiente
+430,299,1,2014,Meio-campista,Volante,Wolfsburg (Alemanha),Não,Alemanha,Centro,Sim,0,Não,Não,Auge
+431,300,1,2014,Meio-campista,Volante,Manchester City (Inglaterra),Não,Inglaterra,Centro,Sim,1,Não,Não,Auge
+432,301,1,2014,Meio-campista,Volante,Tottenham (Inglaterra),Não,Inglaterra,Centro,Sim,0,Não,Não,Auge
+433,302,1,2014,Meio-campista,Meio-campista,Internazionale (Itália),Não,Itália,Centro,Não,0,Não,Não,Auge
+434,286,1,2014,Meio-campista,Volante,Chelsea (Inglaterra),Não,Inglaterra,Direito,Sim,0,Não,Não,Auge
+435,170,1,2014,Meio-campista,Meio-campista,Chelsea (Inglaterra),Não,Inglaterra,Centro,Sim,2,Não,Não,Experiente
+436,303,1,2014,Meio-campista,Meio-campista,Chelsea (Inglaterra),Não,Inglaterra,Direito,Sim,0,Não,Não,Auge
+437,304,1,2014,Atacante,Ponta,Shakhtar Donetsk (Ucrânia),Não,Ucrânia,Esquerdo,Sim,0,Não,Não,Sub-23
+438,305,1,2014,Atacante,Ponta,Barcelona (Espanha),Não,Espanha,Esquerdo,Sim,4,Não,Sim,Sub-23
+439,306,1,2014,Atacante,Ponta,Zenit (Rússia),Não,Rússia,Direito,Sim,0,Não,Não,Auge
+440,278,1,2014,Atacante,Centroavante,Fluminense,Não,Brasil,Centro,Sim,1,Não,Não,Experiente
+441,307,1,2014,Atacante,Centroavante,Atlético Mineiro,Não,Brasil,Centro,Sim,0,Não,Não,Auge
+442,308,1,2018,Goleiro,Goleiro,Roma (Itália),Não,Itália,Centro,Sim,0,Não,Não,Auge
+443,309,1,2018,Goleiro,Goleiro,Manchester City (Inglaterra),Não,Inglaterra,Centro,Não,0,Não,Não,Auge
+444,310,1,2018,Goleiro,Goleiro,Corinthians,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+445,280,1,2018,Defensor,Zagueiro,Paris Saint-Germain (França),Não,França,Centro,Sim,1,Não,Não,Experiente
+446,311,1,2018,Defensor,Zagueiro,Internazionale (Itália),Sim,Itália,Centro,Sim,0,Não,Não,Experiente
+447,312,1,2018,Defensor,Zagueiro,Paris Saint-Germain (França),Não,França,Centro,Não,0,Não,Não,Auge
+448,313,1,2018,Defensor,Zagueiro,Grêmio,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+449,314,1,2018,Defensor,Lateral,Manchester City (Inglaterra),Não,Inglaterra,Direito,Sim,0,Não,Não,Auge
+450,315,1,2018,Defensor,Lateral,Corinthians,Não,Brasil,Direito,Sim,0,Não,Não,Auge
+451,297,1,2018,Defensor,Lateral,Real Madrid (Espanha),Não,Espanha,Esquerdo,Sim,0,Não,Não,Experiente
+452,316,1,2018,Defensor,Lateral,Atlético de Madrid (Espanha),Não,Espanha,Esquerdo,Sim,0,Não,Não,Experiente
+453,317,1,2018,Meio-campista,Volante,Real Madrid (Espanha),Não,Espanha,Centro,Sim,0,Sim,Não,Auge
+454,300,1,2018,Meio-campista,Volante,Manchester City (Inglaterra),Não,Inglaterra,Centro,Sim,0,Não,Não,Experiente
+455,301,1,2018,Meio-campista,Volante,Barcelona (Espanha),Não,Espanha,Centro,Sim,1,Não,Não,Experiente
+456,278,1,2018,Meio-campista,Volante,Shakhtar Donetsk (Ucrânia),Não,Ucrânia,Centro,Não,0,Não,Não,Experiente
+457,318,1,2018,Meio-campista,Meio-campista,Beijing Guoan (China),Não,China,Centro,Não,1,Não,Não,Experiente
+458,319,1,2018,Meio-campista,Meio-campista,Barcelona (Espanha),Não,Espanha,Centro,Sim,2,Não,Sim,Auge
+459,303,1,2018,Meio-campista,Meio-campista,Chelsea (Inglaterra),Não,Inglaterra,Direito,Sim,0,Não,Não,Experiente
+460,305,1,2018,Atacante,Ponta,Paris Saint-Germain (França),Não,França,Esquerdo,Sim,2,Não,Sim,Auge
+461,320,1,2018,Atacante,Ponta,Juventus (Itália),Não,Itália,Direito,Não,0,Não,Não,Auge
+462,321,1,2018,Atacante,Ponta,Shakhtar Donetsk (Ucrânia),Não,Ucrânia,Esquerdo,Não,0,Não,Não,Experiente
+463,322,1,2018,Atacante,Centroavante,Manchester City (Inglaterra),Não,Inglaterra,Centro,Sim,0,Não,Não,Sub-23
+464,323,1,2018,Atacante,Centroavante,Liverpool (Inglaterra),Não,Inglaterra,Centro,Não,0,Não,Não,Auge
+465,308,1,2022,Goleiro,Goleiro,Liverpool (Inglaterra),Não,Inglaterra,Centro,Sim,0,Não,Não,Experiente
+466,309,1,2022,Goleiro,Goleiro,Manchester City (Inglaterra),Não,Inglaterra,Centro,Nao,0,Não,Não,Auge
+467,324,1,2022,Goleiro,Goleiro,Palmeiras,Não,Brasil,Centro,Não,0,Não,Não,Experiente
+468,280,1,2022,Defensor,Zagueiro,Chelsea (Inglaterra),Sim,Inglaterra,Centro,Sim,0,Não,Não,Experiente
+469,312,1,2022,Defensor,Zagueiro,Paris Saint-Germain (França),Não,França,Centro,Sim,0,Não,Não,Auge
+470,325,1,2022,Defensor,Zagueiro,Real Madrid (Espanha),Não,Espanha,Centro,Sim,0,Não,Não,Auge
+471,326,1,2022,Defensor,Zagueiro,Juventus (Itália),Não,Itália,Centro,Sim,0,Não,Não,Auge
+472,314,1,2022,Defensor,Lateral,Juventus (Itália),Não,Itália,Direito,Sim,0,Não,Não,Experiente
+473,282,1,2022,Defensor,Lateral,Pumas (México),Não,México,Direito,Sim,0,Não,Não,Experiente
+474,327,1,2022,Defensor,Lateral,Juventus (Itália),Não,Itália,Esquerdo,Sim,0,Não,Não,Experiente
+475,328,1,2022,Defensor,Lateral,Sevilla (Espanha),Não,Espanha,Esquerdo,Sim,0,Não,Não,Experiente
+476,317,1,2022,Meio-campista,Volante,Manchester United (Inglaterra),Não,Inglaterra,Centro,Sim,1,Não,Não,Experiente
+477,329,1,2022,Meio-campista,Volante,Liverpool (Inglaterra),Não,Inglaterra,Centro,Sim,0,Não,Não,Auge
+478,330,1,2022,Meio-campista,Volante,Newcastle (Inglaterra),Não,Inglaterra,Centro,Sim,0,Não,Não,Auge
+479,331,1,2022,Meio-campista,Meio-campista,West Ham (Inglaterra),Não,Inglaterra,Centro,Sim,1,Não,Não,Auge
+480,332,1,2022,Meio-campista,Meio-campista,Flamengo,Não,Brasil,Centro,Sim,0,Não,Não,Experiente
+481,305,1,2022,Atacante,Meia-atacante,Paris Saint-Germain (França),Não,França,Centro,Sim,2,Não,Não,Experiente
+482,333,1,2022,Atacante,Ponta,Real Madrid (Espanha),Não,Espanha,Esquerdo,Sim,1,Não,Não,Sub-23
+483,334,1,2022,Atacante,Ponta,Real Madrid (Espanha),Não,Espanha,Direito,Sim,0,Não,Não,Sub-23
+484,335,1,2022,Atacante,Ponta,Manchester United (Inglaterra),Não,Inglaterra,Direito,Sim,0,Não,Não,Sub-23
+485,336,1,2022,Atacante,Ponta,Barcelona (Espanha),Não,Espanha,Direito,Sim,0,Não,Não,Auge
+486,337,1,2022,Atacante,Ponta,Arsenal (Inglaterra),Não,Inglaterra,Esquerdo,Sim,0,Não,Não,Sub-23
+487,338,1,2022,Atacante,Centroavante,Tottenham (Inglaterra),Não,Inglaterra,Centro,Sim,3,Não,Sim,Auge
+488,322,1,2022,Atacante,Centroavante,Arsenal (Inglaterra),Não,Inglaterra,Centro,Sim,0,Não,Não,Auge
+489,339,1,2022,Atacante,Centroavante,Flamengo,Não,Brasil,Centro,Sim,0,Não,Não,Auge

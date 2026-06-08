@@ -15,36 +15,22 @@
 <body>
 
 <header class="header">
-
-    <nav class="menu" id="menu">
-
-        <a href="{{ url_for('index') }}">
-            Início
-        </a>
-
-        <a href="{{ url_for('index') }}#historias">
-            História da Copa
-        </a>
-
-        <a href="{{ url_for('index') }}#painel">
-            Álbum
-        </a>
-
-        <a href="#">
-            Minigame
-        </a>
-
-        <a href="#">
-            Sobre
-        </a>
-
-    </nav>
+    
+  <nav class="menu" id="menu">
+    <a href="/">Início</a>
+    <a href="#">História da Copa</a>
+    <a href="/#painel">Álbum</a>
+    <a href="/minigame">Minigame</a>
+    <a href="#">Sobre</a>
+  </nav>
 
     <button class="menu-hamburguer" id="menu-hamburguer">
         ☰
     </button>
 
 </header>
+
+{% block minigame %}{% endblock %}
 
 {% block homepage %}
 {% endblock %}

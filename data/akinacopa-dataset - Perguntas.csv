@@ -1,0 +1,58 @@
+id_pergunta,texto_pergunta,tipo_filtro,chave_atributo
+1,O seu jogador está vivo atualmente?,vitalidade,esta_vivo
+2,O seu jogador atuava como Atacante (linha ofensiva)?,posicao,Atacante
+3,O seu jogador atuava como Goleiro?,posicao,Goleiro
+4,O seu jogador atuava como Zagueiro central?,posicao_especifica,Zagueiro
+6,"O seu jogador jogava centralizado no meio-campo (Volante, Meio-campista ou Meia-atacante)?",posicao_especifica,"Volante, Meio-campista, Meia-atacante"
+7,O seu jogador jogou em Copas antigas (antes de 1970)?,epoca,antes_1970
+8,O seu jogador jogou nos anos 70 ou 80 (era do jejum pós-Pelé)?,epoca,anos_70_80
+9,O seu jogador jogou em uma Copa da era moderna (2002 em diante)?,epoca,seculo_21
+10,"O seu jogador viveu a era de ouro de Pelé e Garrincha (Copas de 58, 62, 66 ou 70)?",epoca,era_pele
+11,O seu jogador foi Campeão do Mundo pela Seleção Brasileira?,conquista,campeao
+12,Este jogador já usou a braçadeira de capitão em alguma Copa?,caracteristica,capitao
+13,O seu jogador participou de mais de uma Copa do Mundo (veterano)?,caracteristica,veterano
+14,"No ano da Copa, o seu jogador defendia um clube do estado de São Paulo?",estado_clube,SP
+15,"No ano da Copa, o seu jogador defendia um clube do estado do Rio de Janeiro?",estado_clube,RJ
+16,"No ano da Copa, o seu jogador atuava em um clube fora do Brasil?",clube,exterior
+17,O seu jogador defendia o Botafogo ou o Vasco da Gama no ano da Copa?,clube,"Botafogo, Vasco da Gama"
+18,"O seu jogador defendia o São Paulo, Palmeiras ou Corinthians no ano da Copa?",clube,"São Paulo, Palmeiras, Corinthians"
+19,"O seu jogador jogava em um clube gaúcho ou mineiro (Inter, Grêmio, Cruzeiro ou Atlético-MG)?",clube,"Internacional, Grêmio, Cruzeiro, Atlético Mineiro"
+20,O seu jogador atuava especificamente como Lateral (direito ou esquerdo)?,posicao_especifica,Lateral
+21,O seu jogador jogava como Ponta (atacante pelas beiradas do campo)?,posicao_especifica,Ponta
+22,"O seu jogador era o centroavante, o homem de referência na área?",posicao_especifica,Centroavante
+23,O seu jogador atuava como Volante (meio-campista de forte marcação)?,posicao_especifica,Volante
+24,O seu jogador foi convocado para 3 ou mais Copas do Mundo (super veterano)?,caracteristica,super_veterano
+25,O seu jogador já disputou uma partida de Final de Copa do Mundo?,conquista,finalista
+26,O seu jogador foi Campeão do Mundo invicto pelo Brasil?,conquista,campeao_invicto
+27,"No ano da Copa, o seu jogador defendia o Flamengo?",clube,Flamengo
+28,"No ano da Copa, o seu jogador defendia o Vasco da Gama?",clube,Vasco da Gama
+29,"No ano da Copa, o seu jogador defendia o Botafogo?",clube,Botafogo
+30,"No ano da Copa, o seu jogador defendia o Fluminense?",clube,Fluminense
+31,"No ano da Copa, o seu jogador defendia o São Paulo?",clube,São Paulo
+32,"No ano da Copa, o seu jogador defendia o Palmeiras?",clube,Palmeiras
+33,"No ano da Copa, o seu jogador defendia o Corinthians?",clube,Corinthians
+34,"No ano da Copa, o seu jogador defendia o Santos?",clube,Santos
+35,"No ano da Copa, o seu jogador jogava em Minas Gerais (Cruzeiro ou Atlético-MG)?",clube,"Cruzeiro, Atlético Mineiro"
+36,"No ano da Copa, o seu jogador jogava no Rio Grande do Sul (Grêmio ou Internacional)?",clube,"Grêmio, Internacional"
+37,O seu jogador era titular absoluto naquela Copa (dono da vaga)?,titular,titular
+38,O seu jogador marcou pelo menos 1 gol naquela Copa?,gols_na_copa,gols_positivo
+39,O seu jogador marcou 3 ou mais gols naquela Copa?,gols_na_copa,gols_artilheiro
+40,O seu jogador atuava pelo lado esquerdo do campo (lateral-esq ou ponta-esq)?,lado_campo,lado_esquerdo
+41,O seu jogador atuava pelo lado direito do campo (lateral-dir ou ponta-dir)?,lado_campo,lado_direito
+42,"No ano da Copa, o clube do seu jogador ficava na Inglaterra?",clube_pais,pais_Inglaterra
+43,"No ano da Copa, o clube do seu jogador ficava na Espanha?",clube_pais,pais_Espanha
+44,"No ano da Copa, o clube do seu jogador ficava na Itália?",clube_pais,pais_Italia
+45,O seu jogador é fisicamente alto (acima de 185 cm)?,altura_categoria,altura_alto
+46,O seu jogador foi expulso ou suspenso naquela Copa?,expulso_ou_suspenso,expulso
+47,O seu jogador foi o artilheiro ou grande destaque individual daquela Copa?,artilheiro_destaque,artilheiro
+48,O seu jogador era jovem naquela Copa (22 anos ou menos)?,faixa_etaria,sub23
+49,O seu jogador participou da Copa de 2022?,copa_especifica,copa_2022
+50,O seu jogador participou da Copa de 2018?,copa_especifica,copa_2018
+51,O seu jogador participou da Copa de 2014?,copa_especifica,copa_2014
+52,O seu jogador participou da Copa de 2010?,copa_especifica,copa_2010
+53,O seu jogador participou da Copa de 2006?,copa_especifica,copa_2006
+54,O seu jogador participou da Copa de 2002?,copa_especifica,copa_2002
+55,O seu jogador participou da Copa de 1994?,copa_especifica,copa_1994
+56,"No ano da Copa, o clube do seu jogador ficava na França?",clube_pais,pais_Franca
+57,"No ano da Copa, o clube do seu jogador ficava na Alemanha?",clube_pais,pais_Alemanha
+58,"No ano da Copa, o clube do seu jogador ficava em Portugal?",clube_pais,pais_Portugal
