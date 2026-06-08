@@ -1,193 +1,295 @@
 {% extends "base.html" %}
+
 {% block homepage %}
 
 <section class="hero">
-
   <div class="overlay"></div>
 
   <div class="content">
+    <span class="small-text">OS</span>
 
-    <span class="small-text">
-      OS
-    </span>
-
-    <h1 class="gold">
-      CAMPEÕES
-    </h1>
+    <h1 class="gold">CAMPEÕES</h1>
 
     <h2>
       NASCEM ANTES <br>
       DO APITO
     </h2>
-
   </div>
-
 </section>
+
 {% endblock %}
+
 {% block historiadacopa %}
-    
+
+
+<main class="world-cup">
+
+    <!-- HERO -->
+
+    <section class="hist">
+
+        <div class="hist-content">
+
+            <span class="mini-title">
+                FIFA WORLD CUP 2026
+            </span>
+
+            <h1>
+                HISTÓRIA<br>
+                DA COPA<br>
+                DO MUNDO
+            </h1>
+
+            <p>
+                A maior competição de futebol do planeta atravessa gerações,
+                cria lendas eternas e transforma partidas em momentos históricos.
+            </p>
+
+            <div class="hist-buttons">
+
+                <a href="#historias" class="hist-btn">
+                    Explorar História
+                </a>
+
+                <a href="#campeoes" class="hist-btn secondary-btn">
+                    Ver Campeões
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- HISTÓRIA -->
+
+    <section class="history" id="historias">
+
+        <div class="section-title">
+
+            <span>Linha do Tempo</span>
+
+            <h2>Momentos Históricos</h2>
+
+        </div>
+
+        <div class="timeline-grid">
+
+            <article class="timeline-card">
+                <div class="card-image copa1930"></div>
+                <div class="card-content">
+                    <h3>1930</h3>
+                    <p>
+                        O Uruguai recebe a primeira Copa do Mundo da FIFA,
+                        iniciando a história do maior torneio do planeta.
+                    </p>
+                </div>
+            </article>
+
+            <article class="timeline-card">
+                <div class="card-image copa1958"></div>
+                <div class="card-content">
+                    <h3>1958</h3>
+                    <p>
+                        Pelé conquista o mundo aos 17 anos e leva
+                        o Brasil ao primeiro título mundial.
+                    </p>
+                </div>
+            </article>
+
+            <article class="timeline-card">
+                <div class="card-image copa1970"></div>
+                <div class="card-content">
+                    <h3>1970</h3>
+                    <p>
+                        O Brasil encanta o mundo com um dos maiores
+                        times da história do futebol.
+                    </p>
+                </div>
+            </article>
+
+            <article class="timeline-card">
+                <div class="card-image copa1986"></div>
+                <div class="card-content">
+                    <h3>1986</h3>
+                    <p>
+                        Maradona domina a Copa do México
+                        e marca o lendário Gol do Século.
+                    </p>
+                </div>
+            </article>
+
+            <article class="timeline-card">
+                <div class="card-image copa2002"></div>
+                <div class="card-content">
+                    <h3>2002</h3>
+                    <p>
+                        Ronaldo Fenômeno lidera o Brasil
+                        rumo ao pentacampeonato mundial.
+                    </p>
+                </div>
+            </article>
+
+            <article class="timeline-card">
+                <div class="card-image copa2022"></div>
+                <div class="card-content">
+                    <h3>2022</h3>
+                    <p>
+                        Messi conquista o mundo em uma das finais
+                        mais históricas da Copa do Mundo.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- CAMPEÕES -->
+
+    <section class="champions" id="campeoes">
+
+        <div class="section-title">
+            <span>Seleções Históricas</span>
+            <h2>Maiores Campeões</h2>
+        </div>
+
+        <div class="champions-grid">
+
+            <div class="champion-card brazil">
+                <div class="champion-info">
+                    <h3>Brasil</h3>
+                    <span>5 títulos</span>
+                </div>
+            </div>
+
+            <div class="champion-card germany">
+                <div class="champion-info">
+                    <h3>Alemanha</h3>
+                    <span>4 títulos</span>
+                </div>
+            </div>
+
+            <div class="champion-card italy">
+                <div class="champion-info">
+                    <h3>Itália</h3>
+                    <span>4 títulos</span>
+                </div>
+            </div>
+
+            <div class="champion-card argentina">
+                <div class="champion-info">
+                    <h3>Argentina</h3>
+                    <span>3 títulos</span>
+                </div>
+            </div>
+
+            <div class="champion-card france" id="ponto-retorno">
+                <div class="champion-info">
+                    <h3>França</h3>
+                    <span>2 títulos</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
 {% endblock %}
+
 
 {% block album %}
-<section id="painel">
 
+<section id="painel">
   <div class="painel-overlay"></div>
 
   <div class="acoes">
 
-      <a href="/abrir_pacote" class="btn abrir-pacote">
-        Abrir pacote ({{ pacotes_disponiveis }})
-      </a>
+    <a href="{{ url_for('abrir_pacote') }}" class="btn abrir-pacote">
+      Abrir pacote ({{ pacotes_disponiveis }})
+    </a>
+    {% if tem_bonus %}
+    <a href="{{ url_for('bonus') }}" class="btn btn-bonus">
+      Resgatar Bônus
+    </a>
+    {% else %}
+    <a class="btn btn-bonus indisponivel">
+      Resgatar Bônus
+    </a>
+    {% endif %}
 
-    <button class="btn btn-bonus">
-      Resgatar bônus diário
-    </button>
-
-    <button class="btn btn-reiniciar">
+    <a href="{{ url_for('reiniciar') }}" class="btn btn-reiniciar">
       Reiniciar
-    </button>
+    </a>
+
+    <a href="{{ url_for('colartudo') }}" class="btn btn-teste">
+      Colagem automática
+    </a>
 
   </div>
-
 </section>
 
 <section class="card">
 
-  <h2 class="titulo">
-    Meu Álbum
-  </h2>
+  <h2 class="titulo">Meu Álbum</h2>
 
   <div class="album-grid">
-    <div class="slot rar-rara">
-      <div class="slot-numero">
-        #001
-      </div>
 
-      <div class="colada">
+    {% for figurinha in figurinhas %}
 
-        <div class="fig-img"
-             style="background-image:url('../static/img/img-figurinhas/neymar.jpg')">
-        </div>
+      <div class="slot">
+        <div class="slot-numero">{{ "%03d"|format(figurinha.numero) }}</div>
+        
+       {% if figurinha.numero in coladas %}
 
-        <div class="fig-info">
+            {% set classe_raridade = "" %}
 
-          <strong>Neymar Jr</strong>
+            {% if figurinha.raridade == "Epica" %}
+                {% set classe_raridade = "rar-epica" %}
+            {% elif figurinha.raridade == "Rara" %}
+                {% set classe_raridade = "rar-rara" %}
+            {% elif figurinha.raridade == "Lendaria" %}
+                {% set classe_raridade = "rar-lendaria" %}
+            {% endif %}
 
-          <span>Brasil</span>
+            <div class="colada {{ classe_raridade }}">
 
-        </div>
+                <img id="fig-{{ figurinha.numero }}"
+                    class="fig-img"
+                    src="{{ url_for('static', filename='img/img-figurinhas/' + figurinha.imagem) }}">
 
-      </div>
+                <p class="fig-nome">
+                    {{ figurinha.nome }}
+                </p>
 
-    </div>
-    <div class="slot rar-comum">
-      <div class="slot-numero">
-        #002
-      </div>
-      <div class="vazio">
-        <span class="silhueta"></span>
-        <small>Argentina</small>
-        <button class="btn btn-mini">
-          +
-        </button>
+            </div>
 
-      </div>
+        {% elif figurinha.numero in sorteadas %}
 
-    </div>
+            <div class="btn-mini">
+                <a href="{{ url_for('colar', jogador=figurinha.numero) }}">+</a>
+            </div>
 
-    <!-- Figurinha preenchida -->
-    <div class="slot rar-epica">
+            <p class="fig-nome">
+                {{ figurinha.nome }}
+            </p>
 
-      <div class="slot-numero">
-        #003
-      </div>
+        {% else %}
 
-      <div class="figurinha colada">
+            <p class="fig-nome">
+                {{ figurinha.selecao }}
+            </p>
 
-        <div class="fig-img"
-             style="background-image:url('../static/img/img-figurinhas/messi.jpeg')">
-        </div>
-
-        <div class="fig-info">
-
-          <strong>Messi</strong>
-
-          <span>Argentina</span>
-
-        </div>
+        {% endif %}
 
       </div>
 
-    </div>
-
-    <!-- Figurinha vazia -->
-    <div class="slot rar-comum">
-
-      <div class="slot-numero">
-        #004
-      </div>
-
-      <div class="vazio">
-
-        <span class="silhueta"></span>
-
-        <small>Portugal</small>
-
-        <button class="btn btn-mini">
-          +
-        </button>
-
-      </div>
-
-    </div>
-
-    <!-- Figurinha vazia -->
-    <div class="slot rar-rara">
-
-      <div class="slot-numero">
-        #005
-      </div>
-
-      <div class="vazio">
-
-        <span class="silhueta"></span>
-
-        <small>França</small>
-
-        <button class="btn btn-mini">
-          +
-        </button>
-
-      </div>
-
-    </div>
-
-    <!-- Figurinha preenchida -->
-    <div class="slot rar-lendaria">
-
-      <div class="slot-numero">
-        #006
-      </div>
-
-      <div class="figurinha colada">
-
-        <div class="fig-img"
-             style="background-image:url('../static/img/img-figurinhas/cr7.jpg')">
-        </div>
-
-        <div class="fig-info">
-
-          <strong>Cristiano Ronaldo</strong>
-
-          <span>Portugal</span>
-
-        </div>
-
-      </div>
-
-    </div>
+    {% endfor %}
 
   </div>
 
 </section>
+
 {% endblock %}

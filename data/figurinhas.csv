@@ -1,0 +1,112 @@
+numero,nome,selecao,raridade,imagem
+1,Pele,Brasil,Lendaria,pele.jpg
+2,Garrincha,Brasil,Lendaria,garrincha.jpg
+3,Didi,Brasil,Lendaria,didi.jpg
+4,Jairzinho,Brasil,Lendaria,jairzinho.jpg
+5,Tostao,Brasil,Epica,tostao.jpg
+6,Zico,Brasil,Lendaria,zico.jpg
+7,Romario,Brasil,Lendaria,romario.jpg
+8,Ronaldo Nazario,Brasil,Lendaria,ronaldo.jpg
+9,Rivaldo,Brasil,Lendaria,rivaldo.jpg
+10,Ronaldinho Gaucho,Brasil,Lendaria,ronaldinho.jpg
+11,Kaka,Brasil,Lendaria,kaka.jpg
+12,Cafu,Brasil,Epica,cafu.jpg
+13,Roberto Carlos,Brasil,Epica,roberto-carlos.jpg
+14,Lúcio,Brasil,Rara,lucio.jpg
+15,Neymar,Brasil,Lendaria,neymar.jpg
+16,Vinicius Jr,Brasil,Lendaria,vinicius-jr.jpg
+17,Alisson,Brasil,Epica,alisson.jpg
+18,Marquinhos,Brasil,Rara,marquinhos.jpg
+19,Casemiro,Brasil,Epica,casemiro.jpg
+20,Raphinha,Brasil,Epica,raphinha.jpg
+21,Endrick,Brasil,Rara,endrick.jpg
+22,Rayan,Brasil,Rara,rayan.jpg
+
+23,Diego Maradona,Argentina,Lendaria,maradona.jpg
+24,Mario Kempes,Argentina,Lendaria,kempes.jpg
+25,Daniel Passarella,Argentina,Epica,passarella.jpg
+26,Gabriel Batistuta,Argentina,Lendaria,batistuta.jpg
+27,Juan Roman Riquelme,Argentina,Epica,riquelme.jpg
+28,Javier Zanetti,Argentina,Epica,zanetti.jpg
+29,Lionel Messi,Argentina,Lendaria,messi.jpg
+30,Angel Di Maria,Argentina,Epica,di-maria.jpg
+31,Julian Alvarez,Argentina,Epica,julian-alvarez.jpg
+32,Enzo Fernandez,Argentina,Rara,enzo-fernandez.jpg
+33,Emiliano Martinez,Argentina,Epica,dibu.jpg
+
+34,Michel Platini,Franca,Lendaria,platini.jpg
+35,Zinedine Zidane,Franca,Lendaria,zidane.jpg
+36,Thierry Henry,Franca,Lendaria,henry.jpg
+37,Kylian Mbappe,Franca,Lendaria,mbappe.jpg
+38,Antoine Griezmann,Franca,Epica,griezmann.jpg
+39,Ousmane Dembele,Franca,Epica,dembele.jpg
+40,Mike Maignan,Franca,Epica,maignan.jpg
+
+41,Franz Beckenbauer,Alemanha,Lendaria,beckenbauer.jpg
+42,Gerd Muller,Alemanha,Lendaria,gerd-muller.jpg
+43,Lothar Matthaus,Alemanha,Lendaria,matthaus.jpg
+44,Oliver Kahn,Alemanha,Lendaria,kahn.jpg
+45,Miroslav Klose,Alemanha,Lendaria,klose.jpg
+46,Thomas Muller,Alemanha,Epica,thomas-muller.jpg
+47,Toni Kroos,Alemanha,Lendaria,kroos.jpg
+48,Jamal Musiala,Alemanha,Lendaria,musiala.jpg
+49,Florian Wirtz,Alemanha,Epica,wirtz.jpg
+
+50,Paolo Maldini,Italia,Lendaria,maldini.jpg
+51,Roberto Baggio,Italia,Lendaria,baggio.jpg
+52,Alessandro Del Piero,Italia,Epica,del-piero.jpg
+53,Gianluigi Buffon,Italia,Lendaria,buffon.jpg
+54,Andrea Pirlo,Italia,Lendaria,pirlo.jpg
+55,Gianluigi Donnarumma,Italia,Epica,donnarumma.jpg
+56,Nicolo Barella,Italia,Rara,barella.jpg
+
+57,Andres Iniesta,Espanha,Lendaria,iniesta.jpg
+58,Xavi,Espanha,Lendaria,xavi.jpg
+59,Iker Casillas,Espanha,Lendaria,casillas.jpg
+60,Sergio Ramos,Espanha,Lendaria,ramos.jpg
+61,David Villa,Espanha,Epica,villa.jpg
+62,Rodri,Espanha,Lendaria,rodri.jpg
+63,Pedri,Espanha,Epica,pedri.jpg
+64,Lamine Yamal,Espanha,Lendaria,yamal.jpg
+
+65,Eusebio,Portugal,Lendaria,eusebio.jpg
+66,Luis Figo,Portugal,Lendaria,figo.jpg
+67,Cristiano Ronaldo,Portugal,Lendaria,cr7.jpg
+68,Bruno Fernandes,Portugal,Epica,bruno-fernandes.jpg
+69,Bernardo Silva,Portugal,Epica,bernardo-silva.jpg
+70,Ruben Dias,Portugal,Epica,ruben-dias.jpg
+71,Joao Neves,Portugal,Rara,joao-neves.jpg
+
+72,Bobby Charlton,Inglaterra,Lendaria,charlton.jpg
+73,Gary Lineker,Inglaterra,Epica,lineker.jpg
+74,David Beckham,Inglaterra,Lendaria,beckham.jpg
+75,Wayne Rooney,Inglaterra,Epica,rooney.jpg
+76,Harry Kane,Inglaterra,Lendaria,kane.jpg
+77,Jude Bellingham,Inglaterra,Lendaria,bellingham.jpg
+78,Bukayo Saka,Inglaterra,Epica,saka.jpg
+79,Phil Foden,Inglaterra,Epica,foden.jpg
+
+80,Johan Cruyff,Holanda,Lendaria,cruyff.jpg
+81,Marco Van Basten,Holanda,Lendaria,van-basten.jpg
+82,Ruud Gullit,Holanda,Epica,gullit.jpg
+83,Arjen Robben,Holanda,Epica,robben.jpg
+84,Wesley Sneijder,Holanda,Epica,sneijder.jpg
+85,Virgil Van Dijk,Holanda,Lendaria,van-dijk.jpg
+
+86,Enzo Francescoli,Uruguai,Lendaria,francescoli.jpg
+87,Diego Forlan,Uruguai,Lendaria,forlan.jpg
+88,Luis Suarez,Uruguai,Lendaria,suarez.jpg
+89,Federico Valverde,Uruguai,Epica,valverde.jpg
+
+90,Davor Suker,Croacia,Lendaria,suker.jpg
+91,Luka Modric,Croacia,Lendaria,modric.jpg
+92,Josko Gvardiol,Croacia,Epica,gvardiol.jpg
+
+93,Eden Hazard,Belgica,Epica,hazard.jpg
+94,Kevin De Bruyne,Belgica,Lendaria,de-bruyne.jpg
+95,Thibaut Courtois,Belgica,Epica,courtois.jpg
+96,Erling Haaland,Noruega,Lendaria,haaland.jpg
+97,Robert Lewandowski,Polonia,Lendaria,lewandowski.jpg
+98,Mohamed Salah,Egito,Lendaria,salah.jpg
+99,Son Heung-min,Coreia do Sul,Lendaria,son.jpg
+100,Sadio Mane,Senegal,Lendaria,mane.jpg

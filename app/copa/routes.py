@@ -1,25 +1,125 @@
 from flask import render_template, redirect, url_for, request, session, jsonify
 from . import akinator_motor as motor
+from app.copa.utils import carregar_figurinhas
+import random
 
-pacotes_disponiveis = 5
+PACOTES_DISPONIVEIS = 7
+
+pacotes_disponiveis = PACOTES_DISPONIVEIS
+
+sorteadas = []
+coladas = []
+
+tem_bonus = False
+repetidas_usadas = 0
+
+figurinhas = carregar_figurinhas()
+
 
 def registrar_rotas(app):
 
-    # Álbum 
+    # Álbum
 
     @app.route("/")
     def index():
         return render_template(
             "index.html",
-            pacotes_disponiveis=pacotes_disponiveis
+            pacotes_disponiveis=pacotes_disponiveis,
+            sorteadas=sorteadas,
+            figurinhas=figurinhas,
+            coladas=coladas,
+            tem_bonus=tem_bonus
         )
 
     @app.route("/abrir_pacote")
     def abrir_pacote():
         global pacotes_disponiveis
+        global sorteadas
+        global tem_bonus
+        global repetidas_usadas
+
         if pacotes_disponiveis > 0:
             pacotes_disponiveis -= 1
-        return redirect(url_for("index") + "#painel")
+
+            nova = random.sample(figurinhas, k=50)
+            nova_ids = [int(f["numero"]) for f in nova]
+
+            sorteadas.extend(nova_ids)
+
+        tudo = sorteadas + coladas
+        repetidas = len(tudo) - len(set(tudo))
+
+        tem_bonus = (repetidas - repetidas_usadas) >= 20
+
+        return redirect(url_for("index") + "#ponto-retorno")
+
+    @app.route("/colar/<int:jogador>")
+    def colar(jogador):
+        global coladas
+        global sorteadas
+        global tem_bonus
+        global repetidas_usadas
+
+        if jogador in sorteadas:
+            coladas.append(jogador)
+            sorteadas.remove(jogador)
+
+        tudo = sorteadas + coladas
+        repetidas = len(tudo) - len(set(tudo))
+
+        tem_bonus = (repetidas - repetidas_usadas) >= 20
+
+        return redirect(url_for("index") + f"#fig-{jogador}")
+
+    @app.route("/bonus")
+    def bonus():
+        global repetidas_usadas
+        global tem_bonus
+
+        tudo = sorteadas + coladas
+        repetidas = len(tudo) - len(set(tudo))
+
+        if repetidas - repetidas_usadas >= 20:
+
+            faltantes = [
+                int(f["numero"])
+                for f in figurinhas
+                if int(f["numero"]) not in coladas
+            ]
+
+            if faltantes:
+                figurinha_bonus = random.choice(faltantes)
+                coladas.append(figurinha_bonus)
+
+            repetidas_usadas += 20
+
+        tem_bonus = (repetidas - repetidas_usadas) >= 20
+
+        return redirect(url_for("index") + "#ponto-retorno")
+
+    @app.route("/reiniciar")
+    def reiniciar():
+        global pacotes_disponiveis
+        global sorteadas
+        global coladas
+        global tem_bonus
+        global repetidas_usadas
+
+        pacotes_disponiveis = PACOTES_DISPONIVEIS
+        sorteadas = []
+        coladas = []
+
+        tem_bonus = False
+        repetidas_usadas = 0
+
+        return redirect(url_for("index") + "#ponto-retorno")
+
+    @app.route("/colartudo")
+    def colartudo():
+        global coladas, sorteadas
+        s = sorteadas.copy()
+        coladas = s
+        return redirect(url_for("index") + "#ponto-retorno")
 
     # Minigame 
 
@@ -38,7 +138,7 @@ def registrar_rotas(app):
         if "ak" not in session:
             return jsonify({"erro": "sem jogo ativo"}), 400
 
-        data       = request.get_json()
+        data        = request.get_json()
         id_pergunta = int(data["pergunta_id"])
         resposta    = str(data["resposta"])
 
@@ -61,7 +161,6 @@ def registrar_rotas(app):
         )
         session["ak"] = novo_ak
 
-        # Salva histórico quando jogo termina (acerto ou erro final)
         fase = estado.get("fase")
         print(f'[confirmar] fase={fase} confirmado={confirmado} fase_palpite={fase_palpite}')
         if fase == "fim":
@@ -76,22 +175,16 @@ def registrar_rotas(app):
 
     @app.route("/minigame/registrar_erro", methods=["POST"])
     def minigame_registrar_erro():
-        """
-        Chamado quando o usuário diz quem era o jogador após o motor errar.
-        Salva o histórico e verifica se o jogador existe na base.
-        """
         if "ak" not in session:
             return jsonify({"erro": "sem jogo ativo"}), 400
 
-        data  = request.get_json()
-        nome  = data.get("nome", "").strip()
-        ano   = data.get("ano")
-        palpite = data.get("palpite", {})
+        data = request.get_json()
+        nome = data.get("nome", "").strip()
+        ano  = data.get("ano")
 
         if not nome or not ano:
             return jsonify({"erro": "Informe o nome e a Copa do jogador."}), 422
 
-        # Verifica se o jogador existe na base
         resultado = motor.verificar_jogador(nome, ano)
         return jsonify({
             "encontrado": resultado["encontrado"],
@@ -105,7 +198,6 @@ def registrar_rotas(app):
 
     @app.route("/minigame/sugerir", methods=["POST"])
     def minigame_sugerir():
-        """Recebe os dados de um jogador sugerido pelo usuário e salva em CSV."""
         dados = request.get_json()
         if not dados:
             return jsonify({"erro": "Dados inválidos."}), 422
