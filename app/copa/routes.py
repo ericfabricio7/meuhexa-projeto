@@ -16,7 +16,7 @@ repetidas_usadas = 0
 
 figurinhas = carregar_figurinhas()
 
-CSV_PATH = "usuarios.csv"
+CSV_PATH = "data/usuarios.csv"
 CSV_HEADER = ["nome", "email", "usuario", "senha"]
 
 
