@@ -2,6 +2,7 @@ from flask import render_template, redirect, url_for, request, session, jsonify
 from . import akinator_motor as motor
 from app.copa.utils import carregar_figurinhas
 import random
+import csv
 
 PACOTES_DISPONIVEIS = 7
 
@@ -207,3 +208,35 @@ def registrar_rotas(app):
             return jsonify({"erro": mensagem}), 422
 
         return jsonify({"ok": True, "mensagem": mensagem})
+    
+        # Cadastro
+
+    @app.route("/cadastro", methods=["GET", "POST"])
+    def cadastro():
+
+        if request.method == "POST":
+
+            nome = request.form.get("nome")
+            email = request.form.get("email")
+            usuario = request.form.get("usuario")
+            senha = request.form.get("senha")
+
+            with open(
+                "usuarios.csv",
+                "a",
+                newline="",
+                encoding="utf-8"
+            ) as arquivo:
+
+                escritor = csv.writer(arquivo)
+
+                escritor.writerow([
+                    nome,
+                    email,
+                    usuario,
+                    senha
+                ])
+
+            return redirect(url_for("index"))
+
+        return render_template("cadastro.html")

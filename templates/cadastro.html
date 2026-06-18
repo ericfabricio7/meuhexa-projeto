@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block cadastro %}
+
+<section class="cadastro-section">
+
+    <div class="cadastro-container">
+
+        <div class="cadastro-header">
+            <span>FIFA WORLD CUP 2026</span>
+            <h1>Crie sua Conta</h1>
+            <p>
+                Entre para o MeuHexa e acompanhe sua jornada rumo ao álbum completo.
+            </p>
+        </div>
+
+        <form class="cadastro-form" method="POST"
+        action="{{ url_for('cadastro') }}">
+
+            <div class="input-group">
+                <label>Nome Completo</label>
+                <input type="text" name="nome" placeholder="Digite seu nome">
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Digite seu email">
+            </div>
+
+            <div class="input-group">
+                <label>Usuário</label>
+                <input type="text" name="usuario" placeholder="Escolha um usuário">
+            </div>
+
+            <div class="input-group">
+                <label>Senha</label>
+                <input type="password" name="senha" placeholder="Digite sua senha">
+            </div>
+
+            <div class="input-group">
+                <label>Confirmar Senha</label>
+                <input type="password" name="confirmar_senha" placeholder="Repita sua senha">
+            </div>
+
+            <button type="submit" class="btn-cadastro">
+                Entrar em Campo ⚽
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+{% endblock %}

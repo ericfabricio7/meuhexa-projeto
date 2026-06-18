@@ -21,6 +21,7 @@
     <a href="#">História da Copa</a>
     <a href="/#painel">Álbum</a>
     <a href="/minigame">Minigame</a>
+    <a href="{{ url_for('cadastro') }}">Cadastro</a>
     <a href="#">Sobre</a>
   </nav>
 
@@ -33,6 +34,9 @@
 {% block minigame %}{% endblock %}
 
 {% block homepage %}
+{% endblock %}
+
+{% block cadastro %}
 {% endblock %}
 
 {% block historiadacopa %}
