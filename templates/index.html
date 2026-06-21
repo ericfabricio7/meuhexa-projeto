@@ -220,14 +220,6 @@
     </a>
     {% endif %}
 
-    <a href="{{ url_for('reiniciar') }}" class="btn btn-reiniciar">
-      Reiniciar
-    </a>
-
-    <a href="{{ url_for('colartudo') }}" class="btn btn-teste">
-      Colagem automática
-    </a>
-
   </div>
 </section>
 
@@ -292,4 +284,11 @@
 
 </section>
 
+{% endblock %}
+
+
+{% block opiniao %}
+    <form action="POST">
+        
+    </form>
 {% endblock %}
