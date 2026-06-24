@@ -3,7 +3,8 @@ from . import akinator_motor as motor
 from app.copa.utils import carregar_figurinhas
 import random
 
-PACOTES_DISPONIVEIS = 7
+PACOTES_DISPONIVEIS = 2
+NUMERO_FIGURINHAS = 7
 
 pacotes_disponiveis = PACOTES_DISPONIVEIS
 
@@ -41,7 +42,7 @@ def registrar_rotas(app):
         if pacotes_disponiveis > 0:
             pacotes_disponiveis -= 1
 
-            nova = random.sample(figurinhas, k=50)
+            nova = random.sample(figurinhas, k=NUMERO_FIGURINHAS)
             nova_ids = [int(f["numero"]) for f in nova]
 
             sorteadas.extend(nova_ids)
@@ -96,32 +97,6 @@ def registrar_rotas(app):
         tem_bonus = (repetidas - repetidas_usadas) >= 20
 
         return redirect(url_for("index") + "#ponto-retorno")
-
-    @app.route("/reiniciar")
-    def reiniciar():
-        global pacotes_disponiveis
-        global sorteadas
-        global coladas
-        global tem_bonus
-        global repetidas_usadas
-
-        pacotes_disponiveis = PACOTES_DISPONIVEIS
-        sorteadas = []
-        coladas = []
-
-        tem_bonus = False
-        repetidas_usadas = 0
-
-        return redirect(url_for("index") + "#ponto-retorno")
-
-    @app.route("/colartudo")
-    def colartudo():
-        global coladas, sorteadas
-        s = sorteadas.copy()
-        coladas = s
-        return redirect(url_for("index") + "#ponto-retorno")
-
-    # Minigame 
 
     @app.route("/minigame")
     def minigame():
