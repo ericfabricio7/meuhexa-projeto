@@ -6,7 +6,8 @@ import random
 import csv
 import os
 
-PACOTES_DISPONIVEIS = 7
+PACOTES_DISPONIVEIS = 2
+NUMERO_FIGURINHAS = 7
 
 pacotes_disponiveis = PACOTES_DISPONIVEIS
 sorteadas = []
@@ -158,8 +159,11 @@ def registrar_rotas(app):
 
         if pacotes_disponiveis > 0:
             pacotes_disponiveis -= 1
-            nova = random.sample(figurinhas, k=50)
-            sorteadas.extend([int(f["numero"]) for f in nova])
+
+            nova = random.sample(figurinhas, k=NUMERO_FIGURINHAS)
+            nova_ids = [int(f["numero"]) for f in nova]
+
+            sorteadas.extend(nova_ids)
 
         tudo = sorteadas + coladas
         repetidas = len(tudo) - len(set(tudo))
@@ -206,29 +210,7 @@ def registrar_rotas(app):
 
         return redirect(url_for("index") + "#ponto-retorno")
 
-    @app.route("/reiniciar")
-    @login_required
-    def reiniciar():
-        global pacotes_disponiveis, sorteadas, coladas, tem_bonus, repetidas_usadas
-
-        pacotes_disponiveis = PACOTES_DISPONIVEIS
-        sorteadas = []
-        coladas = []
-        tem_bonus = False
-        repetidas_usadas = 0
-
-        return redirect(url_for("index") + "#ponto-retorno")
-
-    @app.route("/colartudo")
-    @login_required
-    def colartudo():
-        global coladas, sorteadas
-        coladas = sorteadas.copy()
-        return redirect(url_for("index") + "#ponto-retorno")
-
-    # =========================
-    # 🎮 MINIGAME
-    # =========================
+    # Minigame 
 
     @app.route("/minigame")
     def minigame():
