@@ -1,13 +1,15 @@
-from flask import render_template, redirect, url_for, request, session, jsonify
+from flask import app, render_template, redirect, url_for, request, session, jsonify
 from . import akinator_motor as motor
 from app.copa.utils import carregar_figurinhas
+from functools import wraps
 import random
+import csv
+import os
 
 PACOTES_DISPONIVEIS = 2
 NUMERO_FIGURINHAS = 7
 
 pacotes_disponiveis = PACOTES_DISPONIVEIS
-
 sorteadas = []
 coladas = []
 
@@ -16,10 +18,128 @@ repetidas_usadas = 0
 
 figurinhas = carregar_figurinhas()
 
+CSV_PATH = "data/usuarios.csv"
+CSV_HEADER = ["nome", "email", "usuario", "senha"]
+
+
+# =========================
+# 🧠 CSV HELPERS
+# =========================
+
+def inicializar_csv():
+    if not os.path.exists(CSV_PATH):
+        with open(CSV_PATH, "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(CSV_HEADER)
+
+
+def salvar_usuario(nome, email, usuario, senha):
+    with open(CSV_PATH, "a", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow([nome, email, usuario, senha])
+
+
+def usuario_existe(email, usuario):
+    
+    if not os.path.exists(CSV_PATH):
+        return False
+
+    with open(CSV_PATH, "r", encoding="utf-8") as f:
+        reader = csv.reader(f)
+        next(reader, None)  # pula cabeçalho
+
+        for row in reader:
+            if len(row) < 4:
+                continue
+
+            _, e, u, _ = row
+
+            if e == email or u == usuario:
+                return True
+
+    return False
+
+# =========================
+# Login
+# =========================
+def verificar_login(usuario, senha):
+
+    if not os.path.exists(CSV_PATH):
+        return None
+
+    with open(CSV_PATH, "r") as f:
+        reader = csv.reader(f)
+        next(reader, None)
+
+        for row in reader:
+
+            if len(row) < 4:
+                continue
+
+            nome_csv, email_csv, usuario_csv, senha_csv = row
+
+            if usuario_csv == usuario and senha_csv == senha:
+                return {
+                    "nome": nome_csv,
+                    "email": email_csv,
+                    "usuario": usuario_csv
+                }
+
+    return None
+
+# =========================
+# 🔒 LOGIN REQUIRED
+# =========================
+
+def login_required(f):
+
+    @wraps(f)
+    def decorated(*args, **kwargs):
+
+        if not session.get("logado"):
+            return redirect(url_for("cadastro"))
+
+        return f(*args, **kwargs)
+
+    return decorated
+
+# =========================
+# 🚀 ROTAS
+# =========================
 
 def registrar_rotas(app):
 
-    # Álbum
+    inicializar_csv()
+# =========================
+# 🏠 LOGIN
+# =========================
+
+    @app.route("/login", methods=["POST"])
+    def login():
+
+        usuario = request.form.get("usuario")
+        senha = request.form.get("senha")
+
+        usuario_encontrado = verificar_login(usuario, senha)
+
+        if usuario_encontrado:
+
+            session["logado"] = True
+            session["nome"] = usuario_encontrado["nome"]
+            session["usuario"] = usuario_encontrado["usuario"]
+
+            return redirect(url_for("index"))
+
+        return "Usuário ou senha inválidos!", 401
+    @app.route("/logout")
+    def logout():
+
+        session.clear()
+
+        return redirect(url_for("index"))
+    # =========================
+    # 🏠 ÁLBUM
+    # =========================
 
     @app.route("/")
     def index():
@@ -33,11 +153,9 @@ def registrar_rotas(app):
         )
 
     @app.route("/abrir_pacote")
+    @login_required
     def abrir_pacote():
-        global pacotes_disponiveis
-        global sorteadas
-        global tem_bonus
-        global repetidas_usadas
+        global pacotes_disponiveis, sorteadas, tem_bonus, repetidas_usadas
 
         if pacotes_disponiveis > 0:
             pacotes_disponiveis -= 1
@@ -49,17 +167,14 @@ def registrar_rotas(app):
 
         tudo = sorteadas + coladas
         repetidas = len(tudo) - len(set(tudo))
-
         tem_bonus = (repetidas - repetidas_usadas) >= 20
 
         return redirect(url_for("index") + "#ponto-retorno")
 
     @app.route("/colar/<int:jogador>")
+    @login_required
     def colar(jogador):
-        global coladas
-        global sorteadas
-        global tem_bonus
-        global repetidas_usadas
+        global coladas, sorteadas, tem_bonus, repetidas_usadas
 
         if jogador in sorteadas:
             coladas.append(jogador)
@@ -67,21 +182,19 @@ def registrar_rotas(app):
 
         tudo = sorteadas + coladas
         repetidas = len(tudo) - len(set(tudo))
-
         tem_bonus = (repetidas - repetidas_usadas) >= 20
 
         return redirect(url_for("index") + f"#fig-{jogador}")
 
     @app.route("/bonus")
+    @login_required
     def bonus():
-        global repetidas_usadas
-        global tem_bonus
+        global repetidas_usadas, tem_bonus
 
         tudo = sorteadas + coladas
         repetidas = len(tudo) - len(set(tudo))
 
         if repetidas - repetidas_usadas >= 20:
-
             faltantes = [
                 int(f["numero"])
                 for f in figurinhas
@@ -89,14 +202,15 @@ def registrar_rotas(app):
             ]
 
             if faltantes:
-                figurinha_bonus = random.choice(faltantes)
-                coladas.append(figurinha_bonus)
+                coladas.append(random.choice(faltantes))
 
             repetidas_usadas += 20
 
         tem_bonus = (repetidas - repetidas_usadas) >= 20
 
         return redirect(url_for("index") + "#ponto-retorno")
+
+    # Minigame 
 
     @app.route("/minigame")
     def minigame():
@@ -105,20 +219,21 @@ def registrar_rotas(app):
     @app.route("/minigame/novo", methods=["POST"])
     def minigame_novo():
         session["ak"] = motor.novo_jogo()
-        estado = motor.calcular_estado(session["ak"])
-        return jsonify(estado)
+        return jsonify(motor.calcular_estado(session["ak"]))
 
     @app.route("/minigame/responder", methods=["POST"])
     def minigame_responder():
         if "ak" not in session:
             return jsonify({"erro": "sem jogo ativo"}), 400
 
-        data        = request.get_json()
-        id_pergunta = int(data["pergunta_id"])
-        resposta    = str(data["resposta"])
+        data = request.get_json()
+        novo_ak, estado = motor.processar_resposta(
+            session["ak"],
+            int(data["pergunta_id"]),
+            str(data["resposta"])
+        )
 
-        novo_ak, estado = motor.processar_resposta(session["ak"], id_pergunta, resposta)
-        session["ak"]   = novo_ak
+        session["ak"] = novo_ak
         return jsonify(estado)
 
     @app.route("/minigame/confirmar", methods=["POST"])
@@ -126,25 +241,23 @@ def registrar_rotas(app):
         if "ak" not in session:
             return jsonify({"erro": "sem jogo ativo"}), 400
 
-        data         = request.get_json()
-        confirmado   = data.get("confirmado")
-        palpite_id   = data.get("palpite_id")
-        fase_palpite = data.get("fase_palpite", "mid")
+        data = request.get_json()
 
         novo_ak, estado = motor.confirmar_palpite(
-            session["ak"], confirmado, palpite_id, fase_palpite
+            session["ak"],
+            data.get("confirmado"),
+            data.get("palpite_id"),
+            data.get("fase_palpite", "mid")
         )
+
         session["ak"] = novo_ak
 
-        fase = estado.get("fase")
-        print(f'[confirmar] fase={fase} confirmado={confirmado} fase_palpite={fase_palpite}')
-        if fase == "fim":
+        if estado.get("fase") == "fim":
             motor.salvar_historico(
-                acertou   = bool(estado.get("acertou")),
-                palpite   = estado.get("palpite", {}),
-                n_rodadas = estado.get("rodada", 0),
+                acertou=bool(estado.get("acertou")),
+                palpite=estado.get("palpite", {}),
+                n_rodadas=estado.get("rodada", 0),
             )
-            print(f'[confirmar] histórico salvo: acertou={estado.get("acertou")}')
 
         return jsonify(estado)
 
@@ -155,30 +268,62 @@ def registrar_rotas(app):
 
         data = request.get_json()
         nome = data.get("nome", "").strip()
-        ano  = data.get("ano")
+        ano = data.get("ano")
 
         if not nome or not ano:
-            return jsonify({"erro": "Informe o nome e a Copa do jogador."}), 422
+            return jsonify({"erro": "Informe nome e Copa"}), 422
 
         resultado = motor.verificar_jogador(nome, ano)
+
         return jsonify({
             "encontrado": resultado["encontrado"],
-            "apelido":    resultado.get("apelido"),
-            "mensagem":   (
-                f"{resultado['apelido']} está na nossa base! O motor aprenderá com esse erro."
+            "apelido": resultado.get("apelido"),
+            "mensagem": (
+                f"{resultado['apelido']} já está na base!"
                 if resultado["encontrado"]
-                else f"'{nome}' ainda não está na nossa base para a Copa de {ano}. Que tal nos ajudar a incluir?"
+                else f"{nome} não encontrado na base para {ano}"
             ),
         })
 
     @app.route("/minigame/sugerir", methods=["POST"])
     def minigame_sugerir():
         dados = request.get_json()
+
         if not dados:
-            return jsonify({"erro": "Dados inválidos."}), 422
+            return jsonify({"erro": "Dados inválidos"}), 422
 
         ok, mensagem = motor.salvar_sugestao(dados)
+
         if not ok:
             return jsonify({"erro": mensagem}), 422
 
         return jsonify({"ok": True, "mensagem": mensagem})
+
+    # =========================
+    # 👤 CADASTRO (CSV COM DUPLICIDADE)
+    # =========================
+
+    @app.route("/cadastro", methods=["GET", "POST"])
+    def cadastro():
+
+        modo = request.args.get("modo", "cadastro")
+
+        if request.method == "POST":
+
+            nome = request.form.get("nome")
+            email = request.form.get("email")
+            usuario = request.form.get("usuario")
+            senha = request.form.get("senha")
+
+            if usuario_existe(email, usuario):
+                return "Email ou usuário já cadastrado!", 400
+
+            salvar_usuario(nome, email, usuario, senha)
+
+            session["logado"] = True
+            session["nome"] = nome
+            session["usuario"] = usuario
+
+            return redirect(url_for("index"))
+
+        return render_template("cadastro.html",modo=modo)
