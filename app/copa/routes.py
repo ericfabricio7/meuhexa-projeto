@@ -1,6 +1,7 @@
-from flask import render_template, redirect, url_for, request, session, jsonify
+from flask import app, render_template, redirect, url_for, request, session, jsonify
 from . import akinator_motor as motor
 from app.copa.utils import carregar_figurinhas
+from functools import wraps
 import random
 import csv
 import os
@@ -38,6 +39,7 @@ def salvar_usuario(nome, email, usuario, senha):
 
 
 def usuario_existe(email, usuario):
+    
     if not os.path.exists(CSV_PATH):
         return False
 
@@ -56,6 +58,49 @@ def usuario_existe(email, usuario):
 
     return False
 
+# =========================
+# Login
+# =========================
+def verificar_login(usuario, senha):
+
+    if not os.path.exists(CSV_PATH):
+        return None
+
+    with open(CSV_PATH, "r") as f:
+        reader = csv.reader(f)
+        next(reader, None)
+
+        for row in reader:
+
+            if len(row) < 4:
+                continue
+
+            nome_csv, email_csv, usuario_csv, senha_csv = row
+
+            if usuario_csv == usuario and senha_csv == senha:
+                return {
+                    "nome": nome_csv,
+                    "email": email_csv,
+                    "usuario": usuario_csv
+                }
+
+    return None
+
+# =========================
+# 🔒 LOGIN REQUIRED
+# =========================
+
+def login_required(f):
+
+    @wraps(f)
+    def decorated(*args, **kwargs):
+
+        if not session.get("logado"):
+            return redirect(url_for("cadastro"))
+
+        return f(*args, **kwargs)
+
+    return decorated
 
 # =========================
 # 🚀 ROTAS
@@ -64,7 +109,33 @@ def usuario_existe(email, usuario):
 def registrar_rotas(app):
 
     inicializar_csv()
+# =========================
+# 🏠 LOGIN
+# =========================
 
+    @app.route("/login", methods=["POST"])
+    def login():
+
+        usuario = request.form.get("usuario")
+        senha = request.form.get("senha")
+
+        usuario_encontrado = verificar_login(usuario, senha)
+
+        if usuario_encontrado:
+
+            session["logado"] = True
+            session["nome"] = usuario_encontrado["nome"]
+            session["usuario"] = usuario_encontrado["usuario"]
+
+            return redirect(url_for("index"))
+
+        return "Usuário ou senha inválidos!", 401
+    @app.route("/logout")
+    def logout():
+
+        session.clear()
+
+        return redirect(url_for("index"))
     # =========================
     # 🏠 ÁLBUM
     # =========================
@@ -81,6 +152,7 @@ def registrar_rotas(app):
         )
 
     @app.route("/abrir_pacote")
+    @login_required
     def abrir_pacote():
         global pacotes_disponiveis, sorteadas, tem_bonus, repetidas_usadas
 
@@ -96,6 +168,7 @@ def registrar_rotas(app):
         return redirect(url_for("index") + "#ponto-retorno")
 
     @app.route("/colar/<int:jogador>")
+    @login_required
     def colar(jogador):
         global coladas, sorteadas, tem_bonus, repetidas_usadas
 
@@ -110,6 +183,7 @@ def registrar_rotas(app):
         return redirect(url_for("index") + f"#fig-{jogador}")
 
     @app.route("/bonus")
+    @login_required
     def bonus():
         global repetidas_usadas, tem_bonus
 
@@ -133,6 +207,7 @@ def registrar_rotas(app):
         return redirect(url_for("index") + "#ponto-retorno")
 
     @app.route("/reiniciar")
+    @login_required
     def reiniciar():
         global pacotes_disponiveis, sorteadas, coladas, tem_bonus, repetidas_usadas
 
@@ -145,6 +220,7 @@ def registrar_rotas(app):
         return redirect(url_for("index") + "#ponto-retorno")
 
     @app.route("/colartudo")
+    @login_required
     def colartudo():
         global coladas, sorteadas
         coladas = sorteadas.copy()
@@ -248,6 +324,8 @@ def registrar_rotas(app):
     @app.route("/cadastro", methods=["GET", "POST"])
     def cadastro():
 
+        modo = request.args.get("modo", "cadastro")
+
         if request.method == "POST":
 
             nome = request.form.get("nome")
@@ -255,12 +333,15 @@ def registrar_rotas(app):
             usuario = request.form.get("usuario")
             senha = request.form.get("senha")
 
-            # 🔍 valida duplicidade
             if usuario_existe(email, usuario):
                 return "Email ou usuário já cadastrado!", 400
 
             salvar_usuario(nome, email, usuario, senha)
 
+            session["logado"] = True
+            session["nome"] = nome
+            session["usuario"] = usuario
+
             return redirect(url_for("index"))
 
-        return render_template("cadastro.html")
+        return render_template("cadastro.html",modo=modo)
