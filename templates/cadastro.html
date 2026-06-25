@@ -2,6 +2,7 @@
 
 {% block cadastro %}
 
+{% if modo == "cadastro" %}
 <section class="cadastro-section">
 
     <div class="cadastro-container">
@@ -15,7 +16,7 @@
         </div>
 
         <form class="cadastro-form" method="POST"
-        action="{{ url_for('cadastro') }}">
+              action="{{ url_for('cadastro', modo='cadastro') }}">
 
             <div class="input-group">
                 <label>Nome Completo</label>
@@ -51,5 +52,43 @@
     </div>
 
 </section>
+{% endif %}
+
+{% if modo == "login" %}
+<section class="cadastro-section">
+
+    <div class="cadastro-container">
+
+        <div class="cadastro-header">
+            <span>FIFA WORLD CUP 2026</span>
+            <h1>Acesse sua Conta</h1>
+            <p>
+                Entre para continuar sua jornada rumo ao álbum completo.
+            </p>
+        </div>
+
+        <form class="cadastro-form" method="POST"
+              action="{{ url_for('login') }}">
+
+            <div class="input-group">
+                <label>Usuário</label>
+                <input type="text" name="usuario" placeholder="Digite seu usuário">
+            </div>
+
+            <div class="input-group">
+                <label>Senha</label>
+                <input type="password" name="senha" placeholder="Digite sua senha">
+            </div>
+
+            <button type="submit" class="btn-cadastro">
+                Entrar ⚽
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+{% endif %}
 
 {% endblock %}

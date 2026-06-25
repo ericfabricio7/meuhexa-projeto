@@ -1648,3 +1648,84 @@ html{
     }
 
 }
+.tabs{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+
+    margin-bottom:25px;
+}
+
+.tabs a{
+    text-decoration:none;
+
+    padding:12px 30px;
+
+    border-radius:12px;
+
+    background:#1b1b1b;
+    color:white;
+
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.tabs a:hover{
+    background:#2a2a2a;
+}
+
+.tabs a.ativo{
+    background:linear-gradient(
+        to right,
+        var(--amarelo),
+        var(--amarelo2)
+    );
+
+    color:black;
+}
+.menu-user{
+    margin-left:auto;
+    display:flex;
+    gap:12px;
+}
+
+.btn-menu-user{
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:10px;
+
+    background:linear-gradient(
+        to right,
+        var(--amarelo),
+        var(--amarelo2)
+    );
+
+    color:black !important;
+    font-weight:800;
+
+    transition:.3s;
+}
+
+.btn-menu-user:hover{
+    transform:translateY(-2px);
+}
+.menu-links{
+    display:flex;
+    gap:35px;
+}
+/* Remove as tabs do cadastro */
+.tabs {    display: none;}
+
+/* Garante que o menu-user fique à direita */
+.menu {    
+  width: 100%;}
+
+.menu-links {  
+      display: flex; 
+       gap: 35px;}
+
+.menu-user {    
+  margin-left: auto; 
+     display: flex; 
+        gap: 12px;}
