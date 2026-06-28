@@ -1725,7 +1725,337 @@ html{
       display: flex; 
        gap: 35px;}
 
-.menu-user {    
-  margin-left: auto; 
-     display: flex; 
+.menu-user {
+  margin-left: auto;
+     display: flex;
         gap: 12px;}
+
+/* =========================
+   NAV PERFIL
+========================= */
+
+.btn-menu-perfil{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.nav-avatar-img{
+    width:28px;
+    height:28px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid rgba(0,0,0,.3);
+}
+
+.nav-avatar-inicial{
+    width:28px;
+    height:28px;
+    border-radius:50%;
+    background:rgba(0,0,0,.3);
+    color:black;
+    font-weight:900;
+    font-size:.85rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+}
+
+/* =========================
+   PERFIL
+========================= */
+
+.perfil-section{
+    min-height:100vh;
+    padding:120px 20px 60px;
+    background: linear-gradient(
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.75)
+    ),
+    url("../img/copa2026.jpeg");
+    
+    background-size:cover;
+    background-position:center;
+}
+
+.perfil-wrapper{
+    width:100%;
+    max-width:680px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+}
+
+.perfil-hero{
+    display:flex;
+    align-items:center;
+    gap:24px;
+    padding:32px;
+    background:var(--card);
+    border:1px solid rgba(255,255,255,.06);
+    border-radius:20px;
+}
+
+.perfil-avatar-wrap{
+    flex-shrink:0;
+}
+
+.perfil-avatar{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid var(--amarelo);
+}
+
+.perfil-avatar-inicial{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:linear-gradient(to bottom right, var(--azul), var(--azul2));
+    border:3px solid var(--amarelo);
+    color:white;
+    font-size:2.2rem;
+    font-weight:900;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.perfil-hero-info h1{
+    font-size:1.8rem;
+    font-weight:900;
+    color:white;
+}
+
+.perfil-username{
+    color:var(--muted);
+    font-size:.95rem;
+    display:block;
+    margin-top:4px;
+}
+
+.perfil-selecao-badge{
+    display:inline-block;
+    margin-top:10px;
+    padding:4px 14px;
+    background:rgba(255,216,77,.12);
+    border:1px solid rgba(255,216,77,.3);
+    border-radius:30px;
+    color:var(--amarelo);
+    font-size:.85rem;
+    font-weight:700;
+}
+
+.perfil-msg{
+    padding:14px 18px;
+    border-radius:12px;
+    font-weight:600;
+    font-size:.95rem;
+}
+
+.perfil-msg-sucesso{
+    background:rgba(24,181,88,.12);
+    border:1px solid rgba(24,181,88,.35);
+    color:var(--verde);
+}
+
+.perfil-msg-erro{
+    background:rgba(232,26,26,.1);
+    border:1px solid rgba(232,26,26,.3);
+    color:var(--vermelho);
+}
+
+.perfil-card{
+    background:var(--card);
+    border:1px solid rgba(255,255,255,.06);
+    border-radius:20px;
+    padding:32px;
+}
+
+.perfil-card-perigo{
+    border-color:rgba(232,26,26,.25);
+}
+
+.perfil-card-titulo{
+    font-size:1.15rem;
+    font-weight:700;
+    color:white;
+    margin-bottom:24px;
+}
+
+.perfil-titulo-perigo{
+    color:var(--vermelho);
+}
+
+.perfil-form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.perfil-select{
+    padding:14px;
+    border-radius:10px;
+    border:2px solid rgba(255,255,255,.08);
+    background:#161616;
+    color:white;
+    font-family:"Outfit",sans-serif;
+    font-size:1rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.perfil-select:focus{
+    outline:none;
+    border-color:var(--amarelo);
+    box-shadow:0 0 12px rgba(255,216,77,.3);
+}
+
+.perfil-select option{
+    background:#161616;
+}
+
+.perfil-file{
+    padding:12px 14px;
+    border-radius:10px;
+    border:2px dashed rgba(255,255,255,.12);
+    background:transparent;
+    color:var(--muted);
+    font-family:"Outfit",sans-serif;
+    font-size:.9rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.perfil-file:hover{
+    border-color:var(--amarelo);
+}
+
+.perfil-perigo-desc{
+    color:var(--muted);
+    font-size:.95rem;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.btn-perigo{
+    padding:13px 24px;
+    border:2px solid var(--vermelho);
+    border-radius:12px;
+    background:transparent;
+    color:var(--vermelho);
+    font-family:"Outfit",sans-serif;
+    font-size:1rem;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-perigo:hover{
+    background:var(--vermelho);
+    color:white;
+}
+
+.perfil-modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    z-index:9999;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.perfil-modal-box{
+    background:var(--card);
+    border:1px solid rgba(232,26,26,.3);
+    border-radius:20px;
+    padding:36px;
+    width:100%;
+    max-width:460px;
+}
+
+.perfil-modal-box h3{
+    font-size:1.4rem;
+    font-weight:900;
+    color:white;
+    margin-bottom:12px;
+}
+
+.perfil-modal-box p{
+    color:var(--muted);
+    font-size:.95rem;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.perfil-modal-box strong{
+    color:var(--amarelo);
+}
+
+.perfil-modal-input{
+    width:100%;
+    padding:14px;
+    border-radius:10px;
+    border:2px solid rgba(255,255,255,.08);
+    background:#161616;
+    color:white;
+    font-family:"Outfit",sans-serif;
+    font-size:1rem;
+    margin-bottom:20px;
+    transition:.3s;
+}
+
+.perfil-modal-input:focus{
+    outline:none;
+    border-color:var(--vermelho);
+    box-shadow:0 0 12px rgba(232,26,26,.3);
+}
+
+.perfil-modal-acoes{
+    display:flex;
+    gap:12px;
+    justify-content:flex-end;
+}
+
+.btn-cancelar{
+    padding:13px 24px;
+    border:2px solid rgba(255,255,255,.1);
+    border-radius:12px;
+    background:transparent;
+    color:var(--muted);
+    font-family:"Outfit",sans-serif;
+    font-size:1rem;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-cancelar:hover{
+    border-color:white;
+    color:white;
+}
+
+@media(max-width:600px){
+
+    .perfil-hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .perfil-hero-info h1{
+        font-size:1.4rem;
+    }
+
+    .perfil-card{
+        padding:24px 18px;
+    }
+
+    .perfil-modal-acoes{
+        flex-direction:column;
+    }
+}
