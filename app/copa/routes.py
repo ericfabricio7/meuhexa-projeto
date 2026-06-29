@@ -6,25 +6,22 @@ import random
 import csv
 import os
 
-PACOTES_DISPONIVEIS = 2
-NUMERO_FIGURINHAS = 7
-
-pacotes_disponiveis = PACOTES_DISPONIVEIS
-sorteadas = []
-coladas = []
-
-tem_bonus = False
-repetidas_usadas = 0
-
 figurinhas = carregar_figurinhas()
 
 CSV_PATH = "data/usuarios.csv"
-CSV_HEADER = ["nome", "email", "usuario", "senha"]
+CSV_HEADER = [
+    "nome",
+    "email",
+    "usuario",
+    "senha",
+    "pacotes",
+    "repetidas",
+    "coladas",
+    "sorteadas"
+]
 
-
-# =========================
-# 🧠 CSV HELPERS
-# =========================
+PACOTES_DISPONIVEIS = 2
+NUMERO_FIGURINHAS = 7
 
 def inicializar_csv():
     if not os.path.exists(CSV_PATH):
@@ -32,27 +29,82 @@ def inicializar_csv():
             writer = csv.writer(f)
             writer.writerow(CSV_HEADER)
 
+def verificar_login(usuario, senha):
+
+    if not os.path.exists(CSV_PATH):
+        return None
+
+    with open(CSV_PATH, "r", encoding="utf-8") as f:
+        reader = csv.reader(f)
+        next(reader, None)
+
+        for row in reader:
+
+            if len(row) < 8:
+                continue
+
+            nome_csv, email_csv, usuario_csv, senha_csv, pacotes, repetidas, coladas, sorteadas = row
+
+            if usuario_csv == usuario and senha_csv == senha:
+                return {
+                    "nome": nome_csv,
+                    "email": email_csv,
+                    "usuario": usuario_csv,
+                    "pacotes": int(pacotes),
+                    "repetidas": int(repetidas),
+                    "coladas": coladas,
+                    "sorteadas": sorteadas
+                }
+
+    return None
+
+def salvar_album(usuario, pacotes, repetidas, coladas, sorteadas):
+
+    with open(CSV_PATH, "r", encoding="utf-8") as f:
+        linhas = list(csv.reader(f))
+
+    for i in range(1, len(linhas)):
+
+        if linhas[i][2] == usuario:
+
+            linhas[i][4] = str(pacotes)
+            linhas[i][5] = str(repetidas)
+            linhas[i][6] = ";".join(map(str, coladas))
+            linhas[i][7] = ";".join(map(str, sorteadas))
+
+    with open(CSV_PATH, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerows(linhas)
 
 def salvar_usuario(nome, email, usuario, senha):
     with open(CSV_PATH, "a", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow([nome, email, usuario, senha])
+        writer.writerow([
+            nome,
+            email,
+            usuario,
+            senha,
+            PACOTES_DISPONIVEIS,
+            0,
+            "",
+            ""
+        ])
 
 
 def usuario_existe(email, usuario):
-    
+
     if not os.path.exists(CSV_PATH):
         return False
 
     with open(CSV_PATH, "r", encoding="utf-8") as f:
         reader = csv.reader(f)
-        next(reader, None)  # pula cabeçalho
+        next(reader, None)
 
         for row in reader:
-            if len(row) < 4:
-                continue
+            print(row)
 
-            _, e, u, _ = row
+            e = row[1]
+            u = row[2]
 
             if e == email or u == usuario:
                 return True
@@ -62,30 +114,7 @@ def usuario_existe(email, usuario):
 # =========================
 # Login
 # =========================
-def verificar_login(usuario, senha):
 
-    if not os.path.exists(CSV_PATH):
-        return None
-
-    with open(CSV_PATH, "r") as f:
-        reader = csv.reader(f)
-        next(reader, None)
-
-        for row in reader:
-
-            if len(row) < 4:
-                continue
-
-            nome_csv, email_csv, usuario_csv, senha_csv = row
-
-            if usuario_csv == usuario and senha_csv == senha:
-                return {
-                    "nome": nome_csv,
-                    "email": email_csv,
-                    "usuario": usuario_csv
-                }
-
-    return None
 
 # =========================
 # 🔒 LOGIN REQUIRED
@@ -128,6 +157,23 @@ def registrar_rotas(app):
             session["nome"] = usuario_encontrado["nome"]
             session["usuario"] = usuario_encontrado["usuario"]
 
+            session["pacotes"] = usuario_encontrado["pacotes"]
+            session["repetidas"] = usuario_encontrado["repetidas"]
+
+            session["coladas"] = (
+                [int(x) for x in usuario_encontrado["coladas"].split(";")]
+                if usuario_encontrado["coladas"]
+                else []
+            )
+
+            session["sorteadas"] = (
+                [int(x) for x in usuario_encontrado["sorteadas"].split(";")]
+                if usuario_encontrado["sorteadas"]
+                else []
+            )
+
+            session["bonus"] = False
+
             return redirect(url_for("index"))
 
         return "Usuário ou senha inválidos!", 401
@@ -145,20 +191,27 @@ def registrar_rotas(app):
     def index():
         return render_template(
             "index.html",
-            pacotes_disponiveis=pacotes_disponiveis,
-            sorteadas=sorteadas,
+            pacotes_disponiveis=session.get(
+                "pacotes",
+                PACOTES_DISPONIVEIS
+            ),
+            sorteadas=session.get("sorteadas", []),
             figurinhas=figurinhas,
-            coladas=coladas,
-            tem_bonus=tem_bonus
+            coladas=session.get("coladas", []),
+            tem_bonus=session.get("bonus", False)
         )
 
     @app.route("/abrir_pacote")
     @login_required
     def abrir_pacote():
-        global pacotes_disponiveis, sorteadas, tem_bonus, repetidas_usadas
 
-        if pacotes_disponiveis > 0:
-            pacotes_disponiveis -= 1
+        pacotes = session.get("pacotes", PACOTES_DISPONIVEIS)
+        sorteadas = session.get("sorteadas", [])
+        coladas = session.get("coladas", [])
+        repetidas_usadas = session.get("repetidas", 0)
+
+        if pacotes > 0:
+            pacotes -= 1
 
             nova = random.sample(figurinhas, k=NUMERO_FIGURINHAS)
             nova_ids = [int(f["numero"]) for f in nova]
@@ -167,14 +220,29 @@ def registrar_rotas(app):
 
         tudo = sorteadas + coladas
         repetidas = len(tudo) - len(set(tudo))
-        tem_bonus = (repetidas - repetidas_usadas) >= 20
+        bonus = (repetidas - repetidas_usadas) >= 20
+
+        session["pacotes"] = pacotes
+        session["sorteadas"] = sorteadas
+        session["bonus"] = bonus
+
+        salvar_album(
+            session["usuario"],
+            pacotes,
+            repetidas_usadas,
+            coladas,
+            sorteadas
+        )
 
         return redirect(url_for("index") + "#ponto-retorno")
 
     @app.route("/colar/<int:jogador>")
     @login_required
     def colar(jogador):
-        global coladas, sorteadas, tem_bonus, repetidas_usadas
+
+        coladas = session.get("coladas", [])
+        sorteadas = session.get("sorteadas", [])
+        repetidas_usadas = session.get("repetidas", 0)
 
         if jogador in sorteadas:
             coladas.append(jogador)
@@ -182,19 +250,35 @@ def registrar_rotas(app):
 
         tudo = sorteadas + coladas
         repetidas = len(tudo) - len(set(tudo))
-        tem_bonus = (repetidas - repetidas_usadas) >= 20
+        bonus = (repetidas - repetidas_usadas) >= 20
+
+        session["coladas"] = coladas
+        session["sorteadas"] = sorteadas
+        session["bonus"] = bonus
+
+        salvar_album(
+            session["usuario"],
+            session["pacotes"],
+            repetidas_usadas,
+            coladas,
+            sorteadas
+        )
 
         return redirect(url_for("index") + f"#fig-{jogador}")
 
     @app.route("/bonus")
     @login_required
     def bonus():
-        global repetidas_usadas, tem_bonus
+
+        coladas = session.get("coladas", [])
+        sorteadas = session.get("sorteadas", [])
+        repetidas_usadas = session.get("repetidas", 0)
 
         tudo = sorteadas + coladas
         repetidas = len(tudo) - len(set(tudo))
 
         if repetidas - repetidas_usadas >= 20:
+
             faltantes = [
                 int(f["numero"])
                 for f in figurinhas
@@ -206,9 +290,23 @@ def registrar_rotas(app):
 
             repetidas_usadas += 20
 
-        tem_bonus = (repetidas - repetidas_usadas) >= 20
+        bonus = (repetidas - repetidas_usadas) >= 20
+
+        session["coladas"] = coladas
+        session["bonus"] = bonus
+        session["repetidas"] = repetidas_usadas
+
+        salvar_album(
+            session["usuario"],
+            session["pacotes"],
+            repetidas_usadas,
+            coladas,
+            sorteadas
+        )
 
         return redirect(url_for("index") + "#ponto-retorno")
+    
+    #FINAL - ERIC
 
     # Minigame 
 
@@ -323,6 +421,12 @@ def registrar_rotas(app):
             session["logado"] = True
             session["nome"] = nome
             session["usuario"] = usuario
+
+            session["pacotes"] = PACOTES_DISPONIVEIS
+            session["sorteadas"] = []
+            session["coladas"] = []
+            session["bonus"] = False
+            session["repetidas"] = 0
 
             return redirect(url_for("index"))
 
