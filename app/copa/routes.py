@@ -2,8 +2,10 @@ from flask import render_template, redirect, url_for, request, session, jsonify
 from . import akinator_motor as motor
 from app.copa.utils import carregar_figurinhas
 from functools import wraps
+from datetime import datetime
 import random
 import csv
+import uuid
 import os
 
 PACOTES_DISPONIVEIS = 2
@@ -30,6 +32,16 @@ SELECOES = [
     "Colômbia", "Uruguai", "Equador", "Senegal", "Nigéria", "Costa Rica",
     "Polônia", "Suíça", "Dinamarca", "Turquia", "Canadá", "Peru", "Chile",
 ]
+
+CSV_PENDING_PATH = "data/pending.csv"
+CSV_PENDING_HEADER = [
+    "id_contribuicao", "data_hora", "usuario_contribuinte",
+    "nome", "apelido", "ano_copa", "posicao",
+    "clube", "titular", "gols", "observacoes",
+    "curiosidade_1", "curiosidade_2",
+    "status",
+]
+
 
 
 # CSV HELPERS
@@ -93,6 +105,34 @@ def atualizar_usuario(usuario_alvo, **campos):
 
 def excluir_usuario(usuario_alvo):
     _salvar_usuarios([r for r in _ler_usuarios() if r["usuario"] != usuario_alvo])
+
+
+def salvar_pendente(dados: dict, usuario: str) -> tuple[bool, str]:
+    existe = os.path.exists(CSV_PENDING_PATH) and os.path.getsize(CSV_PENDING_PATH) > 0
+    try:
+        with open(CSV_PENDING_PATH, "a", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=CSV_PENDING_HEADER)
+            if not existe:
+                writer.writeheader()
+            writer.writerow({
+                "id_contribuicao":     str(uuid.uuid4())[:8],
+                "data_hora":           datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "usuario_contribuinte": usuario,
+                "nome":        dados.get("nome", "").strip(),
+                "apelido":     dados.get("apelido", "").strip(),
+                "ano_copa":    dados.get("ano_copa", ""),
+                "posicao":     dados.get("posicao", "").strip(),
+                "clube":       dados.get("clube", "").strip(),
+                "titular":     dados.get("titular", "").strip(),
+                "gols":        dados.get("gols", "0"),
+                "observacoes": dados.get("observacoes", "").strip(),
+                "curiosidade_1": dados.get("curiosidade_1", "").strip(),
+                "curiosidade_2": dados.get("curiosidade_2", "").strip(),
+                "status":      "pendente",
+            })
+        return True, "Contribuição registrada! Avaliaremos para incluir na base."
+    except OSError as e:
+        return False, f"Não foi possível salvar a contribuição: {e}"
 
 
 def extensao_permitida(filename):
@@ -269,12 +309,15 @@ def registrar_rotas(app):
 
     @app.route("/minigame/sugerir", methods=["POST"])
     def minigame_sugerir():
+        if not session.get("logado"):
+            return jsonify({"login_required": True}), 401
+
         dados = request.get_json()
 
         if not dados:
             return jsonify({"erro": "Dados inválidos"}), 422
 
-        ok, mensagem = motor.salvar_sugestao(dados)
+        ok, mensagem = salvar_pendente(dados, session["usuario"])
 
         if not ok:
             return jsonify({"erro": mensagem}), 422

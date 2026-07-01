@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+{% block perfil %}
+<section class="perfil-section">
+    <div class="perfil-wrapper">
+
+        <div class="perfil-hero">
+            <div class="perfil-avatar-wrap">
+                {% if usuario.foto_perfil %}
+                <img src="{{ url_for('static', filename=usuario.foto_perfil) }}"
+                     alt="Foto de perfil" class="perfil-avatar">
+                {% else %}
+                <div class="perfil-avatar-inicial">{{ session.nome[0].upper() }}</div>
+                {% endif %}
+            </div>
+            <div class="perfil-hero-info">
+                <h1>{{ session.nome }}</h1>
+                <span class="perfil-username">@{{ session.usuario }}</span>
+                {% if usuario.selecao_favorita %}
+                <p class="perfil-selecao-badge">{{ usuario.selecao_favorita }}</p>
+                {% endif %}
+            </div>
+        </div>
+
+        {% set erro = request.args.get('erro') %}
+        {% set sucesso = request.args.get('sucesso') %}
+
+        {% if sucesso == 'perfil' %}
+        <div class="perfil-msg perfil-msg-sucesso">Perfil atualizado com sucesso.</div>
+        {% elif sucesso == 'senha' %}
+        <div class="perfil-msg perfil-msg-sucesso">Senha alterada com sucesso.</div>
+        {% elif erro == 'foto_invalida' %}
+        <div class="perfil-msg perfil-msg-erro">Formato de imagem invalido. Use JPG, PNG, GIF ou WebP.</div>
+        {% elif erro == 'senha_incorreta' %}
+        <div class="perfil-msg perfil-msg-erro">Senha atual incorreta.</div>
+        {% elif erro == 'senhas_diferentes' %}
+        <div class="perfil-msg perfil-msg-erro">A nova senha e a confirmacao nao coincidem.</div>
+        {% elif erro == 'senha_curta' %}
+        <div class="perfil-msg perfil-msg-erro">A nova senha deve ter pelo menos 4 caracteres.</div>
+        {% elif erro == 'confirmacao_invalida' %}
+        <div class="perfil-msg perfil-msg-erro">Confirmacao invalida. Digite seu nome de usuario corretamente.</div>
+        {% endif %}
+
+        <div class="perfil-card">
+            <h2 class="perfil-card-titulo">Informações do Perfil</h2>
+            <form class="perfil-form" method="POST"
+                  action="{{ url_for('perfil_atualizar') }}"
+                  enctype="multipart/form-data">
+
+                <div class="input-group">
+                    <label>Nome Completo</label>
+                    <input type="text" name="nome" value="{{ usuario.nome }}"
+                           placeholder="Seu nome completo">
+                </div>
+
+                <div class="input-group">
+                    <label>Seleção Favorita</label>
+                    <select name="selecao_favorita" class="perfil-select">
+                        <option value="">-- Escolha sua seleção --</option>
+                        {% for s in selecoes %}
+                        <option value="{{ s }}"
+                            {% if s == usuario.selecao_favorita %}selected{% endif %}>
+                            {{ s }}
+                        </option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Foto de Perfil</label>
+                    <input type="file" name="foto" accept="image/*" class="perfil-file">
+                </div>
+
+                <button type="submit" class="btn-cadastro">Salvar Alterações</button>
+            </form>
+        </div>
+
+        <div class="perfil-card">
+            <h2 class="perfil-card-titulo">Alterar Senha</h2>
+            <form class="perfil-form" method="POST" action="{{ url_for('perfil_senha') }}">
+
+                <div class="input-group">
+                    <label>Senha Atual</label>
+                    <input type="password" name="senha_atual" placeholder="Digite sua senha atual">
+                </div>
+
+                <div class="input-group">
+                    <label>Nova Senha</label>
+                    <input type="password" name="nova_senha" placeholder="Digite a nova senha">
+                </div>
+
+                <div class="input-group">
+                    <label>Confirmar Nova Senha</label>
+                    <input type="password" name="confirmar_senha" placeholder="Repita a nova senha">
+                </div>
+
+                <button type="submit" class="btn-cadastro">Alterar Senha</button>
+            </form>
+        </div>
+
+        <div class="perfil-card perfil-card-perigo">
+            <h2 class="perfil-card-titulo perfil-titulo-perigo">Excluir conta</h2>
+            <p class="perfil-perigo-desc">
+                A exclusão da conta é permanente e remove todos os seus dados.
+                Esta ação não pode ser desfeita.
+            </p>
+            <button class="btn-perigo"
+                    onclick="document.getElementById('modal-excluir').style.display='flex'">
+                Excluir minha conta
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<div class="perfil-modal" id="modal-excluir" style="display:none">
+    <div class="perfil-modal-box">
+        <h3>Confirmar Exclusão</h3>
+        <p>
+            Para confirmar, digite seu nome de usuario:
+            <strong>{{ session.usuario }}</strong>
+        </p>
+        <form method="POST" action="{{ url_for('perfil_excluir') }}">
+            <input type="text" name="confirmacao"
+                   placeholder="Digite seu usuario"
+                   class="perfil-modal-input">
+            <div class="perfil-modal-acoes">
+                <button type="button" class="btn-cancelar"
+                        onclick="document.getElementById('modal-excluir').style.display='none'">
+                    Cancelar
+                </button>
+                <button type="submit" class="btn-perigo">Excluir Conta</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
