@@ -1,340 +1,340 @@
-id_jogador,nome,apelido,nacionalidade_diferente,caracteristica_geral,esta_vivo,altura_categoria,pe_preferencial,ano_nascimento
-1,Araken Patusca,Araken,0,Único jogador de origem paulista no grupo devido ao boicote político entre as federações.,0,Médio,Destro,1905
-2,Alfredo Brilhante,Brilhante,0,Titular da zaga no primeiro jogo da história do Brasil em Copas do Mundo.,0,Médio,Destro,1904
-3,Carlos Carvalho Leite,Carvalho Leite,0,O jogador mais jovem de toda a delegação brasileira em 1930 (apenas 18 anos).,0,Médio,Destro,1912
-4,Alfredo de Almeida Rego,Doca,0,Atacante veloz do São Cristóvão que viajou com o grupo mas não atuou no torneio.,0,Baixo,Destro,1903
-5,Fausto dos Santos,Fausto,0,Apelidado de 'Maravilha Negra' pela imprensa internacional devido à sua atuação genial no torneio.,0,Médio,Destro,1905
-6,Fernando Giudicelli,Fernando,0,Primeiro brasileiro a jogar pelo Torino (Itália) e pioneiro no mercado europeu de atletas.,0,Médio,Destro,1906
-7,Agostinho Fortes Filho,Fortes,0,"Ídolo histórico do Fluminense, viajou com o grupo mas ficou na reserva.",0,Médio,Destro,1901
-8,Hermógenes Valente Fonseca,Hermógenes,0,Meio-campista dinâmico que foi titular nas duas partidas do Brasil no Uruguai.,0,Médio,Destro,1908
-9,Luiz Gervazoni,Itália,0,Formava com Brilhante a famosa e intransponível zaga do Vasco da época.,0,Médio,Destro,1907
-10,Ivan Mariz,Ivan Mariz,0,"Um dos atletas mais jovens do elenco (20 anos), não chegou a entrar em campo.",0,Médio,Destro,1910
-11,Joel de Oliveira Costa,Joel,0,Goleiro titular na estreia absoluta do Brasil em Copas.,0,Médio,Destro,1904
-12,Manoel de Aguiar Fagundes,Manoelzinho,0,Atacante reserva que viajou ao Uruguai mas não disputou minutos oficiais.,0,Médio,Destro,1907
-13,Moderato Wisintainer,Moderato,0,Jogou no sacrifício com pontos de uma cirurgia recente de apendicite e marcou dois gols contra a Bolívia.,0,Baixo,Destro,1902
-14,Nilo Murtinho Braga,Nilo,0,"Um dos maiores artilheiros pré-Pelé da história do Botafogo, jogou a estreia em 1930.",0,Médio,Ambidestro,1903
-15,Oscarino Costa Silva,Oscarino,0,Único defensor vindo de um clube de Niterói a atuar naquela Copa.,0,Médio,Destro,1907
-16,Estanislau de Figueiredo Pamplona,Pamplona,0,Atuou na linha média na partida de despedida contra a Bolívia.,0,Médio,Destro,1902
-17,Polidoro Rodrigues,Poly,0,Único jogador da história do Americano de Campos (RJ) a disputar uma Copa do Mundo.,0,Baixo,Destro,1909
-18,João Coelho Neto,Preguinho,0,Autor do primeiro gol da história da Seleção Brasileira em Copas do Mundo.,0,Médio,Destro,1905
-19,Moacyr Siqueira de Queiroz,Russinho,0,"Um dos maiores artilheiros do Vasco na era amadora, foi o centroavante titular contra a Bolívia.",0,Médio,Ambidestro,1902
-20,Teóphilo Bettencourt Pereira,Teóphilo,0,Formou o quinteto de ataque titular na partida de estreia contra a Iugoslávia.,0,Médio,Destro,1900
-21,Oswaldo de Barros Velloso,Velloso,0,Primeiro goleiro brasileiro a terminar um jogo de Copa sem sofrer gols (Brasil 4x0 Bolívia).,0,Alto,Destro,1908
-22,José Luiz de Oliveira,Zé Luiz,0,Entrou como titular da zaga na vitória contra a Bolívia.,0,Médio,Destro,1903
-23,Benedicto de Moraes Menezes,Benedicto,0,"Conhecido como 'Benedicto-Gato', foi titular na estreia contra a Iugoslávia.",0,Médio,Canhoto,1907
-24,Humberto de Araújo Benevenuto,Benevenuto,0,"Convocado para o torneio, mas acabou não entrando em campo em nenhuma partida.",0,Médio,Destro,1903
-25,Roberto Gomes Pedrosa,Pedrosa,0,"Goleiro que anos mais tarde se tornou dirigente e deu nome ao torneio ""Robertão"" (precursor do Brasileirão).",0,Médio,Destro,1913
-26,Germano Boettcher Sobrinho,Germano,0,Goleiro reserva em 1934 que fez história no Botafogo e no Flamengo.,0,Médio,Destro,1911
-27,Sylvio Hoffmann Mazzi,Sylvio Hoffmann,0,Defensor clássico que jogou a Copa contratado diretamente pela CBD para burlar o boicote dos clubes paulistas.,0,Médio,Destro,1908
-28,Luiz dos Santos Luz,Luiz Luz,0,Primeiro jogador de um clube gaúcho (Americano-RS) a atuar pela Seleção Brasileira em uma Copa.,0,Médio,Destro,1909
-29,Octacílio Pinheiro Guerra,Octacílio,0,Zagueiro seguro do Botafogo que acabou ficando na reserva durante o torneio na Itália.,0,Médio,Destro,1909
-30,Ariel Augusto Nogueira,Ariel,0,"Meio-campista de extrema longevidade no Botafogo, conhecido pela precisão nos passes.",0,Médio,Destro,1910
-31,Alpheu Martha de Canalli,Canalli,0,Teve uma passagem marcante pelo futebol italiano (Torino) logo após a Copa de 1934.,0,Médio,Destro,1910
-32,Martim Silveira,Martim,0,"Meio-campista refinado e líder natural em campo, jogou também no futebol argentino (Boca Juniors).",0,Médio,Destro,1911
-33,Alfredo de Almeida Tinoco,Tinoco,0,"Um dos poucos operários do futebol na época, defendia o Vasco da Gama com muita raça.",0,Médio,Destro,1904
-34,Waldyr Pellizzoni,Waldyr,0,Meio-campista que viajou como linha de frente reserva e não chegou a entrar em campo na Itália.,0,Médio,Destro,1912
-35,Armando dos Santos,Armandinho,0,Atacante consagrado no futebol paulista que aceitou o convite da CBD para jogar a Copa.,0,Médio,Destro,1911
-36,Leônidas da Silva,Leônidas,0,"O ""Diamante Negro"", considerado um dos maiores da história do futebol e popularizador do gol de bicicleta.",0,Baixo,Destro,1913
-37,Luís Mesquita de Oliveira,Luisinho,0,"Atacante de técnica apurada, multicampeão paulista e um dos maiores artilheiros da era amadora/profissional.",0,Médio,Destro,1911
-38,Rodolfo Barteczko,Patesko,0,"Atacante veloz que jogava no Nacional do Uruguai, sendo um dos poucos que atuavam no exterior na época.",0,Baixo,Canhoto,1910
-39,Waldemar de Brito,Waldemar de Brito,0,"Atacante prolífico que, anos mais tarde, ficou imortalizado na história por descobrir e lapidar o garoto Pelé.",0,Médio,Destro,1913
-40,Áttila de Carvalho,Áttila,0,Atacante habilidoso do Botafogo que participou da excursão europeia de 1934.,0,Médio,Destro,1910
-41,Algisto Lorenzato,Batatais,0,"Goleiro histórico do Fluminense, assumiu a titularidade após a lesão de Walter.",0,Médio,Destro,1910
-42,Walter de Souza Goulart,Walter,0,"Goleiro titular no início da Copa, conhecido por sua elasticidade.",0,Médio,Destro,1913
-43,Domingos da Guia,Domingos da Guia,0,"Apelidado de 'Divino Mestre', é considerado um dos maiores zagueiros da história do futebol mundial.",0,Médio,Destro,1912
-44,Arthur Machado,Machado,0,Zagueiro seguro do Fluminense que fez uma dupla lendária com Domingos da Guia.,0,Médio,Destro,1911
-45,Euclydes Barbosa,Jaú,0,"Zagueiro de muita força física, vindo do Vasco da Gama.",0,Médio,Destro,1909
-46,Alvaro Lopes Cançado,Nariz,0,Defensor do Botafogo que também era formado em medicina.,0,Médio,Destro,1912
-47,Afonso Guimarães da Silva,Afonsinho,0,Primeiro jogador de futebol ativista/político do Brasil e também médico.,0,Médio,Destro,1914
-48,Argemiro Pinheiro da Silva,Argemiro,0,"Meio-campista clássico da Portuguesa Santista, carregava o piano no meio-campo.",0,Médio,Destro,1915
-49,José Augusto Brandão,Brandão,0,"Ídolo do Corinthians na década de 30, meio-campista de muita raça.",0,Médio,Destro,1916
-50,Hermínio Américo de Brito,Britto,0,"Meio-campista de estilo extremamente viril, jogou no sacrifício contra a Checoslováquia.",0,Médio,Destro,1914
-51,José Procópio Mendes,Zezé Procópio,0,Primeiro jogador da história a ser expulso em uma partida do Brasil em Copas (contra a Checoslováquia).,0,Médio,Destro,1913
-52,José Perácio Berjun,Perácio,0,"Atacante dono de um chute poderosíssimo, marcou 3 gols naquela Copa.",0,Médio,Destro,1917
-53,Romeu Pellicciari,Romeu,0,"Meia-atacante de refinada técnica, brilhou no Palmeiras e no Fluminense.",0,Médio,Destro,1911
-54,Elba de Pádua Lima,Tim,0,"Considerado por muitos um gênio tático, apelidado de 'O Estrategista'.",0,Médio,Destro,1915
-55,Hércules de Miranda,Hércules,0,Ponta-esquerda veloz e muito goleador do Fluminense.,0,Médio,Canhoto,1912
-56,Roberto Emílio da Cunha,Roberto,0,"Atacante do São Cristóvão, veloz e muito agudo pelas pontas.",0,Médio,Canhoto,1912
-57,Leonízio Fantoni,Niginho,0,Protagonizou uma polêmica jurídica com a Lazio e foi impedido pela FIFA de jogar a semifinal contra a Itália.,0,Médio,Destro,1912
-58,Moacyr Barbosa,Barbosa,0,"Injustamente culpado pelo gol de Ghiggia na final de 1950, carregou esse fardo pesado por toda a vida.",0,Médio,Destro,1921
-59,Carlos José Castilho,Castilho,0,"Goleiro reserva em 1950, famoso por anos mais tarde amputar um pedaço do dedo para voltar a jogar mais rápido.",0,Alto,Destro,1927
-60,Augusto da Costa,Augusto,0,"Capitão do Brasil na Copa de 1950, liderou a equipe em toda a campanha em solo nacional.",0,Médio,Destro,1920
-61,Juvenal Amarijo,Juvenal,0,"Zagueiro titular absoluto na final contra o Uruguai, marcado pela derrota no Maracanazo.",0,Médio,Destro,1923
-62,Olavo Rodrigues Barbosa,Nena,0,"Zagueiro firme do Internacional, conhecido pelo apelido de 'Parada Agridoce'.",0,Médio,Destro,1923
-63,Nílton Reis dos Santos,Nílton Santos,0,"O 'Enciclopédia do Futebol', fez sua estreia em Copas na reserva de 1950 antes de virar lenda mundial.",0,Médio,Canhoto,1925
-64,João Ferreira,Bigode,0,"Lateral titular em 1950, eternamente lembrado pelo drible sofrido de Ghiggia no gol do título uruguaio.",0,Médio,Destro,1925
-65,Ely do Amparo,Ely,0,"Meio-campista de muita força física e liderança, um dos pilares do Vasco da Gama na época.",0,Médio,Destro,1921
-66,Danilo Alvim,Danilo Alvim,0,"Conhecido como 'Príncipe', um dos meio-campistas mais elegantes e técnicos da história da Seleção.",0,Médio,Destro,1920
-67,José Carlos Bauer,Bauer,0,"O 'Monstro do Maracanã', foi o único jogador brasileiro poupado das críticas pesadas da imprensa após a final.",0,Médio,Destro,1925
-68,Rui Campos,Rui,0,"Formava a famosa linha média do São Paulo ('Bauer, Rui e Noronha') que brilhou no futebol paulista.",0,Médio,Destro,1920
-69,Jacinto de Moura,Noronha,0,"Lateral/meio-campista esquerdo do São Paulo, fez parte do elenco mas não jogou a final contra o Uruguai.",0,Médio,Destro,1918
-70,Alfredo dos Santos,Alfredo II,0,"Meio-campista polivalente do Vasco, entrou no time na histórica goleada de 7x1 contra a Suécia.",0,Médio,Destro,1920
-71,Thomaz Soares da Silva,Zizinho,0,"O grande ídolo de Pelé, eleito o melhor jogador da Copa de 1950 mesmo com o vice-campeonato do Brasil.",0,Baixo,Destro,1922
-72,Ademir Marques de Menezes,Ademir de Menezes,0,"Conhecido como 'Queixada', foi o artilheiro isolado da Copa de 1950 marcando 9 gols.",0,Médio,Destro,1922
-73,Jair da Rosa Pinto,Jair,0,"Meia-esquerda de chute lendário e visão de jogo cirúrgica, era um dos grandes cérebros do time.",0,Baixo,Canhoto,1921
-74,Francisco Aramburu,Chico,0,"Atacante veloz que marcou quatro gols na Copa de 1950, incluindo dois na goleada sobre a Espanha.",0,Baixo,Canhoto,1922
-75,Albino Friaça Cardoso,Friaça,0,"Atacante do São Paulo, foi o autor do único gol do Brasil na finalíssima contra o Uruguai.",0,Médio,Destro,1924
-76,Manuel Marinho Alves,Maneca,0,"Atacante do Expresso da Vitória do Vasco, marcou gol na estreia da Copa contra o México.",0,Médio,Destro,1926
-77,Oswaldo Silva,Baltazar,0,"O 'Cabecinha de Ouro', atacante famoso por admitir que marcava mais gols de cabeça do que com os pés.",0,Médio,Destro,1926
-78,Rodrigues Tatu,Rodrigues,0,"Ponta-esquerda extremamente habilidoso e veloz, campeão pelo Palmeiras na época.",0,Médio,Canhoto,1925
-79,Adão Nunes Dornelles,Adãozinho,0,"Atacante clássico do Internacional dos anos 40, viajou como reserva no mundial.",0,Médio,Destro,1923
-80,Oswaldo Alfredo da Silva,Veludo,0,"Goleiro reserva com reflexos espetaculares, apelidado com o nome de um tecido macio devido à sua agilidade felina.",0,Médio,Destro,1930
-81,Anselmo Duarte,Cabeção,0,Terceiro goleiro da delegação na Suíça e ídolo histórico do Corinthians conhecido como 'Cabeção'.,0,Médio,Destro,1930
-82,Djalma Pereira Dias dos Santos,Djalma Santos,0,"Considerado um dos maiores laterais-direitos de todos os tempos, unia técnica impecável com uma força física impressionante.",0,Médio,Destro,1929
-83,Carlos Alberto Rodrigues Gavião,Pinheiro,0,"Zagueiro central extremamente raçudo do Fluminense, conhecido pelo apelido de 'Pinheiro'.",0,Médio,Destro,1932
-84,Mauro Ramos de Oliveira,Mauro Ramos,0,"Zagueiro de uma elegância raríssima com a bola nos pés, que jogava sempre de cabeça erguida.",0,Alto,Destro,1930
-85,Alfredo Ramos de Oliveira,Alfredo Ramos,0,Lateral-esquerdo do São Paulo apelidado de 'Polvo' pela facilidade monumental que tinha em desarmar adversários.,0,Médio,Canhoto,1924
-86,Paulinho de Almeida,Paulinho,0,Lateral-direito de muita entrega e vigor físico que representava a raça do Vasco da Gama.,0,Médio,Destro,1932
-87,Waldir Pereira,Didi,0,O genial inventor do chute de 'Folha Seca' e o grande cérebro pensante do meio-campo brasileiro.,0,Médio,Ambidestro,1928
-88,José Mendonça dos Santos,Dequinha,0,Volante clássico e refinado que se tornou o capitão e a grande referência do Flamengo nos anos 50.,0,Médio,Destro,1928
-89,José Cândido Sotto Maior,Brandãozinho,0,"Meio-campista incansável e marcador implacável da Portuguesa, conhecido pelo apelido de 'Brandãozinho'.",0,Médio,Destro,1925
-90,Júlio Botelho,Julinho Botelho,0,Ponta-direita genial que marcou um dos gols mais bonitos da história da Seleção contra a Checoslováquia em 1954.,0,Baixo,Destro,1929
-91,Oswaldo da Silva,Baltazar,0,"Atacante do Corinthians conhecido como 'Cabecinha de Ouro', famoso por admitir que fazia mais gols de cabeça do que com os pés.",0,Médio,Destro,1926
-92,Humberto Tozzi,Humberto Tozzi,0,Atacante goleador do Palmeiras que acabou expulso na violenta partida conhecida como 'Batalha de Berna'.,0,Médio,Destro,1934
-93,Mauro Raphael,Maurinho,0,"Ponta-direita veloz e muito incisivo do São Paulo, peça fundamental do ataque tricolor.",0,Médio,Canhoto,1933
-94,José Lázaro Robles,Pinga,0,"Meia-atacante canhoto e extremamente artilheiro do Vasco, conhecido pelo apelido de 'Pinga'.",0,Médio,Canhoto,1924
-95,Aluísio Francisco da Luz,Índio,0,"Atacante raçudo do Flamengo conhecido como 'Índio', autor do gol salvador no empate contra a Iugoslávia.",0,Médio,Destro,1931
-96,Rubens Josué da Costa,Rubens,0,"Meia-atacante de habilidade rara e dribles desconcertantes, apelidado de 'Doutor do Balbúrdia'.",0,Médio,Destro,1928
-97,Francisco Rodrigues,Rodrigues,0,"Ponta-esquerda de chute potentíssimo, foi titular absoluto em Copas pelo Palmeiras.",0,Médio,Canhoto,1925
-98,Gylmar dos Santos Neves,Gilmar,0,"Goleiro titular elegante e seguro do primeiro título mundial, transmitia uma calma absoluta para a defesa.",0,Médio,Destro,1930
-99,Hilderaldo Luiz Bellini,Bellini,0,"Zagueiro capitão do primeiro título mundial, imortalizou o gesto de levantar a taça da Copa do Mundo com as duas mãos sobre a cabeça.",0,Alto,Destro,1930
-100,Orlando Peçanha de Carvalho,Orlando,0,"Zagueiro central de desarmes limpos e precisos, fez uma dupla de área perfeita e intransponível com Bellini.",0,Médio,Destro,1935
-101,Valdemar Rodrigues Martins,Oreco,0,"Defensor polivalente do Corinthians conhecido como 'Oreco', garantia de segurança e raça na reserva.",0,Médio,Destro,1936
-102,Zózimo Alves Calazans,Zózimo,0,"Zagueiro técnico e muito calmo do Bangu, viajou como peça de reposição de luxo na Suécia.",0,Médio,Destro,1932
-103,Dino Sani,Dino Sani,0,"Volante clássico de passes milimétricos do São Paulo, começou a Copa de 58 como titular antes de ceder lugar a Zito.",1,Baixo,Destro,1932
-104,Moacir Claudino Pinto,Moacir,0,Jovem meia-atacante promissor do Flamengo que viajou para ganhar experiência no grupo campeão.,1,Médio,Destro,1936
-105,Zito,Zito,0,"O volante 'gerente' do meio-campo, assumiu a titularidade durante a Copa de 58 e dava ordens até em Pelé e Garrincha.",0,Médio,Destro,1932
-106,Mário Jorge Lobo Zagallo,Zagallo,0,"Ponta-esquerda tático moderno que recuava para ajudar o meio-campo, fundamental para o equilíbrio do time campeão.",0,Médio,Canhoto,1931
-107,Edson Arantes do Nascimento,Pelé,0,"O 'Rei do Futebol' que assombrou o mundo com apenas 17 anos em 1958, chorando no ombro de Bellini após o título.",0,Baixo,Destro,1940
-108,Manuel Francisco dos Santos,Garrincha,0,"O 'Anjo das Pernas Tortas', destroçou as defesas europeias com seus dribles desconcertantes na ponta-direita.",0,Médio,Destro,1933
-109,José João Altafini,Mazzola,0,"Conhecido no Brasil como 'Mazzola', começou a Copa de 58 como titular e marcou dois gols antes de dar vaga ao Pelé.",1,Médio,Destro,1938
-110,Vavá,Vavá,0,"O 'Peito de Aço', atacante de pura raça e trombadas que marcou dois gols idênticos na final da Copa de 58 contra a Suécia.",0,Médio,Destro,1934
-111,Joel Antônio Martins,Joel,0,"Ponta-clássico e veloz do Flamengo, foi o titular do ataque brasileiro nos primeiros jogos da Copa de 58.",0,Médio,Canhoto,1931
-112,Dida,Dida,0,"Goleiro titular da Seleção por mais de uma década, foi peça-chave no pentacampeonato de 2002 e um dos melhores goleiros do mundo no auge da carreira.",1,Alto,Destro,1973
-113,Pepe,Pepe,0,"O 'Canhão da Vila', ponta-esquerda dono de um dos chutes mais potentes da história do futebol, reserva de Zagallo em 58.",1,Baixo,Canhoto,1935
-114,Castilho,Castilho,0,Defendeu o Brasil na Copa de 1962.,0,Médio,Destro,1927
-115,Jair Marinho de Oliveira,Jair Marinho,0,"Lateral-direito reserva de luxo, aguardou sua chance na campanha do Bi no Chile.",0,Médio,Destro,1936
-116,Altair Gomes de Figueiredo,Altair,0,"Defensor extremamente técnico e leal do Fluminense, reserva imediato na zaga em 62.",0,Médio,Canhoto,1938
-117,Jurandir de Freitas,Jurandir,0,"Zagueiro central de muita força física do São Paulo, peça de reposição no Chile.",0,Médio,Destro,1940
-118,Mengálvio Figueiró,Mengálvio,0,"Meio-campista clássico e cadenciador do Santos, reserva imediato no mundial de 62.",1,Médio,Destro,1939
-119,Amarildo Tavares da Silveira,Amarildo,0,"O 'Possesso', que teve a missão impossível de substituir o lesionado Pelé em 1962 e acabou virando o grande herói do Bicampeonato.",1,Médio,Destro,1940
-120,Coutinho,Coutinho,0,"Parceiro genial de Pelé no Santos, viajou como o camisa 9 titular, mas uma lesão o tirou dos gramados dando vaga para Vavá.",0,Médio,Destro,1943
-121,Jair da Costa,Jair da Costa,0,"Ponta-direita veloz da Portuguesa, viajou como reserva imediato do genial Garrincha.",1,Baixo,Destro,1940
-122,Manga,Manga,0,"Goleiro de defesas acrobáticas e históricas, jogou a partida da eliminação contra a Seleção de Portugal em 66.",1,Alto,Destro,1937
-123,Brito,Brito,0,"Zagueiro de força física impressionante e estilo xerife, começou sua trajetória em Copas na Inglaterra.",1,Alto,Destro,1939
-124,Fidélis,Fidélis,0,"Lateral-direito vigoroso do Bangu, ganhou a vaga de titular durante o mundial de 66.",0,Médio,Destro,1944
-125,Rildo da Costa Menezes,Rildo,0,Defendeu o Brasil na Copa de 1966.,0,Médio,Canhoto,1943
-126,Gérson de Oliveira Nunes,Gérson,0,"O 'Canhotinha de Ouro', um dos maiores lançadores da história do futebol, fez sua estreia discreta na trágica Copa de 66.",1,Médio,Canhoto,1941
-127,Denílson Custódio Machado,Denílson,0,"Volante de forte marcação e raça do Fluminense, titular no meio-campo em 1966.",0,Médio,Destro,1943
-128,Lima,Lima,0,"O curinga do Santos, jogador polivalente que atuou como lateral-direito na Copa de 66.",1,Médio,Destro,1942
-129,Jairzinho,Jairzinho,0,Defendeu o Brasil na Copa de 1966.,1,Médio,Destro,1944
-130,Alcindo Martha de Freitas,Alcindo,0,"Atacante de muita raça do Grêmio, ganhou a vaga de titular na frente ao lado de Pelé na estreia.",0,Médio,Destro,1945
-131,Silva Batuta,Silva Batuta,0,"Atacante folclórico e goleador do Flamengo, usou a camisa 10 do Brasil no jogo contra a Hungria na ausência de Pelé.",0,Médio,Destro,1940
-132,Edu,Edu,0,"Ponta-esquerda do Santos que viajou para a Inglaterra com apenas 16 anos, sendo um dos mais jovens da história das Copas.",1,Baixo,Canhoto,1949
-133,Paraná,Paraná,0,"Ponta-esquerda de dribles rápidos do São Paulo, atuou na partida decisiva contra Portugal.",1,Médio,Canhoto,1942
-134,Tostão,Tostão,0,Defendeu o Brasil na Copa de 1966.,1,Baixo,Destro,1947
-135,Rinaldo Amorim,Rinaldo,0,"Ponta-esquerda habilidoso do Palmeiras, fez parte do contestado ataque brasileiro na Inglaterra.",0,Médio,Canhoto,1942
-136,Félix Miéli Venerando,Félix,0,"Goleiro titular do Tri em 1970, apelidado de 'Papel' devido à sua magreza e elasticidade nas pontes espetaculares.",0,Médio,Destro,1937
-137,Ado,Ado,0,"Goleiro reserva de excelente envergadura, brilhava no Corinthians na época do Tri.",1,Médio,Destro,1946
-138,Leão,Leão,0,"Jovem goleiro promissor do Palmeiras, viajou como terceiro goleiro em 70 dando início a uma longa história em Copas.",1,Alto,Destro,1949
-139,Carlos Alberto Torres,Carlos Alberto,0,"O 'Capita', lateral-direito eterno que marcou o gol mais plástico da história das Copas na final contra a Itália.",0,Médio,Destro,1944
-140,Piazza,Piazza,0,"Volante de origem no Cruzeiro, aceitou o sacrifício tático de jogar improvisado como zagueiro central para o time ficar perfeito.",1,Baixo,Destro,1943
-141,Everaldo,Everaldo,0,"Lateral-esquerdo do Grêmio, dono de uma marcação implacável que garantiu o equilíbrio defensivo do time do Tri.",0,Médio,Canhoto,1944
-142,Marco Antônio,Marco Antônio,0,"Lateral-esquerdo de muita técnica e cruzamentos perfeitos, reserva imediato de Everaldo em 70.",1,Médio,Canhoto,1951
-143,Baldocchi,Baldocchi,0,"Zagueiro central seguro do Palmeiras, fez parte do grupo tricampeão na reserva.",1,Médio,Destro,1946
-144,Fontana,Fontana,0,"Zagueiro de estilo viril e xerife da zaga do Cruzeiro, atuou na partida contra a Romênia em 70.",0,Médio,Destro,1940
-145,Joel Camargo,Joel Camargo,0,"Zagueiro técnico e elegante do Santos, multicampeão na era Pelé e reserva no México.",0,Médio,Destro,1946
-146,Ze Maria,Zé Maria,0,Defendeu o Brasil na Copa de 1970.,1,Médio,Destro,1949
-147,Clodoaldo,Clodoaldo,0,O jovem volante que deu os dribles desconcertantes em quatro italianos na jogada ensaiada do gol histórico do Carlos Alberto.,1,Baixo,Destro,1949
-148,Rivellino,Rivellino,0,"O dono da 'Patada Atômica' e do drible elástico, assombrou o mundo com seus chutes de falta na Copa de 70.",1,Médio,Canhoto,1946
-149,Paulo Cézar Caju,Paulo Cézar Caju,0,"O curinga do ataque de 70, entrava no segundo tempo para prender a bola com sua habilidade espetacular.",1,Médio,Ambidestro,1949
-150,Roberto Miranda,Roberto,0,"Atacante de muita força física do Botafogo, apelidado de 'Vendaval', reserva de luxo de Tostão.",1,Baixo,Destro,1943
-151,Dario,Dadá Maravilha,0,Defendeu o Brasil na Copa de 1970.,1,Médio,Destro,1946
-152,Wendell Lucena Ramalho,Wendell,0,"Goleiro titular do Botafogo, assumiu a meta da Seleção Brasileira durante a Copa de 1974.",0,Médio,Destro,1947
-153,Renato Cunha Valle,Renato,0,"Goleiro de reflexos rápidos do Flamengo, viajou como o terceiro goleiro da delegação.",1,Médio,Destro,1944
-154,Marinho Peres,Marinho Peres,0,"Zagueiro clássico e elegante do Santos, assumiu a braçadeira de capitão e liderou a defesa em 74.",0,Alto,Destro,1947
-155,Luís Edmundo Pereira,Luís Pereira,0,Defendeu o Brasil na Copa de 1974.,1,Alto,Destro,1949
-156,Nelinho,Nelinho,0,Lateral-direito dono de um dos chutes de trivela mais potentes e plásticos da história do futebol mundial.,1,Baixo,Destro,1950
-157,Zé Maria,Zé Maria,0,Defendeu o Brasil na Copa de 1974.,1,Médio,Destro,1949
-158,Marinho Chagas,Marinho Chagas,0,"O 'Bruxa', lateral-esquerdo revolucionário e loiro que atacava muito mais do que defendia, brilhando na Copa de 74.",0,Médio,Canhoto,1952
-159,Alfredo Mostarda,Alfredo,0,"Zagueiro firme e vigoroso do Palmeiras, entrou no time na disputa de terceiro lugar contra a Polônia.",1,Médio,Destro,1946
-160,Carbone,Carbone,0,"Volante marcador e incansável do Internacional, dava o combate físico pesado no meio-campo.",0,Médio,Destro,1946
-161,Ademir da Guia,Ademir da Guia,0,"O 'Divino', lenda injustiçada do Palmeiras que, apesar de sua genialidade absurda, jogou apenas uma partida na Copa de 74.",1,Alto,Destro,1942
-162,Paulo Cézar Carpegiani,Carpegiani,0,"Meio-campista dinâmico e de excelente passe, foi um dos motores do time na Alemanha.",1,Médio,Destro,1949
-163,Leivinha,Leivinha,0,"Meia-atacante habilidoso e excelente cabeceador, peça importante do Palmeiras e da Seleção.",1,Médio,Destro,1949
-164,Valdomiro Vaz Franco,Valdomiro,0,"Ponta-direita veloz e raçudo do Internacional, marcou um gol crucial contra o Zaire.",1,Médio,Destro,1946
-165,Dirceu,Dirceu,0,"O 'Formiguinha', meio-campista de fôlego invejável e chute fortíssimo de fora da área que disputou três Copas.",0,Médio,Canhoto,1952
-166,Mirandinha,Mirandinha,0,"Atacante veloz do São Paulo, foi o responsável por tentar substituir o peso do ataque brasileiro em 74.",1,Médio,Destro,1952
-167,César Maluco,César Maluco,0,"Centroavante folclórico e goleador do Palmeiras, viajou como opção de área na reserva.",1,Médio,Destro,1945
-168,Carlos,Carlos,0,"Goleiro de excelente colocação do Ponte Preta, fez sua estreia em Copas na reserva em 78.",1,Médio,Destro,1956
-169,Waldir Peres,Waldir Peres,0,"Goleiro elástico e pegador de pênaltis do São Paulo, viajou como reserva imediato no mundial.",0,Médio,Destro,1951
-170,Oscar,Oscar,0,"Zagueiro central imponente do Ponte Preta, formou uma das duplas de zaga mais seguras da história da Seleção.",1,Médio,Destro,1954
-171,Amaral,Amaral,0,Zagueiro do Corinthians que salvou um gol em cima da linha duas vezes seguidas contra a Espanha em 78.,0,Alto,Destro,1954
-172,Edinho,Edinho,0,Zagueiro técnico do Fluminense que sabia sair jogando e tinha um espírito de liderança nato.,1,Médio,Destro,1955
-173,Abel Braga,Abel,0,"Zagueiro vigoroso do Vasco da Gama, viajou como peça de reposição física na Argentina.",1,Alto,Destro,1952
-174,Toninho Baiano,Toninho,0,"Lateral-direito de muita força no apoio ao ataque, titular absoluto da equipe na Copa de 78.",0,Baixo,Destro,1948
-175,Rodrigues Neto,Rodrigues Neto,0,"Lateral-esquerdo experiente do Botafogo, garantia de segurança defensiva no setor.",0,Médio,Canhoto,1949
-176,Chicão,Chicão,0,"Volante de estilo xerife e extrema virilidade do São Paulo, escalado para dar o combate físico no clássico violento contra a Argentina.",0,Médio,Destro,1949
-177,Batista,Batista,0,"Meio-campista clássico de excelente passe do Internacional, um dos pilares táticos do time em 78.",1,Baixo,Destro,1955
-178,Toninho Cerezo,Toninho Cerezo,0,"Volante elegante de passadas longas e fôlego infinito, começou ali sua dinastia no meio-campo do Brasil.",1,Médio,Destro,1955
-179,Zico,Zico,0,"O 'Galinho de Quintino', estreou em Copas em 78 e teve um gol de cabeça legítimo anulado pelo árbitro no último segundo contra a Suécia.",1,Médio,Destro,1953
-180,Jorge Mendonça,Jorge Mendonça,0,Meia-atacante do Palmeiras que ganhou a vaga de titular durante a Copa devido à sua incrível visão de jogo.,0,Médio,Destro,1954
-181,Reinaldo,Reinaldo,0,"O genial e contestado centroavante do Atlético Mineiro, famoso por comemorar seus gols com o punho cerrado contra a ditadura militar.",1,Baixo,Destro,1957
-182,Roberto Dinamite,Roberto Dinamite,0,"Maior ídolo da história do Vasco, entrou no time durante a Copa de 78 e marcou gols decisivos que salvaram o Brasil.",0,Alto,Destro,1954
-183,Gil,Gil,0,"Ponta-direita veloz e de dribles rápidos do Botafogo, conhecido como 'Furacão' pela ponta.",1,Médio,Destro,1950
-184,Zé Sérgio,Zé Sérgio,0,"Ponta-esquerda extremamente habilidoso do São Paulo, o terror dos laterais adversários no drible curto.",1,Baixo,Canhoto,1957
-185,Paulo Sérgio,Paulo Sérgio,0,"Goleiro ágil e de ótimos reflexos do Botafogo, viajou como reserva na Espanha.",1,Médio,Destro,1954
-186,Luizinho,Luizinho,0,"Zagueiro de uma técnica e elegância absurdas do Atlético Mineiro, jogava sem dar um único pontapé nos adversários.",1,Médio,Destro,1958
-187,Juninho Fonseca,Juninho,0,"Zagueiro firme da Ponte Preta, fez parte do elenco lendário de 82 na reserva.",1,Médio,Destro,1958
-188,Leandro,Leandro,0,"Um dos maiores laterais-direitos da história do futebol, tinha a técnica de um camisa 10 jogando na ala do Flamengo.",1,Médio,Destro,1959
-189,Júnior,Júnior,0,"O 'Capacete', lateral-esquerdo genial do Flamengo que parecia um meio-campista e marcou um gol lindo contra a Argentina em 82.",1,Baixo,Ambidestro,1954
-190,Edevaldo,Edevaldo,0,"Lateral-direito veloz do Fluminense, viajou como o reserva imediato do titular Leandro.",1,Alto,Destro,1958
-191,Pedrinho,Pedrinho,0,"Lateral-esquerdo de forte chute do Vasco da Gama, peça importante de composição do elenco.",1,Médio,Canhoto,1957
-192,Falcão,Falcão,0,"O 'Rei de Roma', meio-campista de elegância máxima que marcou o gol dramático contra a Itália e comemorou correndo com as veias do pescoço saltadas.",1,Médio,Destro,1953
-193,Sócrates,Sócrates,0,"O 'Doutor', meio-campista genial que jogava de cabeça erguida, calcanhares mágicos e liderança política inigualável.",0,Médio,Destro,1954
-194,Paulo Isidoro,Paulo Isidoro,0,"O curinga favorito do técnico Telê Santana, entrava no segundo tempo para dar velocidade e fôlego ao meio-campo.",1,Médio,Destro,1953
-195,Renato,Renato,0,"Meio-campista habilidoso do São Paulo, viajou como opção tática no banco de reservas.",1,Médio,Destro,1957
-196,Serginho Chulapa,Serginho Chulapa,0,"Centroavante grandalhão, trombador e brigador do São Paulo, assumiu a camisa 9 após o corte de Careca.",1,Médio,Destro,1953
-197,Éder,Éder,0,"O 'Aleijado' (por só usar a perna esquerda), ponta dono de um chute de força descomunal que encobriu o goleiro da Escócia em 82.",1,Médio,Canhoto,1957
-198,Paulo Victor,Paulo Victor,0,"Goleiro de ótimos reflexos do Fluminense, viajou como o segundo goleiro da delegação brasileira.",1,Médio,Destro,1957
-199,Júlio César,Júlio César,0,"Zagueiro central clássico do Guarani, jogou tanta bola no México que foi eleito o melhor zagueiro da Copa de 86.",1,Alto,Destro,1963
-200,Mauro Galvão,Mauro Galvão,0,"Zagueiro de técnica refinada e antecipação perfeita do Internacional, peça de segurança no banco.",1,Médio,Destro,1961
-201,Josimar,Josimar,0,Lateral-direito do Botafogo que entrou de última hora e marcou dois dos gols mais bonitos e folclóricos da história do Brasil em Copas.,1,Médio,Destro,1961
-202,Branco,Branco,0,Lateral-esquerdo dono de um chute fortíssimo que viria a marcar época na posição pela Seleção.,1,Alto,Canhoto,1964
-203,Djalma Baia,Djalma Santos,0,"Lateral-direito de muita velocidade e força do Santos, conhecido no futebol como 'Djalma Santos' moderno.",1,Médio,Destro,1962
-204,Junior,Júnior,0,Defendeu o Brasil na Copa de 1986.,1,Baixo,Destro,1954
-205,Elzo,Elzo,0,"Volante incansável do Atlético Mineiro, correu por todo o meio-campo e jogou todos os minutos do Brasil na Copa de 86.",1,Médio,Destro,1961
-206,Alemão,Alemão,0,"Meio-campista moderno de muita força física e arranque do Botafogo, um dos motores do time no México.",1,Alto,Destro,1961
-207,Silas,Silas,0,"Jovem meia extremamente habilidoso do São Paulo, fazia parte dos famosos 'Menudos do Morumbi'.",1,Médio,Destro,1965
-208,Valdo,Valdo,0,"Meia-armador de passes precisos e refinados do Grêmio, começou ali sua trajetória na Seleção.",1,Médio,Ambidestro,1964
-209,Careca,Careca,0,"O grande camisa 9 do São Paulo espantou o azar de 82 e destruiu no México, marcando 5 gols e sendo o vice-artilheiro da Copa.",1,Médio,Destro,1960
-210,Müller,Müller,0,"Atacante veloz e muito inteligente do São Paulo, infernizava as defesas puxando contra-ataques.",1,Médio,Destro,1966
-211,Casagrande,Casagrande,0,"Atacante de muita presença de área e contestação política, fez dupla de ataque com Careca no início do torneio.",1,Médio,Destro,1963
-212,Edivaldo,Edivaldo,0,"Ponta-esquerda habilidoso do Atlético Mineiro, entrou como opção de drible rápido nas partidas.",0,Baixo,Canhoto,1962
-213,Taffarel,Taffarel,0,"O goleiro que viria a se tornar uma lenda mística, fez sua estreia em Copas do Mundo na Itália em 1990.",1,Alto,Destro,1966
-214,Acácio,Acácio,0,"Goleiro seguro e de grande estatura do Vasco da Gama, viajou como o reserva imediato de Taffarel.",1,Alto,Destro,1959
-215,Zé Carlos,Zé Carlos,0,"Goleiro de muita agilidade do Flamengo, fechou o trio de arqueiros convocados para a Itália.",0,Baixo,Destro,1962
-216,Ricardo Gomes,Ricardo Gomes,0,"Zagueiro técnico e capitão da equipe na Itália, liderava a contestada linha defensiva de 90.",1,Médio,Destro,1964
-217,Ricardo Rocha,Ricardo Rocha,0,"O 'Xerife', zagueiro de muita raça e antecipação do São Paulo, conhecido por jogar com o coração na ponta da chuteira.",1,Alto,Destro,1962
-218,Mozer,Mozer,0,"Zagueiro extremamente viril e forte na bola aérea do Benfica, acabou expulso logo na estreia contra a Suécia.",1,Alto,Destro,1960
-219,Aldair,Aldair,0,"Zagueiro clássico de técnica impecável e calma absurda, fez sua estreia em Copas na reserva de 90.",1,Baixo,Destro,1965
-220,Jorginho,Jorginho,0,"Lateral-direito de cruzamentos milimétricos e apoio impecável, assumiu a titularidade absoluta da posição.",1,Alto,Destro,1964
-221,Mazinho,Mazinho,0,"Jogador polivalente do Vasco que atuava tanto na lateral quanto no meio-campo, viajou como peça tática crucial.",1,Médio,Ambidestro,1966
-222,Dunga,Dunga,0,"Volante de liderança implacável e estilo agressivo, virou o símbolo máximo daquela contestada eliminação na Itália.",1,Médio,Destro,1963
-223,Bismarck,Bismarck,0,"Jovem meia promissor de muita habilidade do Vasco da Gama, viajou como opção de armação.",1,Médio,Destro,1969
-224,Tita,Tita,0,"Meio-campista experiente do Vasco de técnica apurada, viajou no grupo mas não chegou a entrar em campo.",1,Médio,Destro,1958
-225,Bebeto,Bebeto,0,O jovem e genial atacante do Vasco fez sua estreia discreta em Copas do Mundo na reserva em 90.,1,Médio,Destro,1964
-226,Renato Gaúcho,Renato Gaúcho,0,"Atacante folclórico, veloz e de muita personalidade do Flamengo, entrou no segundo tempo contra a Argentina.",1,Médio,Destro,1962
-227,Zetti,Zetti,0,"Goleiro reserva de extrema segurança e ídolo gigante do São Paulo, era a sombra perfeita para o titular Taffarel.",1,Alto,Destro,1965
-228,Gilmar Rinaldi,Gilmar Rinaldi,0,"Goleiro veterano e campeão mundial na reserva em 94, trazia uma liderança de vestiário fundamental para o grupo.",1,Alto,Destro,1959
-229,Marcio Santos,Márcio Santos,0,"Zagueiro clássico e seguro, jogou tanta bola nos Estados Unidos que foi eleito para a seleção ideal da Copa de 94.",1,Alto,Destro,1969
-230,Ronaldão,Ronaldão,0,"Zagueiro de muita força física convocado de última hora para o lugar do lesionado Ricardo Gomes, trazendo vigor à reserva.",1,Alto,Destro,1965
-231,Cafu,Cafu,0,Jovem lateral do São Paulo que entrou no primeiro tempo da grande final contra a Itália e deu conta do recado na ala direita.,1,Médio,Destro,1970
-232,Leonardo,Leonardo,0,"Lateral-esquerdo técnico que acabou marcado por dar uma cotovelada dramática no jogador dos EUA, sendo expulso e suspenso da Copa.",1,Médio,Canhoto,1969
-233,Mauro Silva,Mauro Silva,0,"O verdadeiro cão de guarda do meio-campo, dava uma proteção absurda para a defesa e não deixava ninguém passar.",1,Médio,Destro,1968
-234,Zinho,Zinho,0,"O 'Mentalista' do time, cumpria uma função tática defensiva tão rígida pelo lado esquerdo que acabou apelidado injustamente de 'enceradeira'.",1,Baixo,Canhoto,1967
-235,Raí,Raí,0,"O camisa 10 e capitão no início da Copa, marcou um gol de pênalti na estreia, mas acabou perdendo a titularidade ao longo do torneio.",1,Alto,Destro,1965
-236,Viola,Viola,0,Atacante folclórico que entrou na prorrogação da final contra a Itália e infernizou a defesa italiana com seus dribles ousados.,1,Médio,Destro,1969
-237,Ronaldo,Ronaldo,0,"O 'Ronaldinho' na época, viajou com apenas 17 anos para os EUA para ganhar experiência no grupo do Tetra.",1,Médio,Destro,1976
-238,Romário,Romário,0,"O 'Baixinho', protagonista absoluto do Tetra que chamou a responsabilidade, fez gols em quase todos os jogos e carregou o Brasil ao título.",1,Baixo,Destro,1966
-239,Carlos Germano,Carlos Germano,0,"Goleiro histórico do Vasco da Gama, viajou como o reserva imediato e de muita confiança de Taffarel na França.",1,Alto,Destro,1970
-240,Gonçalves,Gonçalves,0,"Zagueiro técnico e de muita liderança do Botafogo, viajou como peça de reposição para a zaga central.",1,Alto,Destro,1966
-241,André Cruz,André Cruz,0,"Defensor dono de um chute potente em cobranças de falta, era o reserva de luxo do Milan na delegação brasileira.",1,Alto,Canhoto,1968
-242,Roberto Carlos,Roberto Carlos,0,Lateral-esquerdo dono de coxas monumentais e um chute de força absurda que desafiava as leis da física.,1,Baixo,Canhoto,1973
-243,César Sampaio,César Sampaio,0,"Volante de excelente chegada à frente, marcou o primeiro gol de toda a Copa de 1998 na partida de abertura contra a Escócia.",1,Médio,Destro,1968
-244,Zé Roberto,Zé Roberto,0,"Meia-atacante de fôlego invejável e polivalência, atuava tanto na lateral esquerda quanto no meio-campo.",1,Baixo,Canhoto,1974
-245,Doriva,Doriva,0,"Volante de forte marcação e disciplina tática implacável do Porto, opção de proteção no banco.",1,Médio,Destro,1972
-246,Giovanni,Giovanni,0,"O 'Messias', meia habilidoso e ídolo do Barcelona, começou a Copa de 98 como titular na partida de estreia.",1,Médio,Destro,1972
-247,Rivaldo,Rivaldo,0,"O gênio discreto do meio-campo, jogou uma Copa espetacular em 98 marcando três gols decisivos na campanha do vice-campeonato.",1,Alto,Canhoto,1972
-248,Denílson,Denílson,0,"O rei do drible curto, entrava no segundo tempo para desesperar os laterais adversários e prender a bola na ponta esquerda.",1,Baixo,Canhoto,1977
-249,Edmundo,Edmundo,0,"O 'Animal', atacante de genialidade e temperamento explosivo do Fiorentina, entrou no segundo tempo da grande final contra a França.",1,Médio,Destro,1971
-250,Marcos,Marcos,0,"O 'São Marcos' do Palmeiras, goleiro titular absoluto do Penta que fez defesas milagrosas em toda a Copa, fechando o gol na final contra a Alemanha.",1,Alto,Destro,1973
-251,Rogério Ceni,Rogério Ceni,0,"Goleiro artilheiro e líder histórico do São Paulo, viajou como o reserva imediato de Marcos no Japão e na Coreia.",1,Alto,Destro,1973
-252,Lúcio,Lúcio,0,"Zagueiro de arrancadas ofensivas imponentes conhecidas como 'peripécias', xerife absoluto da zaga do Penta.",1,Alto,Destro,1978
-253,Roque Júnior,Roque Júnior,0,"Zagueiro de total confiança do técnico Felipão, formou o trio de defensores campeões do mundo em 2002.",1,Alto,Destro,1976
-254,Edmílson,Edmílson,0,Zagueiro/volante que jogava de cabeça erguida e marcou um gol antológico de voleio contra a Costa Rica em 2002.,1,Alto,Destro,1976
-255,Anderson Polga,Anderson Polga,0,"Zagueiro técnico do Grêmio, ganhou oportunidades na fase de grupos da campanha do Penta.",1,Médio,Destro,1979
-256,Belletti,Belletti,0,Lateral-direito reserva que entrou na semifinal dramática contra a Turquia e deu o passe para o gol histórico de bico do Ronaldo.,1,Médio,Destro,1976
-257,Gilberto Silva,Gilberto Silva,0,"O 'Muro Invisível', volante que assumiu a titularidade de última hora após a lesão de Emerson e roubou todas as bolas da Copa.",1,Médio,Destro,1976
-258,Kléber,Kléberson,0,"Volante de muita raça e forte marcação do Corinthians, viajou como peça de reposição no meio-campo.",1,Médio,Destro,1980
-259,Vampeta,Vampeta,0,"Volante folclórico e de muita qualidade do Corinthians, famoso por dar cambalhotas na rampa do Palácio do Planalto após o título.",1,Médio,Destro,1974
-260,Juninho Paulista,Juninho Paulista,0,"Meia-armador de muita velocidade no drible curto, começou a Copa de 2002 como o titular da armação.",1,Baixo,Destro,1973
-261,Kaká,Kaká,0,"Jovem promessa do São Paulo de arrancadas velozes, jogou apenas alguns minutos contra a Costa Rica e quase entrou na finalíssima.",1,Alto,Destro,1982
-262,Ricardinho,Ricardinho,0,"Meia de passes cirúrgicos do Corinthians, convocado às pressas para o lugar do cortado Emerson.",1,Médio,Destro,1976
-263,Ronaldinho Gaúcho,Ronaldinho Gaúcho,0,"O 'Bruxo', destruiu a Inglaterra nas quartas de final com uma assistência mágica e um gol de falta antológico encobrindo o goleiro Seaman.",1,Médio,Destro,1980
-264,Denilson,Denilson,0,Atacante que protagonizou a cena icônica de 2002 ao ser perseguido desesperadamente por quatro jogadores da Turquia ao mesmo tempo.,1,Baixo,Destro,1977
-265,Edílson,Edílson,0,"O 'Capetinha', atacante de muita irreverência e dribles rápidos, foi titular na semifinal contra a Turquia na ausência de Ronaldinho.",1,Baixo,Destro,1970
-266,Luizão,Luizão,0,"Centroavante de muita entrega e malandragem na área, cavou o pênalti crucial contra a Turquia na estreia do Penta.",1,Médio,Destro,1975
-267,Gomes,Gomes,0,"Goleiro de incrível envergadura e elasticidade do PSV, viajou para a Alemanha como o terceiro goleiro do elenco.",1,Alto,Destro,1981
-268,Juan,Juan,0,"Zagueiro de técnica refinada, desarmes limpos e muita categoria, formou uma dupla de zaga memorável com Lúcio.",1,Alto,Destro,1979
-269,Cris,Cris,0,"Zagueiro de muita força física e estilo xerife, brilhava intensamente no Lyon da França na época.",1,Alto,Destro,1977
-270,Luisão,Luisão,0,"Zagueiro gigante e de excelente cabeceio do Benfica, viajou como peça de reposição para a zaga central.",1,Alto,Destro,1981
-271,Cicinho,Cicinho,0,"Lateral-direito de muita ala e cruzamentos precisos, reserva imediato do experiente capitão Cafu.",1,Baixo,Destro,1980
-272,Gilberto,Gilberto,0,"Lateral-esquerdo de muita consistência defensiva do Hertha Berlin, marcou um gol na vitória por 4x1 contra o Japão.",1,Baixo,Canhoto,1976
-273,Emerson,Emerson,0,"Volante de extrema liderança e espírito de capitão que infelizmente havia sido cortado em 2002, mas conseguiu jogar em 2006.",1,Médio,Destro,1976
-274,Mineiro,Mineiro,0,"Volante de muita raça e dinâmica do São Paulo, convocado de última hora para o lugar do lesionado Edmílson.",1,Médio,Destro,1975
-275,Juninho Pernambucano,Juninho Pernambucano,0,"O maior batedor de faltas da história do futebol mundial, marcou um gol de fora da área contra o Japão em 2006.",1,Médio,Destro,1975
-276,Adriano,Adriano Imperador,0,"O 'Imperador', atacante dono de uma potência física devastadora e um chute de canhota mortal, marcou dois gols na Alemanha.",1,Alto,Canhoto,1982
-277,Robinho,Robinho,0,"O 'Rei do Pedre', entrava no segundo tempo para quebrar as linhas adversárias com suas pedaladas e velocidade.",1,Baixo,Destro,1984
-278,Fred,Fred,0,Jovem atacante do Lyon que entrou no finalzinho do jogo contra a Austrália e marcou um gol com apenas dois minutos em campo.,1,Alto,Destro,1983
-279,Doni,Doni,0,"Goleiro de grande estatura do Roma, viajou para a África do Sul como o reserva imediato de Júlio César.",1,Alto,Destro,1979
-280,Thiago Silva,Thiago Silva,0,"O 'Monstro', jovem zagueiro do Milan de técnica absurda, fez sua estreia em Copas do Mundo na reserva em 2010.",1,Alto,Destro,1984
-281,Maicon,Maicon,0,"Lateral-direito de arrancadas avassaladoras e muita força, marcou um gol quase sem ângulo antológico contra a Coreia do Norte.",1,Alto,Destro,1981
-282,Daniel Alves,Daniel Alves,0,"Lateral de extrema habilidade que, devido à concorrência com Maicon, jogou a Copa muitas vezes improvisado no meio-campo.",1,Baixo,Destro,1983
-283,Michel Bastos,Michel Bastos,0,"Meia-atacante de chute potente do Lyon, acabou improvisado como lateral-esquerdo titular durante toda a campanha de 2010.",1,Médio,Canhoto,1983
-284,Felipe Melo,Felipe Melo,0,"Volante de marcação agressiva e temperamento explosivo, deu uma assistência genial para Robinho antes de ser expulso contra a Holanda.",1,Alto,Destro,1983
-285,Josué,Josué,0,"Volante de excelente posicionamento e passes curtos, multicampeão pelo São Paulo e Wolfsburg.",1,Baixo,Destro,1979
-286,Ramires,Ramires,0,"O 'Queniano', volante de fôlego inacreditável e arrancadas em velocidade que mudavam o ritmo do meio-campo.",1,Médio,Destro,1987
-287,Elano,Elano,0,"Meio-campista tático e cirúrgico, marcou dois gols nos primeiros jogos antes de sofrer uma lesão grave que desestruturou o time.",1,Médio,Destro,1981
-288,Júlio Baptista,Júlio Baptista,0,"O 'Bestial', meia de muita força física e imposição na área, reserva imediato para o setor de armação.",1,Alto,Destro,1981
-289,Luís Fabiano,Luís Fabiano,0,"O 'Fabuloso', camisa 9 clássico e brigador que quebrou o jejum de gols com uma pintura de chapelada dupla contra a Costa do Marfim.",1,Médio,Destro,1980
-290,Nilmar,Nilmar,0,"Atacante de velocidade pura e dribles rápidos do Villarreal, entrava no segundo tempo para incendiar os contra-ataques.",1,Alto,Destro,1984
-291,Grafite,Grafite,0,"Centroavante de muita força que brilhava no futebol alemão, convocado para ser a opção de impacto na área.",1,Alto,Destro,1979
-292,Jefferson,Jefferson,0,"Goleiro de defesas milagrosas e pegador de pênaltis do Botafogo, viajou como o reserva de luxo em 2014.",1,Alto,Destro,1983
-293,Victor,Victor,0,"O 'Santo' do Atlético Mineiro após o título da Libertadores, integrou o grupo de goleiros na Copa do Brasil.",1,Alto,Destro,1983
-294,David Luiz,David Luiz,0,"Zagueiro que jogava com extrema vibração e emoção aflorada, marcou um gol de falta antológico contra a Colômbia nas quartas.",1,Alto,Destro,1987
-295,Dante,Dante,0,"Zagueiro de muita regularidade no Bayern de Munique, acabou escalado na fogueira da semifinal contra a Alemanha.",1,Alto,Canhoto,1983
-296,Henrique,Henrique,0,"Zagueiro de total confiança do técnico Felipão, viajou como opção de proteção defensiva no banco.",1,Alto,Destro,1986
-297,Marcelo,Marcelo,0,"Lateral-esquerdo de habilidade idêntica a de um meia-armador, dono absoluto da posição no Real Madrid e na Seleção.",1,Baixo,Canhoto,1988
-298,Maxwell,Maxwell,0,"Lateral-esquerdo de carreira ultra vitoriosa na Europa, garantia de experiência e elegância na reserva.",1,Médio,Canhoto,1981
-299,Luiz Gustavo,Luiz Gustavo,0,"O volante 'carrapato' de Felipão, responsável único por dar o combate e morder os meias adversários na proteção da zaga.",1,Médio,Canhoto,1987
-300,Fernandinho,Fernandinho,0,"Meio-campista moderno do Manchester City, ganhou a titularidade durante a Copa devido à sua intensidade tática.",1,Médio,Destro,1985
-301,Paulinho,Paulinho,0,Defendeu o Brasil na Copa de 2014.,1,Médio,Destro,1988
-302,Hernanes,Hernanes,0,"O 'Profeta', meio-campista de excelente chute com as duas pernas e passes longos de muita categoria.",1,Médio,Ambidestro,1985
-303,Willian,Willian,0,"O 'Foguetinho', meia-atacante de muita velocidade conduzindo a bola e recomposição tática impressionante.",1,Médio,Destro,1988
-304,Bernard,Bernard,0,"Atacante franzino apelidado por Felipão de ter 'alegria nas pernas', escolhido para substituir o lesionado Neymar na semifinal.",1,Baixo,Destro,1992
-305,Neymar,Neymar,0,"O grande craque da geração chamou a pressão para si na Copa de 2014, marcando 4 gols antes de sofrer a trágica lesão na vértebra.",1,Médio,Destro,1992
-306,Hulk,Hulk,0,"Atacante dono de uma força física descomunal e um chute de esquerda que parecia um torpedo, um dos pilares da era Felipão.",1,Médio,Canhoto,1986
-307,Jô,Jô,0,"Centroavante de muita estatura e presença de área do Atlético Mineiro, reserva imediato de Fred no mundial.",1,Médio,Destro,1987
-308,Alisson Becker,Alisson,0,"Goleiro de frieza extrema, posicionamento perfeito e reposição de elite, assumiu a titularidade absoluta da meta em 2018.",1,Alto,Destro,1992
-309,Ederson,Ederson,0,"Goleiro do Manchester City revolucionário pelo jogo com os pés e lançamentos milimétricos, viajou na reserva de luxo.",1,Alto,Canhoto,1993
-310,Cássio,Cássio,0,"Ídolo gigante e paredão do Corinthians, convocado por seus milagres históricos para fechar o trio de arqueiros na Rússia.",1,Alto,Destro,1987
-311,Miranda,Miranda,0,"Zagueiro extremamente seguro, silencioso e preciso nos desarmes, foi o grande pilar defensivo de Tite em 2018.",1,Alto,Destro,1984
-312,Marquinhos,Marquinhos,0,"Jovem defensor de elite do PSG conhecido pela velocidade e impulsão absurda, começou ali sua dinastia na zaga.",1,Médio,Destro,1994
-313,Geromel,Geromel,0,"O 'Pedro Geromito', zagueiro venerado pela torcida do Grêmio devido aos seus desarmes perfeitos, integrou o elenco na Rússia.",1,Alto,Destro,1985
-314,Danilo,Danilo,0,"Lateral-direito tático e de muita inteligência posicional, começou a Copa como titular antes de sofrer com lesões.",1,Alto,Destro,1991
-315,Fagner,Fagner,0,"Lateral-direito de forte marcação e intensidade do Corinthians, assumiu a titularidade após a lesão de Danilo na Copa.",1,Baixo,Destro,1989
-316,Filipe Luís,Filipe Luís,0,"Lateral-esquerdo de leitura tática impecável e posicionamento de mestre, reserva imediato de Marcelo.",1,Médio,Canhoto,1985
-317,Casemiro,Casemiro,0,"O verdadeiro tanque do meio-campo, dono de uma força de desarmar impressionante e cuja ausência por suspensão custou a eliminação contra a Bélgica.",1,Alto,Destro,1992
-318,Renato Augusto,Renato Augusto,0,"Meia de inteligência cerebral absurda, entrou contra a Bélgica, marcou um gol lindo de cabeça e quase empatou o jogo no final.",1,Alto,Destro,1988
-319,Philippe Coutinho,Philippe Coutinho,0,"O 'Pequeno Mágico', foi o grande nome do Brasil na Rússia com seus chutes colocados de fora da área e passes geniais.",1,Baixo,Destro,1992
-320,Douglas Costa,Douglas Costa,0,"Ponta de velocidade supersônica e dribles devastadores, entrava no segundo tempo para destruir as defesas cansadas.",1,Baixo,Canhoto,1990
-321,Taison,Taison,0,"Atacante de muita velocidade e condução vertical do Shakhtar Donetsk, homem de total confiança do técnico Tite.",1,Baixo,Destro,1988
-322,Gabriel Jesus,Gabriel Jesus,0,"O jovem camisa 9 de Tite trabalhou taticamente de forma incansável na marcação, mas acabou sofrendo com a falta de gols na Rússia.",1,Médio,Destro,1997
-323,Roberto Firmino,Firmino,0,"Atacante de movimentação inteligente e finta rápida no Liverpool, entrava muito bem nos jogos e marcou contra o México.",1,Médio,Destro,1991
-324,Weverton,Weverton,0,"Goleiro multicampeão e paredão do Palmeiras, viajou como terceiro arqueiro e realizou o sonho de entrar em campo no Catar.",1,Alto,Destro,1987
-325,Éder Militão,Militão,0,"Zagueiro de elite do Real Madrid, jogou a Copa do Catar improvisado como lateral-direito e deu um show de desarmes.",1,Alto,Destro,1998
-326,Bremer,Bremer,0,"Zagueiro de força física brutal e velocidade impressionante da Juventus de Turim, ganhou vaga na lista do Catar.",1,Alto,Destro,1997
-327,Alex Sandro,Alex Sandro,0,"Lateral-esquerdo de muita força física e consistência tática defensiva, titular absoluto do setor em 2022.",1,Médio,Canhoto,1991
-328,Alex Telles,Alex Telles,0,"Lateral-esquerdo de excelente cruzamento e apoios ofensivos, peça de reposição que atuou na fase de grupos.",1,Médio,Canhoto,1992
-329,Fabinho,Fabinho,0,"Volante de passadas longas e desarmes precisos do Liverpool, o reserva imediato de luxo para a cabeça de área.",1,Alto,Destro,1993
-330,Bruno Guimarães,Bruno Guimarães,0,"Meio-campista moderno de passes verticais e muita dinâmica, um dos grandes nomes da nova geração no futebol inglês.",1,Médio,Destro,1997
-331,Lucas Paquetá,Paquetá,0,"Meio-campista de muita criatividade e dancinhas nas comemorações, unia a armação com o recuo para ajudar Casemiro.",1,Médio,Canhoto,1997
-332,Everton Ribeiro,Éverton Ribeiro,0,"Meia de uma genialidade clássica e giros curtos fantásticos, maestro lendário do Flamengo que viajou como opção de cadência.",1,Baixo,Destro,1989
-333,Vinicius Junior,Vini Jr.,0,"O 'Malvadeza', ponta-esquerda campeão europeu pelo Real Madrid que usou seus dribles imparáveis e velocidade para fazer uma grande Copa.",1,Médio,Destro,2000
-334,Rodrygo,Rodrygo,0,"O 'Raio', jovem atacante de inteligência espacial e técnica absurda que atuava em qualquer posição do ataque.",1,Baixo,Destro,2001
-335,Antony,Antony,0,"Ponta de dribles plásticos e giros característicos de futsal, o famoso 'spin', opção de drible na ponta direita.",1,Médio,Canhoto,2000
-336,Raphinha,Raphinha,0,"Ponta-direita de muita intensidade na pressão defensiva e arrancadas velozes pela ala, titular de confiança de Tite.",1,Médio,Canhoto,1996
-337,Gabriel Martinelli,Martinelli,0,"Ponta de velocidade explosiva e dedicação intensa do Arsenal, infernal atacando em direção ao gol na fase de grupos.",1,Médio,Destro,2001
-338,Richarlison,Richarlison,0,"O 'Pombo', camisa 9 do Catar que marcou o gol mais bonito de toda a Copa do Mundo em um voleio plástico espetacular contra a Sérvia.",1,Alto,Destro,1997
-339,Pedro,Pedro,0,"Centroavante clássico de área, o legítimo 'camisa 9' de pivôs geniais e finalizações letais de primeira do Flamengo.",1,Alto,Destro,1997
+id_jogador,nome,apelido,nacionalidade_diferente,caracteristica_geral,esta_vivo,altura_categoria,pe_preferencial,ano_nascimento,imagem
+1,Araken Patusca,Araken,0,Único jogador de origem paulista no grupo devido ao boicote político entre as federações.,0,Médio,Destro,1905,
+2,Alfredo Brilhante,Brilhante,0,Titular da zaga no primeiro jogo da história do Brasil em Copas do Mundo.,0,Médio,Destro,1904,
+3,Carlos Carvalho Leite,Carvalho Leite,0,O jogador mais jovem de toda a delegação brasileira em 1930 (apenas 18 anos).,0,Médio,Destro,1912,
+4,Alfredo de Almeida Rego,Doca,0,Atacante veloz do São Cristóvão que viajou com o grupo mas não atuou no torneio.,0,Baixo,Destro,1903,
+5,Fausto dos Santos,Fausto,0,Apelidado de 'Maravilha Negra' pela imprensa internacional devido à sua atuação genial no torneio.,0,Médio,Destro,1905,
+6,Fernando Giudicelli,Fernando,0,Primeiro brasileiro a jogar pelo Torino (Itália) e pioneiro no mercado europeu de atletas.,0,Médio,Destro,1906,
+7,Agostinho Fortes Filho,Fortes,0,"Ídolo histórico do Fluminense, viajou com o grupo mas ficou na reserva.",0,Médio,Destro,1901,
+8,Hermógenes Valente Fonseca,Hermógenes,0,Meio-campista dinâmico que foi titular nas duas partidas do Brasil no Uruguai.,0,Médio,Destro,1908,
+9,Luiz Gervazoni,Itália,0,Formava com Brilhante a famosa e intransponível zaga do Vasco da época.,0,Médio,Destro,1907,
+10,Ivan Mariz,Ivan Mariz,0,"Um dos atletas mais jovens do elenco (20 anos), não chegou a entrar em campo.",0,Médio,Destro,1910,
+11,Joel de Oliveira Costa,Joel,0,Goleiro titular na estreia absoluta do Brasil em Copas.,0,Médio,Destro,1904,
+12,Manoel de Aguiar Fagundes,Manoelzinho,0,Atacante reserva que viajou ao Uruguai mas não disputou minutos oficiais.,0,Médio,Destro,1907,
+13,Moderato Wisintainer,Moderato,0,Jogou no sacrifício com pontos de uma cirurgia recente de apendicite e marcou dois gols contra a Bolívia.,0,Baixo,Destro,1902,
+14,Nilo Murtinho Braga,Nilo,0,"Um dos maiores artilheiros pré-Pelé da história do Botafogo, jogou a estreia em 1930.",0,Médio,Ambidestro,1903,
+15,Oscarino Costa Silva,Oscarino,0,Único defensor vindo de um clube de Niterói a atuar naquela Copa.,0,Médio,Destro,1907,
+16,Estanislau de Figueiredo Pamplona,Pamplona,0,Atuou na linha média na partida de despedida contra a Bolívia.,0,Médio,Destro,1902,
+17,Polidoro Rodrigues,Poly,0,Único jogador da história do Americano de Campos (RJ) a disputar uma Copa do Mundo.,0,Baixo,Destro,1909,
+18,João Coelho Neto,Preguinho,0,Autor do primeiro gol da história da Seleção Brasileira em Copas do Mundo.,0,Médio,Destro,1905,
+19,Moacyr Siqueira de Queiroz,Russinho,0,"Um dos maiores artilheiros do Vasco na era amadora, foi o centroavante titular contra a Bolívia.",0,Médio,Ambidestro,1902,
+20,Teóphilo Bettencourt Pereira,Teóphilo,0,Formou o quinteto de ataque titular na partida de estreia contra a Iugoslávia.,0,Médio,Destro,1900,
+21,Oswaldo de Barros Velloso,Velloso,0,Primeiro goleiro brasileiro a terminar um jogo de Copa sem sofrer gols (Brasil 4x0 Bolívia).,0,Alto,Destro,1908,
+22,José Luiz de Oliveira,Zé Luiz,0,Entrou como titular da zaga na vitória contra a Bolívia.,0,Médio,Destro,1903,
+23,Benedicto de Moraes Menezes,Benedicto,0,"Conhecido como 'Benedicto-Gato', foi titular na estreia contra a Iugoslávia.",0,Médio,Canhoto,1907,
+24,Humberto de Araújo Benevenuto,Benevenuto,0,"Convocado para o torneio, mas acabou não entrando em campo em nenhuma partida.",0,Médio,Destro,1903,
+25,Roberto Gomes Pedrosa,Pedrosa,0,"Goleiro que anos mais tarde se tornou dirigente e deu nome ao torneio ""Robertão"" (precursor do Brasileirão).",0,Médio,Destro,1913,
+26,Germano Boettcher Sobrinho,Germano,0,Goleiro reserva em 1934 que fez história no Botafogo e no Flamengo.,0,Médio,Destro,1911,
+27,Sylvio Hoffmann Mazzi,Sylvio Hoffmann,0,Defensor clássico que jogou a Copa contratado diretamente pela CBD para burlar o boicote dos clubes paulistas.,0,Médio,Destro,1908,
+28,Luiz dos Santos Luz,Luiz Luz,0,Primeiro jogador de um clube gaúcho (Americano-RS) a atuar pela Seleção Brasileira em uma Copa.,0,Médio,Destro,1909,
+29,Octacílio Pinheiro Guerra,Octacílio,0,Zagueiro seguro do Botafogo que acabou ficando na reserva durante o torneio na Itália.,0,Médio,Destro,1909,
+30,Ariel Augusto Nogueira,Ariel,0,"Meio-campista de extrema longevidade no Botafogo, conhecido pela precisão nos passes.",0,Médio,Destro,1910,
+31,Alpheu Martha de Canalli,Canalli,0,Teve uma passagem marcante pelo futebol italiano (Torino) logo após a Copa de 1934.,0,Médio,Destro,1910,
+32,Martim Silveira,Martim,0,"Meio-campista refinado e líder natural em campo, jogou também no futebol argentino (Boca Juniors).",0,Médio,Destro,1911,
+33,Alfredo de Almeida Tinoco,Tinoco,0,"Um dos poucos operários do futebol na época, defendia o Vasco da Gama com muita raça.",0,Médio,Destro,1904,
+34,Waldyr Pellizzoni,Waldyr,0,Meio-campista que viajou como linha de frente reserva e não chegou a entrar em campo na Itália.,0,Médio,Destro,1912,
+35,Armando dos Santos,Armandinho,0,Atacante consagrado no futebol paulista que aceitou o convite da CBD para jogar a Copa.,0,Médio,Destro,1911,
+36,Leônidas da Silva,Leônidas,0,"O ""Diamante Negro"", considerado um dos maiores da história do futebol e popularizador do gol de bicicleta.",0,Baixo,Destro,1913,
+37,Luís Mesquita de Oliveira,Luisinho,0,"Atacante de técnica apurada, multicampeão paulista e um dos maiores artilheiros da era amadora/profissional.",0,Médio,Destro,1911,
+38,Rodolfo Barteczko,Patesko,0,"Atacante veloz que jogava no Nacional do Uruguai, sendo um dos poucos que atuavam no exterior na época.",0,Baixo,Canhoto,1910,
+39,Waldemar de Brito,Waldemar de Brito,0,"Atacante prolífico que, anos mais tarde, ficou imortalizado na história por descobrir e lapidar o garoto Pelé.",0,Médio,Destro,1913,
+40,Áttila de Carvalho,Áttila,0,Atacante habilidoso do Botafogo que participou da excursão europeia de 1934.,0,Médio,Destro,1910,
+41,Algisto Lorenzato,Batatais,0,"Goleiro histórico do Fluminense, assumiu a titularidade após a lesão de Walter.",0,Médio,Destro,1910,
+42,Walter de Souza Goulart,Walter,0,"Goleiro titular no início da Copa, conhecido por sua elasticidade.",0,Médio,Destro,1913,
+43,Domingos da Guia,Domingos da Guia,0,"Apelidado de 'Divino Mestre', é considerado um dos maiores zagueiros da história do futebol mundial.",0,Médio,Destro,1912,
+44,Arthur Machado,Machado,0,Zagueiro seguro do Fluminense que fez uma dupla lendária com Domingos da Guia.,0,Médio,Destro,1911,
+45,Euclydes Barbosa,Jaú,0,"Zagueiro de muita força física, vindo do Vasco da Gama.",0,Médio,Destro,1909,
+46,Alvaro Lopes Cançado,Nariz,0,Defensor do Botafogo que também era formado em medicina.,0,Médio,Destro,1912,
+47,Afonso Guimarães da Silva,Afonsinho,0,Primeiro jogador de futebol ativista/político do Brasil e também médico.,0,Médio,Destro,1914,
+48,Argemiro Pinheiro da Silva,Argemiro,0,"Meio-campista clássico da Portuguesa Santista, carregava o piano no meio-campo.",0,Médio,Destro,1915,
+49,José Augusto Brandão,Brandão,0,"Ídolo do Corinthians na década de 30, meio-campista de muita raça.",0,Médio,Destro,1916,
+50,Hermínio Américo de Brito,Britto,0,"Meio-campista de estilo extremamente viril, jogou no sacrifício contra a Checoslováquia.",0,Médio,Destro,1914,
+51,José Procópio Mendes,Zezé Procópio,0,Primeiro jogador da história a ser expulso em uma partida do Brasil em Copas (contra a Checoslováquia).,0,Médio,Destro,1913,
+52,José Perácio Berjun,Perácio,0,"Atacante dono de um chute poderosíssimo, marcou 3 gols naquela Copa.",0,Médio,Destro,1917,
+53,Romeu Pellicciari,Romeu,0,"Meia-atacante de refinada técnica, brilhou no Palmeiras e no Fluminense.",0,Médio,Destro,1911,
+54,Elba de Pádua Lima,Tim,0,"Considerado por muitos um gênio tático, apelidado de 'O Estrategista'.",0,Médio,Destro,1915,
+55,Hércules de Miranda,Hércules,0,Ponta-esquerda veloz e muito goleador do Fluminense.,0,Médio,Canhoto,1912,
+56,Roberto Emílio da Cunha,Roberto,0,"Atacante do São Cristóvão, veloz e muito agudo pelas pontas.",0,Médio,Canhoto,1912,
+57,Leonízio Fantoni,Niginho,0,Protagonizou uma polêmica jurídica com a Lazio e foi impedido pela FIFA de jogar a semifinal contra a Itália.,0,Médio,Destro,1912,
+58,Moacyr Barbosa,Barbosa,0,"Injustamente culpado pelo gol de Ghiggia na final de 1950, carregou esse fardo pesado por toda a vida.",0,Médio,Destro,1921,
+59,Carlos José Castilho,Castilho,0,"Goleiro reserva em 1950, famoso por anos mais tarde amputar um pedaço do dedo para voltar a jogar mais rápido.",0,Alto,Destro,1927,
+60,Augusto da Costa,Augusto,0,"Capitão do Brasil na Copa de 1950, liderou a equipe em toda a campanha em solo nacional.",0,Médio,Destro,1920,
+61,Juvenal Amarijo,Juvenal,0,"Zagueiro titular absoluto na final contra o Uruguai, marcado pela derrota no Maracanazo.",0,Médio,Destro,1923,
+62,Olavo Rodrigues Barbosa,Nena,0,"Zagueiro firme do Internacional, conhecido pelo apelido de 'Parada Agridoce'.",0,Médio,Destro,1923,
+63,Nílton Reis dos Santos,Nílton Santos,0,"O 'Enciclopédia do Futebol', fez sua estreia em Copas na reserva de 1950 antes de virar lenda mundial.",0,Médio,Canhoto,1925,
+64,João Ferreira,Bigode,0,"Lateral titular em 1950, eternamente lembrado pelo drible sofrido de Ghiggia no gol do título uruguaio.",0,Médio,Destro,1925,
+65,Ely do Amparo,Ely,0,"Meio-campista de muita força física e liderança, um dos pilares do Vasco da Gama na época.",0,Médio,Destro,1921,
+66,Danilo Alvim,Danilo Alvim,0,"Conhecido como 'Príncipe', um dos meio-campistas mais elegantes e técnicos da história da Seleção.",0,Médio,Destro,1920,
+67,José Carlos Bauer,Bauer,0,"O 'Monstro do Maracanã', foi o único jogador brasileiro poupado das críticas pesadas da imprensa após a final.",0,Médio,Destro,1925,
+68,Rui Campos,Rui,0,"Formava a famosa linha média do São Paulo ('Bauer, Rui e Noronha') que brilhou no futebol paulista.",0,Médio,Destro,1920,
+69,Jacinto de Moura,Noronha,0,"Lateral/meio-campista esquerdo do São Paulo, fez parte do elenco mas não jogou a final contra o Uruguai.",0,Médio,Destro,1918,
+70,Alfredo dos Santos,Alfredo II,0,"Meio-campista polivalente do Vasco, entrou no time na histórica goleada de 7x1 contra a Suécia.",0,Médio,Destro,1920,
+71,Thomaz Soares da Silva,Zizinho,0,"O grande ídolo de Pelé, eleito o melhor jogador da Copa de 1950 mesmo com o vice-campeonato do Brasil.",0,Baixo,Destro,1922,
+72,Ademir Marques de Menezes,Ademir de Menezes,0,"Conhecido como 'Queixada', foi o artilheiro isolado da Copa de 1950 marcando 9 gols.",0,Médio,Destro,1922,
+73,Jair da Rosa Pinto,Jair,0,"Meia-esquerda de chute lendário e visão de jogo cirúrgica, era um dos grandes cérebros do time.",0,Baixo,Canhoto,1921,
+74,Francisco Aramburu,Chico,0,"Atacante veloz que marcou quatro gols na Copa de 1950, incluindo dois na goleada sobre a Espanha.",0,Baixo,Canhoto,1922,
+75,Albino Friaça Cardoso,Friaça,0,"Atacante do São Paulo, foi o autor do único gol do Brasil na finalíssima contra o Uruguai.",0,Médio,Destro,1924,
+76,Manuel Marinho Alves,Maneca,0,"Atacante do Expresso da Vitória do Vasco, marcou gol na estreia da Copa contra o México.",0,Médio,Destro,1926,
+77,Oswaldo Silva,Baltazar,0,"O 'Cabecinha de Ouro', atacante famoso por admitir que marcava mais gols de cabeça do que com os pés.",0,Médio,Destro,1926,
+78,Rodrigues Tatu,Rodrigues,0,"Ponta-esquerda extremamente habilidoso e veloz, campeão pelo Palmeiras na época.",0,Médio,Canhoto,1925,
+79,Adão Nunes Dornelles,Adãozinho,0,"Atacante clássico do Internacional dos anos 40, viajou como reserva no mundial.",0,Médio,Destro,1923,
+80,Oswaldo Alfredo da Silva,Veludo,0,"Goleiro reserva com reflexos espetaculares, apelidado com o nome de um tecido macio devido à sua agilidade felina.",0,Médio,Destro,1930,
+81,Anselmo Duarte,Cabeção,0,Terceiro goleiro da delegação na Suíça e ídolo histórico do Corinthians conhecido como 'Cabeção'.,0,Médio,Destro,1930,
+82,Djalma Pereira Dias dos Santos,Djalma Santos,0,"Considerado um dos maiores laterais-direitos de todos os tempos, unia técnica impecável com uma força física impressionante.",0,Médio,Destro,1929,
+83,Carlos Alberto Rodrigues Gavião,Pinheiro,0,"Zagueiro central extremamente raçudo do Fluminense, conhecido pelo apelido de 'Pinheiro'.",0,Médio,Destro,1932,
+84,Mauro Ramos de Oliveira,Mauro Ramos,0,"Zagueiro de uma elegância raríssima com a bola nos pés, que jogava sempre de cabeça erguida.",0,Alto,Destro,1930,
+85,Alfredo Ramos de Oliveira,Alfredo Ramos,0,Lateral-esquerdo do São Paulo apelidado de 'Polvo' pela facilidade monumental que tinha em desarmar adversários.,0,Médio,Canhoto,1924,
+86,Paulinho de Almeida,Paulinho,0,Lateral-direito de muita entrega e vigor físico que representava a raça do Vasco da Gama.,0,Médio,Destro,1932,
+87,Waldir Pereira,Didi,0,O genial inventor do chute de 'Folha Seca' e o grande cérebro pensante do meio-campo brasileiro.,0,Médio,Ambidestro,1928,
+88,José Mendonça dos Santos,Dequinha,0,Volante clássico e refinado que se tornou o capitão e a grande referência do Flamengo nos anos 50.,0,Médio,Destro,1928,
+89,José Cândido Sotto Maior,Brandãozinho,0,"Meio-campista incansável e marcador implacável da Portuguesa, conhecido pelo apelido de 'Brandãozinho'.",0,Médio,Destro,1925,
+90,Júlio Botelho,Julinho Botelho,0,Ponta-direita genial que marcou um dos gols mais bonitos da história da Seleção contra a Checoslováquia em 1954.,0,Baixo,Destro,1929,
+91,Oswaldo da Silva,Baltazar,0,"Atacante do Corinthians conhecido como 'Cabecinha de Ouro', famoso por admitir que fazia mais gols de cabeça do que com os pés.",0,Médio,Destro,1926,
+92,Humberto Tozzi,Humberto Tozzi,0,Atacante goleador do Palmeiras que acabou expulso na violenta partida conhecida como 'Batalha de Berna'.,0,Médio,Destro,1934,
+93,Mauro Raphael,Maurinho,0,"Ponta-direita veloz e muito incisivo do São Paulo, peça fundamental do ataque tricolor.",0,Médio,Canhoto,1933,
+94,José Lázaro Robles,Pinga,0,"Meia-atacante canhoto e extremamente artilheiro do Vasco, conhecido pelo apelido de 'Pinga'.",0,Médio,Canhoto,1924,
+95,Aluísio Francisco da Luz,Índio,0,"Atacante raçudo do Flamengo conhecido como 'Índio', autor do gol salvador no empate contra a Iugoslávia.",0,Médio,Destro,1931,
+96,Rubens Josué da Costa,Rubens,0,"Meia-atacante de habilidade rara e dribles desconcertantes, apelidado de 'Doutor do Balbúrdia'.",0,Médio,Destro,1928,
+97,Francisco Rodrigues,Rodrigues,0,"Ponta-esquerda de chute potentíssimo, foi titular absoluto em Copas pelo Palmeiras.",0,Médio,Canhoto,1925,
+98,Gylmar dos Santos Neves,Gilmar,0,"Goleiro titular elegante e seguro do primeiro título mundial, transmitia uma calma absoluta para a defesa.",0,Médio,Destro,1930,
+99,Hilderaldo Luiz Bellini,Bellini,0,"Zagueiro capitão do primeiro título mundial, imortalizou o gesto de levantar a taça da Copa do Mundo com as duas mãos sobre a cabeça.",0,Alto,Destro,1930,
+100,Orlando Peçanha de Carvalho,Orlando,0,"Zagueiro central de desarmes limpos e precisos, fez uma dupla de área perfeita e intransponível com Bellini.",0,Médio,Destro,1935,
+101,Valdemar Rodrigues Martins,Oreco,0,"Defensor polivalente do Corinthians conhecido como 'Oreco', garantia de segurança e raça na reserva.",0,Médio,Destro,1936,
+102,Zózimo Alves Calazans,Zózimo,0,"Zagueiro técnico e muito calmo do Bangu, viajou como peça de reposição de luxo na Suécia.",0,Médio,Destro,1932,
+103,Dino Sani,Dino Sani,0,"Volante clássico de passes milimétricos do São Paulo, começou a Copa de 58 como titular antes de ceder lugar a Zito.",1,Baixo,Destro,1932,
+104,Moacir Claudino Pinto,Moacir,0,Jovem meia-atacante promissor do Flamengo que viajou para ganhar experiência no grupo campeão.,1,Médio,Destro,1936,
+105,Zito,Zito,0,"O volante 'gerente' do meio-campo, assumiu a titularidade durante a Copa de 58 e dava ordens até em Pelé e Garrincha.",0,Médio,Destro,1932,
+106,Mário Jorge Lobo Zagallo,Zagallo,0,"Ponta-esquerda tático moderno que recuava para ajudar o meio-campo, fundamental para o equilíbrio do time campeão.",0,Médio,Canhoto,1931,
+107,Edson Arantes do Nascimento,Pelé,0,"O 'Rei do Futebol' que assombrou o mundo com apenas 17 anos em 1958, chorando no ombro de Bellini após o título.",0,Baixo,Destro,1940,
+108,Manuel Francisco dos Santos,Garrincha,0,"O 'Anjo das Pernas Tortas', destroçou as defesas europeias com seus dribles desconcertantes na ponta-direita.",0,Médio,Destro,1933,
+109,José João Altafini,Mazzola,0,"Conhecido no Brasil como 'Mazzola', começou a Copa de 58 como titular e marcou dois gols antes de dar vaga ao Pelé.",1,Médio,Destro,1938,
+110,Vavá,Vavá,0,"O 'Peito de Aço', atacante de pura raça e trombadas que marcou dois gols idênticos na final da Copa de 58 contra a Suécia.",0,Médio,Destro,1934,
+111,Joel Antônio Martins,Joel,0,"Ponta-clássico e veloz do Flamengo, foi o titular do ataque brasileiro nos primeiros jogos da Copa de 58.",0,Médio,Canhoto,1931,
+112,Dida,Dida,0,"Goleiro titular da Seleção por mais de uma década, foi peça-chave no pentacampeonato de 2002 e um dos melhores goleiros do mundo no auge da carreira.",1,Alto,Destro,1973,
+113,Pepe,Pepe,0,"O 'Canhão da Vila', ponta-esquerda dono de um dos chutes mais potentes da história do futebol, reserva de Zagallo em 58.",1,Baixo,Canhoto,1935,
+114,Castilho,Castilho,0,Defendeu o Brasil na Copa de 1962.,0,Médio,Destro,1927,
+115,Jair Marinho de Oliveira,Jair Marinho,0,"Lateral-direito reserva de luxo, aguardou sua chance na campanha do Bi no Chile.",0,Médio,Destro,1936,
+116,Altair Gomes de Figueiredo,Altair,0,"Defensor extremamente técnico e leal do Fluminense, reserva imediato na zaga em 62.",0,Médio,Canhoto,1938,
+117,Jurandir de Freitas,Jurandir,0,"Zagueiro central de muita força física do São Paulo, peça de reposição no Chile.",0,Médio,Destro,1940,
+118,Mengálvio Figueiró,Mengálvio,0,"Meio-campista clássico e cadenciador do Santos, reserva imediato no mundial de 62.",1,Médio,Destro,1939,
+119,Amarildo Tavares da Silveira,Amarildo,0,"O 'Possesso', que teve a missão impossível de substituir o lesionado Pelé em 1962 e acabou virando o grande herói do Bicampeonato.",1,Médio,Destro,1940,
+120,Coutinho,Coutinho,0,"Parceiro genial de Pelé no Santos, viajou como o camisa 9 titular, mas uma lesão o tirou dos gramados dando vaga para Vavá.",0,Médio,Destro,1943,
+121,Jair da Costa,Jair da Costa,0,"Ponta-direita veloz da Portuguesa, viajou como reserva imediato do genial Garrincha.",1,Baixo,Destro,1940,
+122,Manga,Manga,0,"Goleiro de defesas acrobáticas e históricas, jogou a partida da eliminação contra a Seleção de Portugal em 66.",1,Alto,Destro,1937,
+123,Brito,Brito,0,"Zagueiro de força física impressionante e estilo xerife, começou sua trajetória em Copas na Inglaterra.",1,Alto,Destro,1939,
+124,Fidélis,Fidélis,0,"Lateral-direito vigoroso do Bangu, ganhou a vaga de titular durante o mundial de 66.",0,Médio,Destro,1944,
+125,Rildo da Costa Menezes,Rildo,0,Defendeu o Brasil na Copa de 1966.,0,Médio,Canhoto,1943,
+126,Gérson de Oliveira Nunes,Gérson,0,"O 'Canhotinha de Ouro', um dos maiores lançadores da história do futebol, fez sua estreia discreta na trágica Copa de 66.",1,Médio,Canhoto,1941,
+127,Denílson Custódio Machado,Denílson,0,"Volante de forte marcação e raça do Fluminense, titular no meio-campo em 1966.",0,Médio,Destro,1943,
+128,Lima,Lima,0,"O curinga do Santos, jogador polivalente que atuou como lateral-direito na Copa de 66.",1,Médio,Destro,1942,
+129,Jairzinho,Jairzinho,0,Defendeu o Brasil na Copa de 1966.,1,Médio,Destro,1944,
+130,Alcindo Martha de Freitas,Alcindo,0,"Atacante de muita raça do Grêmio, ganhou a vaga de titular na frente ao lado de Pelé na estreia.",0,Médio,Destro,1945,
+131,Silva Batuta,Silva Batuta,0,"Atacante folclórico e goleador do Flamengo, usou a camisa 10 do Brasil no jogo contra a Hungria na ausência de Pelé.",0,Médio,Destro,1940,
+132,Edu,Edu,0,"Ponta-esquerda do Santos que viajou para a Inglaterra com apenas 16 anos, sendo um dos mais jovens da história das Copas.",1,Baixo,Canhoto,1949,
+133,Paraná,Paraná,0,"Ponta-esquerda de dribles rápidos do São Paulo, atuou na partida decisiva contra Portugal.",1,Médio,Canhoto,1942,
+134,Tostão,Tostão,0,Defendeu o Brasil na Copa de 1966.,1,Baixo,Destro,1947,
+135,Rinaldo Amorim,Rinaldo,0,"Ponta-esquerda habilidoso do Palmeiras, fez parte do contestado ataque brasileiro na Inglaterra.",0,Médio,Canhoto,1942,
+136,Félix Miéli Venerando,Félix,0,"Goleiro titular do Tri em 1970, apelidado de 'Papel' devido à sua magreza e elasticidade nas pontes espetaculares.",0,Médio,Destro,1937,
+137,Ado,Ado,0,"Goleiro reserva de excelente envergadura, brilhava no Corinthians na época do Tri.",1,Médio,Destro,1946,
+138,Leão,Leão,0,"Jovem goleiro promissor do Palmeiras, viajou como terceiro goleiro em 70 dando início a uma longa história em Copas.",1,Alto,Destro,1949,
+139,Carlos Alberto Torres,Carlos Alberto,0,"O 'Capita', lateral-direito eterno que marcou o gol mais plástico da história das Copas na final contra a Itália.",0,Médio,Destro,1944,
+140,Piazza,Piazza,0,"Volante de origem no Cruzeiro, aceitou o sacrifício tático de jogar improvisado como zagueiro central para o time ficar perfeito.",1,Baixo,Destro,1943,
+141,Everaldo,Everaldo,0,"Lateral-esquerdo do Grêmio, dono de uma marcação implacável que garantiu o equilíbrio defensivo do time do Tri.",0,Médio,Canhoto,1944,
+142,Marco Antônio,Marco Antônio,0,"Lateral-esquerdo de muita técnica e cruzamentos perfeitos, reserva imediato de Everaldo em 70.",1,Médio,Canhoto,1951,
+143,Baldocchi,Baldocchi,0,"Zagueiro central seguro do Palmeiras, fez parte do grupo tricampeão na reserva.",1,Médio,Destro,1946,
+144,Fontana,Fontana,0,"Zagueiro de estilo viril e xerife da zaga do Cruzeiro, atuou na partida contra a Romênia em 70.",0,Médio,Destro,1940,
+145,Joel Camargo,Joel Camargo,0,"Zagueiro técnico e elegante do Santos, multicampeão na era Pelé e reserva no México.",0,Médio,Destro,1946,
+146,Ze Maria,Zé Maria,0,Defendeu o Brasil na Copa de 1970.,1,Médio,Destro,1949,
+147,Clodoaldo,Clodoaldo,0,O jovem volante que deu os dribles desconcertantes em quatro italianos na jogada ensaiada do gol histórico do Carlos Alberto.,1,Baixo,Destro,1949,
+148,Rivellino,Rivellino,0,"O dono da 'Patada Atômica' e do drible elástico, assombrou o mundo com seus chutes de falta na Copa de 70.",1,Médio,Canhoto,1946,
+149,Paulo Cézar Caju,Paulo Cézar Caju,0,"O curinga do ataque de 70, entrava no segundo tempo para prender a bola com sua habilidade espetacular.",1,Médio,Ambidestro,1949,
+150,Roberto Miranda,Roberto,0,"Atacante de muita força física do Botafogo, apelidado de 'Vendaval', reserva de luxo de Tostão.",1,Baixo,Destro,1943,
+151,Dario,Dadá Maravilha,0,Defendeu o Brasil na Copa de 1970.,1,Médio,Destro,1946,
+152,Wendell Lucena Ramalho,Wendell,0,"Goleiro titular do Botafogo, assumiu a meta da Seleção Brasileira durante a Copa de 1974.",0,Médio,Destro,1947,
+153,Renato Cunha Valle,Renato,0,"Goleiro de reflexos rápidos do Flamengo, viajou como o terceiro goleiro da delegação.",1,Médio,Destro,1944,
+154,Marinho Peres,Marinho Peres,0,"Zagueiro clássico e elegante do Santos, assumiu a braçadeira de capitão e liderou a defesa em 74.",0,Alto,Destro,1947,
+155,Luís Edmundo Pereira,Luís Pereira,0,Defendeu o Brasil na Copa de 1974.,1,Alto,Destro,1949,
+156,Nelinho,Nelinho,0,Lateral-direito dono de um dos chutes de trivela mais potentes e plásticos da história do futebol mundial.,1,Baixo,Destro,1950,
+157,Zé Maria,Zé Maria,0,Defendeu o Brasil na Copa de 1974.,1,Médio,Destro,1949,
+158,Marinho Chagas,Marinho Chagas,0,"O 'Bruxa', lateral-esquerdo revolucionário e loiro que atacava muito mais do que defendia, brilhando na Copa de 74.",0,Médio,Canhoto,1952,
+159,Alfredo Mostarda,Alfredo,0,"Zagueiro firme e vigoroso do Palmeiras, entrou no time na disputa de terceiro lugar contra a Polônia.",1,Médio,Destro,1946,
+160,Carbone,Carbone,0,"Volante marcador e incansável do Internacional, dava o combate físico pesado no meio-campo.",0,Médio,Destro,1946,
+161,Ademir da Guia,Ademir da Guia,0,"O 'Divino', lenda injustiçada do Palmeiras que, apesar de sua genialidade absurda, jogou apenas uma partida na Copa de 74.",1,Alto,Destro,1942,
+162,Paulo Cézar Carpegiani,Carpegiani,0,"Meio-campista dinâmico e de excelente passe, foi um dos motores do time na Alemanha.",1,Médio,Destro,1949,
+163,Leivinha,Leivinha,0,"Meia-atacante habilidoso e excelente cabeceador, peça importante do Palmeiras e da Seleção.",1,Médio,Destro,1949,
+164,Valdomiro Vaz Franco,Valdomiro,0,"Ponta-direita veloz e raçudo do Internacional, marcou um gol crucial contra o Zaire.",1,Médio,Destro,1946,
+165,Dirceu,Dirceu,0,"O 'Formiguinha', meio-campista de fôlego invejável e chute fortíssimo de fora da área que disputou três Copas.",0,Médio,Canhoto,1952,
+166,Mirandinha,Mirandinha,0,"Atacante veloz do São Paulo, foi o responsável por tentar substituir o peso do ataque brasileiro em 74.",1,Médio,Destro,1952,
+167,César Maluco,César Maluco,0,"Centroavante folclórico e goleador do Palmeiras, viajou como opção de área na reserva.",1,Médio,Destro,1945,
+168,Carlos,Carlos,0,"Goleiro de excelente colocação do Ponte Preta, fez sua estreia em Copas na reserva em 78.",1,Médio,Destro,1956,
+169,Waldir Peres,Waldir Peres,0,"Goleiro elástico e pegador de pênaltis do São Paulo, viajou como reserva imediato no mundial.",0,Médio,Destro,1951,
+170,Oscar,Oscar,0,"Zagueiro central imponente do Ponte Preta, formou uma das duplas de zaga mais seguras da história da Seleção.",1,Médio,Destro,1954,
+171,Amaral,Amaral,0,Zagueiro do Corinthians que salvou um gol em cima da linha duas vezes seguidas contra a Espanha em 78.,0,Alto,Destro,1954,
+172,Edinho,Edinho,0,Zagueiro técnico do Fluminense que sabia sair jogando e tinha um espírito de liderança nato.,1,Médio,Destro,1955,
+173,Abel Braga,Abel,0,"Zagueiro vigoroso do Vasco da Gama, viajou como peça de reposição física na Argentina.",1,Alto,Destro,1952,
+174,Toninho Baiano,Toninho,0,"Lateral-direito de muita força no apoio ao ataque, titular absoluto da equipe na Copa de 78.",0,Baixo,Destro,1948,
+175,Rodrigues Neto,Rodrigues Neto,0,"Lateral-esquerdo experiente do Botafogo, garantia de segurança defensiva no setor.",0,Médio,Canhoto,1949,
+176,Chicão,Chicão,0,"Volante de estilo xerife e extrema virilidade do São Paulo, escalado para dar o combate físico no clássico violento contra a Argentina.",0,Médio,Destro,1949,
+177,Batista,Batista,0,"Meio-campista clássico de excelente passe do Internacional, um dos pilares táticos do time em 78.",1,Baixo,Destro,1955,
+178,Toninho Cerezo,Toninho Cerezo,0,"Volante elegante de passadas longas e fôlego infinito, começou ali sua dinastia no meio-campo do Brasil.",1,Médio,Destro,1955,
+179,Zico,Zico,0,"O 'Galinho de Quintino', estreou em Copas em 78 e teve um gol de cabeça legítimo anulado pelo árbitro no último segundo contra a Suécia.",1,Médio,Destro,1953,
+180,Jorge Mendonça,Jorge Mendonça,0,Meia-atacante do Palmeiras que ganhou a vaga de titular durante a Copa devido à sua incrível visão de jogo.,0,Médio,Destro,1954,
+181,Reinaldo,Reinaldo,0,"O genial e contestado centroavante do Atlético Mineiro, famoso por comemorar seus gols com o punho cerrado contra a ditadura militar.",1,Baixo,Destro,1957,
+182,Roberto Dinamite,Roberto Dinamite,0,"Maior ídolo da história do Vasco, entrou no time durante a Copa de 78 e marcou gols decisivos que salvaram o Brasil.",0,Alto,Destro,1954,
+183,Gil,Gil,0,"Ponta-direita veloz e de dribles rápidos do Botafogo, conhecido como 'Furacão' pela ponta.",1,Médio,Destro,1950,
+184,Zé Sérgio,Zé Sérgio,0,"Ponta-esquerda extremamente habilidoso do São Paulo, o terror dos laterais adversários no drible curto.",1,Baixo,Canhoto,1957,
+185,Paulo Sérgio,Paulo Sérgio,0,"Goleiro ágil e de ótimos reflexos do Botafogo, viajou como reserva na Espanha.",1,Médio,Destro,1954,
+186,Luizinho,Luizinho,0,"Zagueiro de uma técnica e elegância absurdas do Atlético Mineiro, jogava sem dar um único pontapé nos adversários.",1,Médio,Destro,1958,
+187,Juninho Fonseca,Juninho,0,"Zagueiro firme da Ponte Preta, fez parte do elenco lendário de 82 na reserva.",1,Médio,Destro,1958,
+188,Leandro,Leandro,0,"Um dos maiores laterais-direitos da história do futebol, tinha a técnica de um camisa 10 jogando na ala do Flamengo.",1,Médio,Destro,1959,
+189,Júnior,Júnior,0,"O 'Capacete', lateral-esquerdo genial do Flamengo que parecia um meio-campista e marcou um gol lindo contra a Argentina em 82.",1,Baixo,Ambidestro,1954,
+190,Edevaldo,Edevaldo,0,"Lateral-direito veloz do Fluminense, viajou como o reserva imediato do titular Leandro.",1,Alto,Destro,1958,
+191,Pedrinho,Pedrinho,0,"Lateral-esquerdo de forte chute do Vasco da Gama, peça importante de composição do elenco.",1,Médio,Canhoto,1957,
+192,Falcão,Falcão,0,"O 'Rei de Roma', meio-campista de elegância máxima que marcou o gol dramático contra a Itália e comemorou correndo com as veias do pescoço saltadas.",1,Médio,Destro,1953,
+193,Sócrates,Sócrates,0,"O 'Doutor', meio-campista genial que jogava de cabeça erguida, calcanhares mágicos e liderança política inigualável.",0,Médio,Destro,1954,
+194,Paulo Isidoro,Paulo Isidoro,0,"O curinga favorito do técnico Telê Santana, entrava no segundo tempo para dar velocidade e fôlego ao meio-campo.",1,Médio,Destro,1953,
+195,Renato,Renato,0,"Meio-campista habilidoso do São Paulo, viajou como opção tática no banco de reservas.",1,Médio,Destro,1957,
+196,Serginho Chulapa,Serginho Chulapa,0,"Centroavante grandalhão, trombador e brigador do São Paulo, assumiu a camisa 9 após o corte de Careca.",1,Médio,Destro,1953,
+197,Éder,Éder,0,"O 'Aleijado' (por só usar a perna esquerda), ponta dono de um chute de força descomunal que encobriu o goleiro da Escócia em 82.",1,Médio,Canhoto,1957,
+198,Paulo Victor,Paulo Victor,0,"Goleiro de ótimos reflexos do Fluminense, viajou como o segundo goleiro da delegação brasileira.",1,Médio,Destro,1957,
+199,Júlio César,Júlio César,0,"Zagueiro central clássico do Guarani, jogou tanta bola no México que foi eleito o melhor zagueiro da Copa de 86.",1,Alto,Destro,1963,
+200,Mauro Galvão,Mauro Galvão,0,"Zagueiro de técnica refinada e antecipação perfeita do Internacional, peça de segurança no banco.",1,Médio,Destro,1961,
+201,Josimar,Josimar,0,Lateral-direito do Botafogo que entrou de última hora e marcou dois dos gols mais bonitos e folclóricos da história do Brasil em Copas.,1,Médio,Destro,1961,
+202,Branco,Branco,0,Lateral-esquerdo dono de um chute fortíssimo que viria a marcar época na posição pela Seleção.,1,Alto,Canhoto,1964,
+203,Djalma Baia,Djalma Santos,0,"Lateral-direito de muita velocidade e força do Santos, conhecido no futebol como 'Djalma Santos' moderno.",1,Médio,Destro,1962,
+204,Junior,Júnior,0,Defendeu o Brasil na Copa de 1986.,1,Baixo,Destro,1954,
+205,Elzo,Elzo,0,"Volante incansável do Atlético Mineiro, correu por todo o meio-campo e jogou todos os minutos do Brasil na Copa de 86.",1,Médio,Destro,1961,
+206,Alemão,Alemão,0,"Meio-campista moderno de muita força física e arranque do Botafogo, um dos motores do time no México.",1,Alto,Destro,1961,
+207,Silas,Silas,0,"Jovem meia extremamente habilidoso do São Paulo, fazia parte dos famosos 'Menudos do Morumbi'.",1,Médio,Destro,1965,
+208,Valdo,Valdo,0,"Meia-armador de passes precisos e refinados do Grêmio, começou ali sua trajetória na Seleção.",1,Médio,Ambidestro,1964,
+209,Careca,Careca,0,"O grande camisa 9 do São Paulo espantou o azar de 82 e destruiu no México, marcando 5 gols e sendo o vice-artilheiro da Copa.",1,Médio,Destro,1960,
+210,Müller,Müller,0,"Atacante veloz e muito inteligente do São Paulo, infernizava as defesas puxando contra-ataques.",1,Médio,Destro,1966,
+211,Casagrande,Casagrande,0,"Atacante de muita presença de área e contestação política, fez dupla de ataque com Careca no início do torneio.",1,Médio,Destro,1963,
+212,Edivaldo,Edivaldo,0,"Ponta-esquerda habilidoso do Atlético Mineiro, entrou como opção de drible rápido nas partidas.",0,Baixo,Canhoto,1962,
+213,Taffarel,Taffarel,0,"O goleiro que viria a se tornar uma lenda mística, fez sua estreia em Copas do Mundo na Itália em 1990.",1,Alto,Destro,1966,
+214,Acácio,Acácio,0,"Goleiro seguro e de grande estatura do Vasco da Gama, viajou como o reserva imediato de Taffarel.",1,Alto,Destro,1959,
+215,Zé Carlos,Zé Carlos,0,"Goleiro de muita agilidade do Flamengo, fechou o trio de arqueiros convocados para a Itália.",0,Baixo,Destro,1962,
+216,Ricardo Gomes,Ricardo Gomes,0,"Zagueiro técnico e capitão da equipe na Itália, liderava a contestada linha defensiva de 90.",1,Médio,Destro,1964,
+217,Ricardo Rocha,Ricardo Rocha,0,"O 'Xerife', zagueiro de muita raça e antecipação do São Paulo, conhecido por jogar com o coração na ponta da chuteira.",1,Alto,Destro,1962,
+218,Mozer,Mozer,0,"Zagueiro extremamente viril e forte na bola aérea do Benfica, acabou expulso logo na estreia contra a Suécia.",1,Alto,Destro,1960,
+219,Aldair,Aldair,0,"Zagueiro clássico de técnica impecável e calma absurda, fez sua estreia em Copas na reserva de 90.",1,Baixo,Destro,1965,
+220,Jorginho,Jorginho,0,"Lateral-direito de cruzamentos milimétricos e apoio impecável, assumiu a titularidade absoluta da posição.",1,Alto,Destro,1964,
+221,Mazinho,Mazinho,0,"Jogador polivalente do Vasco que atuava tanto na lateral quanto no meio-campo, viajou como peça tática crucial.",1,Médio,Ambidestro,1966,
+222,Dunga,Dunga,0,"Volante de liderança implacável e estilo agressivo, virou o símbolo máximo daquela contestada eliminação na Itália.",1,Médio,Destro,1963,
+223,Bismarck,Bismarck,0,"Jovem meia promissor de muita habilidade do Vasco da Gama, viajou como opção de armação.",1,Médio,Destro,1969,
+224,Tita,Tita,0,"Meio-campista experiente do Vasco de técnica apurada, viajou no grupo mas não chegou a entrar em campo.",1,Médio,Destro,1958,
+225,Bebeto,Bebeto,0,O jovem e genial atacante do Vasco fez sua estreia discreta em Copas do Mundo na reserva em 90.,1,Médio,Destro,1964,
+226,Renato Gaúcho,Renato Gaúcho,0,"Atacante folclórico, veloz e de muita personalidade do Flamengo, entrou no segundo tempo contra a Argentina.",1,Médio,Destro,1962,
+227,Zetti,Zetti,0,"Goleiro reserva de extrema segurança e ídolo gigante do São Paulo, era a sombra perfeita para o titular Taffarel.",1,Alto,Destro,1965,
+228,Gilmar Rinaldi,Gilmar Rinaldi,0,"Goleiro veterano e campeão mundial na reserva em 94, trazia uma liderança de vestiário fundamental para o grupo.",1,Alto,Destro,1959,
+229,Marcio Santos,Márcio Santos,0,"Zagueiro clássico e seguro, jogou tanta bola nos Estados Unidos que foi eleito para a seleção ideal da Copa de 94.",1,Alto,Destro,1969,
+230,Ronaldão,Ronaldão,0,"Zagueiro de muita força física convocado de última hora para o lugar do lesionado Ricardo Gomes, trazendo vigor à reserva.",1,Alto,Destro,1965,
+231,Cafu,Cafu,0,Jovem lateral do São Paulo que entrou no primeiro tempo da grande final contra a Itália e deu conta do recado na ala direita.,1,Médio,Destro,1970,cafu.jpg
+232,Leonardo,Leonardo,0,"Lateral-esquerdo técnico que acabou marcado por dar uma cotovelada dramática no jogador dos EUA, sendo expulso e suspenso da Copa.",1,Médio,Canhoto,1969,
+233,Mauro Silva,Mauro Silva,0,"O verdadeiro cão de guarda do meio-campo, dava uma proteção absurda para a defesa e não deixava ninguém passar.",1,Médio,Destro,1968,
+234,Zinho,Zinho,0,"O 'Mentalista' do time, cumpria uma função tática defensiva tão rígida pelo lado esquerdo que acabou apelidado injustamente de 'enceradeira'.",1,Baixo,Canhoto,1967,
+235,Raí,Raí,0,"O camisa 10 e capitão no início da Copa, marcou um gol de pênalti na estreia, mas acabou perdendo a titularidade ao longo do torneio.",1,Alto,Destro,1965,
+236,Viola,Viola,0,Atacante folclórico que entrou na prorrogação da final contra a Itália e infernizou a defesa italiana com seus dribles ousados.,1,Médio,Destro,1969,
+237,Ronaldo,Ronaldo,0,"O 'Ronaldinho' na época, viajou com apenas 17 anos para os EUA para ganhar experiência no grupo do Tetra.",1,Médio,Destro,1976,ronaldo.jpg
+238,Romário,Romário,0,"O 'Baixinho', protagonista absoluto do Tetra que chamou a responsabilidade, fez gols em quase todos os jogos e carregou o Brasil ao título.",1,Baixo,Destro,1966,
+239,Carlos Germano,Carlos Germano,0,"Goleiro histórico do Vasco da Gama, viajou como o reserva imediato e de muita confiança de Taffarel na França.",1,Alto,Destro,1970,
+240,Gonçalves,Gonçalves,0,"Zagueiro técnico e de muita liderança do Botafogo, viajou como peça de reposição para a zaga central.",1,Alto,Destro,1966,
+241,André Cruz,André Cruz,0,"Defensor dono de um chute potente em cobranças de falta, era o reserva de luxo do Milan na delegação brasileira.",1,Alto,Canhoto,1968,
+242,Roberto Carlos,Roberto Carlos,0,Lateral-esquerdo dono de coxas monumentais e um chute de força absurda que desafiava as leis da física.,1,Baixo,Canhoto,1973,roberto-carlos.jpg
+243,César Sampaio,César Sampaio,0,"Volante de excelente chegada à frente, marcou o primeiro gol de toda a Copa de 1998 na partida de abertura contra a Escócia.",1,Médio,Destro,1968,
+244,Zé Roberto,Zé Roberto,0,"Meia-atacante de fôlego invejável e polivalência, atuava tanto na lateral esquerda quanto no meio-campo.",1,Baixo,Canhoto,1974,
+245,Doriva,Doriva,0,"Volante de forte marcação e disciplina tática implacável do Porto, opção de proteção no banco.",1,Médio,Destro,1972,
+246,Giovanni,Giovanni,0,"O 'Messias', meia habilidoso e ídolo do Barcelona, começou a Copa de 98 como titular na partida de estreia.",1,Médio,Destro,1972,
+247,Rivaldo,Rivaldo,0,"O gênio discreto do meio-campo, jogou uma Copa espetacular em 98 marcando três gols decisivos na campanha do vice-campeonato.",1,Alto,Canhoto,1972,rivaldo.jpg
+248,Denílson,Denílson,0,"O rei do drible curto, entrava no segundo tempo para desesperar os laterais adversários e prender a bola na ponta esquerda.",1,Baixo,Canhoto,1977,
+249,Edmundo,Edmundo,0,"O 'Animal', atacante de genialidade e temperamento explosivo do Fiorentina, entrou no segundo tempo da grande final contra a França.",1,Médio,Destro,1971,
+250,Marcos,Marcos,0,"O 'São Marcos' do Palmeiras, goleiro titular absoluto do Penta que fez defesas milagrosas em toda a Copa, fechando o gol na final contra a Alemanha.",1,Alto,Destro,1973,
+251,Rogério Ceni,Rogério Ceni,0,"Goleiro artilheiro e líder histórico do São Paulo, viajou como o reserva imediato de Marcos no Japão e na Coreia.",1,Alto,Destro,1973,
+252,Lúcio,Lúcio,0,"Zagueiro de arrancadas ofensivas imponentes conhecidas como 'peripécias', xerife absoluto da zaga do Penta.",1,Alto,Destro,1978,lucio.jpg
+253,Roque Júnior,Roque Júnior,0,"Zagueiro de total confiança do técnico Felipão, formou o trio de defensores campeões do mundo em 2002.",1,Alto,Destro,1976,
+254,Edmílson,Edmílson,0,Zagueiro/volante que jogava de cabeça erguida e marcou um gol antológico de voleio contra a Costa Rica em 2002.,1,Alto,Destro,1976,
+255,Anderson Polga,Anderson Polga,0,"Zagueiro técnico do Grêmio, ganhou oportunidades na fase de grupos da campanha do Penta.",1,Médio,Destro,1979,
+256,Belletti,Belletti,0,Lateral-direito reserva que entrou na semifinal dramática contra a Turquia e deu o passe para o gol histórico de bico do Ronaldo.,1,Médio,Destro,1976,
+257,Gilberto Silva,Gilberto Silva,0,"O 'Muro Invisível', volante que assumiu a titularidade de última hora após a lesão de Emerson e roubou todas as bolas da Copa.",1,Médio,Destro,1976,
+258,Kléber,Kléberson,0,"Volante de muita raça e forte marcação do Corinthians, viajou como peça de reposição no meio-campo.",1,Médio,Destro,1980,
+259,Vampeta,Vampeta,0,"Volante folclórico e de muita qualidade do Corinthians, famoso por dar cambalhotas na rampa do Palácio do Planalto após o título.",1,Médio,Destro,1974,
+260,Juninho Paulista,Juninho Paulista,0,"Meia-armador de muita velocidade no drible curto, começou a Copa de 2002 como o titular da armação.",1,Baixo,Destro,1973,
+261,Kaká,Kaká,0,"Jovem promessa do São Paulo de arrancadas velozes, jogou apenas alguns minutos contra a Costa Rica e quase entrou na finalíssima.",1,Alto,Destro,1982,kaka.jpg
+262,Ricardinho,Ricardinho,0,"Meia de passes cirúrgicos do Corinthians, convocado às pressas para o lugar do cortado Emerson.",1,Médio,Destro,1976,
+263,Ronaldinho Gaúcho,Ronaldinho Gaúcho,0,"O 'Bruxo', destruiu a Inglaterra nas quartas de final com uma assistência mágica e um gol de falta antológico encobrindo o goleiro Seaman.",1,Médio,Destro,1980,ronaldinho.jpg
+264,Denilson,Denilson,0,Atacante que protagonizou a cena icônica de 2002 ao ser perseguido desesperadamente por quatro jogadores da Turquia ao mesmo tempo.,1,Baixo,Destro,1977,
+265,Edílson,Edílson,0,"O 'Capetinha', atacante de muita irreverência e dribles rápidos, foi titular na semifinal contra a Turquia na ausência de Ronaldinho.",1,Baixo,Destro,1970,
+266,Luizão,Luizão,0,"Centroavante de muita entrega e malandragem na área, cavou o pênalti crucial contra a Turquia na estreia do Penta.",1,Médio,Destro,1975,
+267,Gomes,Gomes,0,"Goleiro de incrível envergadura e elasticidade do PSV, viajou para a Alemanha como o terceiro goleiro do elenco.",1,Alto,Destro,1981,
+268,Juan,Juan,0,"Zagueiro de técnica refinada, desarmes limpos e muita categoria, formou uma dupla de zaga memorável com Lúcio.",1,Alto,Destro,1979,
+269,Cris,Cris,0,"Zagueiro de muita força física e estilo xerife, brilhava intensamente no Lyon da França na época.",1,Alto,Destro,1977,
+270,Luisão,Luisão,0,"Zagueiro gigante e de excelente cabeceio do Benfica, viajou como peça de reposição para a zaga central.",1,Alto,Destro,1981,
+271,Cicinho,Cicinho,0,"Lateral-direito de muita ala e cruzamentos precisos, reserva imediato do experiente capitão Cafu.",1,Baixo,Destro,1980,
+272,Gilberto,Gilberto,0,"Lateral-esquerdo de muita consistência defensiva do Hertha Berlin, marcou um gol na vitória por 4x1 contra o Japão.",1,Baixo,Canhoto,1976,
+273,Emerson,Emerson,0,"Volante de extrema liderança e espírito de capitão que infelizmente havia sido cortado em 2002, mas conseguiu jogar em 2006.",1,Médio,Destro,1976,
+274,Mineiro,Mineiro,0,"Volante de muita raça e dinâmica do São Paulo, convocado de última hora para o lugar do lesionado Edmílson.",1,Médio,Destro,1975,
+275,Juninho Pernambucano,Juninho Pernambucano,0,"O maior batedor de faltas da história do futebol mundial, marcou um gol de fora da área contra o Japão em 2006.",1,Médio,Destro,1975,
+276,Adriano,Adriano Imperador,0,"O 'Imperador', atacante dono de uma potência física devastadora e um chute de canhota mortal, marcou dois gols na Alemanha.",1,Alto,Canhoto,1982,
+277,Robinho,Robinho,0,"O 'Rei do Pedre', entrava no segundo tempo para quebrar as linhas adversárias com suas pedaladas e velocidade.",1,Baixo,Destro,1984,
+278,Fred,Fred,0,Jovem atacante do Lyon que entrou no finalzinho do jogo contra a Austrália e marcou um gol com apenas dois minutos em campo.,1,Alto,Destro,1983,
+279,Doni,Doni,0,"Goleiro de grande estatura do Roma, viajou para a África do Sul como o reserva imediato de Júlio César.",1,Alto,Destro,1979,
+280,Thiago Silva,Thiago Silva,0,"O 'Monstro', jovem zagueiro do Milan de técnica absurda, fez sua estreia em Copas do Mundo na reserva em 2010.",1,Alto,Destro,1984,
+281,Maicon,Maicon,0,"Lateral-direito de arrancadas avassaladoras e muita força, marcou um gol quase sem ângulo antológico contra a Coreia do Norte.",1,Alto,Destro,1981,
+282,Daniel Alves,Daniel Alves,0,"Lateral de extrema habilidade que, devido à concorrência com Maicon, jogou a Copa muitas vezes improvisado no meio-campo.",1,Baixo,Destro,1983,
+283,Michel Bastos,Michel Bastos,0,"Meia-atacante de chute potente do Lyon, acabou improvisado como lateral-esquerdo titular durante toda a campanha de 2010.",1,Médio,Canhoto,1983,
+284,Felipe Melo,Felipe Melo,0,"Volante de marcação agressiva e temperamento explosivo, deu uma assistência genial para Robinho antes de ser expulso contra a Holanda.",1,Alto,Destro,1983,
+285,Josué,Josué,0,"Volante de excelente posicionamento e passes curtos, multicampeão pelo São Paulo e Wolfsburg.",1,Baixo,Destro,1979,
+286,Ramires,Ramires,0,"O 'Queniano', volante de fôlego inacreditável e arrancadas em velocidade que mudavam o ritmo do meio-campo.",1,Médio,Destro,1987,
+287,Elano,Elano,0,"Meio-campista tático e cirúrgico, marcou dois gols nos primeiros jogos antes de sofrer uma lesão grave que desestruturou o time.",1,Médio,Destro,1981,
+288,Júlio Baptista,Júlio Baptista,0,"O 'Bestial', meia de muita força física e imposição na área, reserva imediato para o setor de armação.",1,Alto,Destro,1981,
+289,Luís Fabiano,Luís Fabiano,0,"O 'Fabuloso', camisa 9 clássico e brigador que quebrou o jejum de gols com uma pintura de chapelada dupla contra a Costa do Marfim.",1,Médio,Destro,1980,
+290,Nilmar,Nilmar,0,"Atacante de velocidade pura e dribles rápidos do Villarreal, entrava no segundo tempo para incendiar os contra-ataques.",1,Alto,Destro,1984,
+291,Grafite,Grafite,0,"Centroavante de muita força que brilhava no futebol alemão, convocado para ser a opção de impacto na área.",1,Alto,Destro,1979,
+292,Jefferson,Jefferson,0,"Goleiro de defesas milagrosas e pegador de pênaltis do Botafogo, viajou como o reserva de luxo em 2014.",1,Alto,Destro,1983,
+293,Victor,Victor,0,"O 'Santo' do Atlético Mineiro após o título da Libertadores, integrou o grupo de goleiros na Copa do Brasil.",1,Alto,Destro,1983,
+294,David Luiz,David Luiz,0,"Zagueiro que jogava com extrema vibração e emoção aflorada, marcou um gol de falta antológico contra a Colômbia nas quartas.",1,Alto,Destro,1987,
+295,Dante,Dante,0,"Zagueiro de muita regularidade no Bayern de Munique, acabou escalado na fogueira da semifinal contra a Alemanha.",1,Alto,Canhoto,1983,
+296,Henrique,Henrique,0,"Zagueiro de total confiança do técnico Felipão, viajou como opção de proteção defensiva no banco.",1,Alto,Destro,1986,
+297,Marcelo,Marcelo,0,"Lateral-esquerdo de habilidade idêntica a de um meia-armador, dono absoluto da posição no Real Madrid e na Seleção.",1,Baixo,Canhoto,1988,
+298,Maxwell,Maxwell,0,"Lateral-esquerdo de carreira ultra vitoriosa na Europa, garantia de experiência e elegância na reserva.",1,Médio,Canhoto,1981,
+299,Luiz Gustavo,Luiz Gustavo,0,"O volante 'carrapato' de Felipão, responsável único por dar o combate e morder os meias adversários na proteção da zaga.",1,Médio,Canhoto,1987,
+300,Fernandinho,Fernandinho,0,"Meio-campista moderno do Manchester City, ganhou a titularidade durante a Copa devido à sua intensidade tática.",1,Médio,Destro,1985,
+301,Paulinho,Paulinho,0,Defendeu o Brasil na Copa de 2014.,1,Médio,Destro,1988,
+302,Hernanes,Hernanes,0,"O 'Profeta', meio-campista de excelente chute com as duas pernas e passes longos de muita categoria.",1,Médio,Ambidestro,1985,
+303,Willian,Willian,0,"O 'Foguetinho', meia-atacante de muita velocidade conduzindo a bola e recomposição tática impressionante.",1,Médio,Destro,1988,
+304,Bernard,Bernard,0,"Atacante franzino apelidado por Felipão de ter 'alegria nas pernas', escolhido para substituir o lesionado Neymar na semifinal.",1,Baixo,Destro,1992,
+305,Neymar,Neymar,0,"O grande craque da geração chamou a pressão para si na Copa de 2014, marcando 4 gols antes de sofrer a trágica lesão na vértebra.",1,Médio,Destro,1992,neymar.jpg
+306,Hulk,Hulk,0,"Atacante dono de uma força física descomunal e um chute de esquerda que parecia um torpedo, um dos pilares da era Felipão.",1,Médio,Canhoto,1986,
+307,Jô,Jô,0,"Centroavante de muita estatura e presença de área do Atlético Mineiro, reserva imediato de Fred no mundial.",1,Médio,Destro,1987,
+308,Alisson Becker,Alisson,0,"Goleiro de frieza extrema, posicionamento perfeito e reposição de elite, assumiu a titularidade absoluta da meta em 2018.",1,Alto,Destro,1992,alisson.jpg
+309,Ederson,Ederson,0,"Goleiro do Manchester City revolucionário pelo jogo com os pés e lançamentos milimétricos, viajou na reserva de luxo.",1,Alto,Canhoto,1993,
+310,Cássio,Cássio,0,"Ídolo gigante e paredão do Corinthians, convocado por seus milagres históricos para fechar o trio de arqueiros na Rússia.",1,Alto,Destro,1987,
+311,Miranda,Miranda,0,"Zagueiro extremamente seguro, silencioso e preciso nos desarmes, foi o grande pilar defensivo de Tite em 2018.",1,Alto,Destro,1984,
+312,Marquinhos,Marquinhos,0,"Jovem defensor de elite do PSG conhecido pela velocidade e impulsão absurda, começou ali sua dinastia na zaga.",1,Médio,Destro,1994,marquinhos.jpg
+313,Geromel,Geromel,0,"O 'Pedro Geromito', zagueiro venerado pela torcida do Grêmio devido aos seus desarmes perfeitos, integrou o elenco na Rússia.",1,Alto,Destro,1985,
+314,Danilo,Danilo,0,"Lateral-direito tático e de muita inteligência posicional, começou a Copa como titular antes de sofrer com lesões.",1,Alto,Destro,1991,
+315,Fagner,Fagner,0,"Lateral-direito de forte marcação e intensidade do Corinthians, assumiu a titularidade após a lesão de Danilo na Copa.",1,Baixo,Destro,1989,
+316,Filipe Luís,Filipe Luís,0,"Lateral-esquerdo de leitura tática impecável e posicionamento de mestre, reserva imediato de Marcelo.",1,Médio,Canhoto,1985,
+317,Casemiro,Casemiro,0,"O verdadeiro tanque do meio-campo, dono de uma força de desarmar impressionante e cuja ausência por suspensão custou a eliminação contra a Bélgica.",1,Alto,Destro,1992,casemiro.jpg
+318,Renato Augusto,Renato Augusto,0,"Meia de inteligência cerebral absurda, entrou contra a Bélgica, marcou um gol lindo de cabeça e quase empatou o jogo no final.",1,Alto,Destro,1988,
+319,Philippe Coutinho,Philippe Coutinho,0,"O 'Pequeno Mágico', foi o grande nome do Brasil na Rússia com seus chutes colocados de fora da área e passes geniais.",1,Baixo,Destro,1992,
+320,Douglas Costa,Douglas Costa,0,"Ponta de velocidade supersônica e dribles devastadores, entrava no segundo tempo para destruir as defesas cansadas.",1,Baixo,Canhoto,1990,
+321,Taison,Taison,0,"Atacante de muita velocidade e condução vertical do Shakhtar Donetsk, homem de total confiança do técnico Tite.",1,Baixo,Destro,1988,
+322,Gabriel Jesus,Gabriel Jesus,0,"O jovem camisa 9 de Tite trabalhou taticamente de forma incansável na marcação, mas acabou sofrendo com a falta de gols na Rússia.",1,Médio,Destro,1997,
+323,Roberto Firmino,Firmino,0,"Atacante de movimentação inteligente e finta rápida no Liverpool, entrava muito bem nos jogos e marcou contra o México.",1,Médio,Destro,1991,
+324,Weverton,Weverton,0,"Goleiro multicampeão e paredão do Palmeiras, viajou como terceiro arqueiro e realizou o sonho de entrar em campo no Catar.",1,Alto,Destro,1987,
+325,Éder Militão,Militão,0,"Zagueiro de elite do Real Madrid, jogou a Copa do Catar improvisado como lateral-direito e deu um show de desarmes.",1,Alto,Destro,1998,
+326,Bremer,Bremer,0,"Zagueiro de força física brutal e velocidade impressionante da Juventus de Turim, ganhou vaga na lista do Catar.",1,Alto,Destro,1997,
+327,Alex Sandro,Alex Sandro,0,"Lateral-esquerdo de muita força física e consistência tática defensiva, titular absoluto do setor em 2022.",1,Médio,Canhoto,1991,
+328,Alex Telles,Alex Telles,0,"Lateral-esquerdo de excelente cruzamento e apoios ofensivos, peça de reposição que atuou na fase de grupos.",1,Médio,Canhoto,1992,
+329,Fabinho,Fabinho,0,"Volante de passadas longas e desarmes precisos do Liverpool, o reserva imediato de luxo para a cabeça de área.",1,Alto,Destro,1993,
+330,Bruno Guimarães,Bruno Guimarães,0,"Meio-campista moderno de passes verticais e muita dinâmica, um dos grandes nomes da nova geração no futebol inglês.",1,Médio,Destro,1997,
+331,Lucas Paquetá,Paquetá,0,"Meio-campista de muita criatividade e dancinhas nas comemorações, unia a armação com o recuo para ajudar Casemiro.",1,Médio,Canhoto,1997,
+332,Everton Ribeiro,Éverton Ribeiro,0,"Meia de uma genialidade clássica e giros curtos fantásticos, maestro lendário do Flamengo que viajou como opção de cadência.",1,Baixo,Destro,1989,
+333,Vinicius Junior,Vini Jr.,0,"O 'Malvadeza', ponta-esquerda campeão europeu pelo Real Madrid que usou seus dribles imparáveis e velocidade para fazer uma grande Copa.",1,Médio,Destro,2000,vinicius-jr.jpg
+334,Rodrygo,Rodrygo,0,"O 'Raio', jovem atacante de inteligência espacial e técnica absurda que atuava em qualquer posição do ataque.",1,Baixo,Destro,2001,
+335,Antony,Antony,0,"Ponta de dribles plásticos e giros característicos de futsal, o famoso 'spin', opção de drible na ponta direita.",1,Médio,Canhoto,2000,
+336,Raphinha,Raphinha,0,"Ponta-direita de muita intensidade na pressão defensiva e arrancadas velozes pela ala, titular de confiança de Tite.",1,Médio,Canhoto,1996,raphinha.jpg
+337,Gabriel Martinelli,Martinelli,0,"Ponta de velocidade explosiva e dedicação intensa do Arsenal, infernal atacando em direção ao gol na fase de grupos.",1,Médio,Destro,2001,
+338,Richarlison,Richarlison,0,"O 'Pombo', camisa 9 do Catar que marcou o gol mais bonito de toda a Copa do Mundo em um voleio plástico espetacular contra a Sérvia.",1,Alto,Destro,1997,
+339,Pedro,Pedro,0,"Centroavante clássico de área, o legítimo 'camisa 9' de pivôs geniais e finalizações letais de primeira do Flamengo.",1,Alto,Destro,1997,
