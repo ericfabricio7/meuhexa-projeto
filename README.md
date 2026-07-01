@@ -4,12 +4,17 @@ O MeuHexa é uma aplicação web temática da Copa do Mundo desenvolvida como pr
 
 A plataforma oferece uma experiência gamificada em torno do futebol mundial, combinando um álbum digital de figurinhas colecionáveis, um minigame no estilo Akinator que tenta adivinhar jogadores históricos pensados pelo usuário, e um mecanismo de aprendizado contínuo pelo qual o próprio usuário contribui para o crescimento da base de dados do sistema.
 
+## Diagrama de Casos de Uso
+
+[Ver DiagramaUC-MeuHexa.svg](./DiagramaUC-MeuHexa.svg)
+
 ## Funcionalidades
 
-- **Álbum de figurinhas** - abra pacotes, cole figurinhas e troque repetidas por bônus
+- **Cadastro e autenticação** - criação de conta, login, gerenciamento de perfil (foto, seleção favorita, senha)
+- **Álbum de figurinhas** - abra pacotes e cole figurinhas
 - **AkinaCopa** - minigame que tenta adivinhar em qual jogador você está pensando, usando perguntas progressivas (escopo de jogadores limitado para as copas modernas da seleção brasileira: 2002–2022)
-- **Histórico de partidas** - cada jogo é registrado automaticamente
-- **Sugestão de jogadores** - quando o motor erra, o usuário pode sugerir o jogador para expandir a base
+- **Histórico de partidas** - cada jogo é registrado automaticamente em CSV
+- **Contribuição de dataset** - quando o motor erra e o jogador não está na base, o usuário cadastrado pode enviar os dados do jogador; a contribuição fica pendente para aprovação futura
 
 ## Tecnologias
 
@@ -47,25 +52,38 @@ Acesse em `http://localhost:5000`
 
 ```
 meuhexa-projeto/
-├── main.py                        # Entry point Flask
+├── main.py                              # Entry point Flask
+├── requirements.txt
+├── DiagramaUC-MeuHexa.svg               # Diagrama de casos de uso
 ├── app/
 │   └── copa/
-│       ├── routes.py              # Todas as rotas (álbum + minigame)
-│       ├── akinator_motor.py      # Lógica do AkinaCopa
-│       └── utils.py               # Utilitários (carregar figurinhas)
+│       ├── routes.py                    # Todas as rotas HTTP + helpers de CSV
+│       ├── akinator_motor.py            # Motor do AkinaCopa (pandas)
+│       └── utils.py                     # Carregamento de figurinhas
+│
 ├── data/
-│   ├── akinacopa-dataset - Jogadores.csv
+│   ├── akinacopa-dataset - Jogadores.csv   
 │   ├── akinacopa-dataset - Participações Copa.csv
 │   ├── akinacopa-dataset - Perguntas.csv
-│   ├── akinacopa-dataset - Histórico Aprendizado.csv
-│   └── sugestoes_jogadores.csv    # criado automaticamente
+│   ├── akinacopa-dataset - Seleção.csv
+│   ├── akinacopa-dataset - Técnicos.csv
+│   ├── akinacopa-dataset - Histórico Aprendizado.csv  # gerado em runtime
+│   ├── figurinhas.csv                   # Catálogo do álbum
+│   ├── usuarios.csv                     # Contas cadastradas
+│   └── pending.csv                      # Contribuições aguardando aprovação
+│
 ├── templates/
-│   ├── base.html
-│   ├── index.html
-│   └── minigame.html
+│   ├── base.html                        # Layout base (nav, header)
+│   ├── index.html                       # Homepage + álbum
+│   ├── minigame.html                    # AkinaCopa
+│   ├── cadastro.html                    # Login e cadastro
+│   └── perfil.html                      # Perfil do usuário
+│
 └── static/
     ├── css/styles.css
     └── img/
+        ├── img-figurinhas/              # Fotos dos jogadores (usadas no palpite)
+        └── perfil/                      # Fotos de perfil enviadas pelos usuários
 ```
 
 ## Branches
