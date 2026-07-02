@@ -265,6 +265,7 @@ def _row_para_dict(row):
         'fato':    str(row['caracteristica_geral']),
         'erro':    round(float(row['total_erros']), 2),
         'rarity':  RARITY.get(ano, 'rar-rara'),
+        'imagem':  str(row.get('imagem', '') or ''),
     }
 
 
@@ -388,12 +389,21 @@ def confirmar_palpite(ak, confirmado, palpite_id, fase_palpite='mid'):
 
     # Palpite final errado → encerra o jogo imediatamente
     if confirmado is False and fase_palpite == 'final':
-        df_ord = _reconstruir_df(ak['erros']).sort_values('total_erros')
+        df     = _reconstruir_df(ak['erros'])
+        df_ord = df.sort_values('total_erros')
         top3   = [_row_para_dict(r) for _, r in df_ord.head(3).iterrows()]
+
+        # Exibe o palpite que o motor fez (antes da penalidade), não o novo top-1
+        mask = df['id_participacao'] == int(palpite_id) if palpite_id is not None else None
+        if mask is not None and mask.any():
+            palpite_exibido = _row_para_dict(df[mask].iloc[0])
+        else:
+            palpite_exibido = _row_para_dict(df_ord.iloc[0])
+
         return ak, {
             'fase': 'fim', 'acertou': False,
             'rodada': ak['rodada'], 'total': MAX_RODADAS,
-            'palpite': _row_para_dict(df_ord.iloc[0]),
+            'palpite': palpite_exibido,
             'top3': top3, 'pergunta': None,
         }
 

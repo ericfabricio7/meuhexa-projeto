@@ -20,7 +20,7 @@
 
     <div class="menu-links">
         <a href="/">Início</a>
-        <a href="#">História da Copa</a>
+        <a href="/#historias">História da Copa</a>
         <a href="/#painel">Álbum</a>
         <a href="/minigame">Minigame</a>
         <a href="#">Sobre</a>
@@ -29,6 +29,15 @@
     <div class="menu-user">
 
         {% if session.get("logado") %}
+            <a href="{{ url_for('perfil') }}" class="btn-menu-user btn-menu-perfil">
+                {% if session.get("foto") %}
+                <img src="{{ url_for('static', filename=session.foto) }}"
+                     alt="Perfil" class="nav-avatar-img">
+                {% else %}
+                <span class="nav-avatar-inicial">{{ session.nome[0].upper() }}</span>
+                {% endif %}
+                {{ session.nome.split()[0] }}
+            </a>
             <a href="{{ url_for('logout') }}" class="btn-menu-user">
                 Sair
             </a>
@@ -51,6 +60,8 @@
     </button>
 
 </header>
+
+{% block perfil %}{% endblock %}
 
 {% block minigame %}{% endblock %}
 

@@ -102,7 +102,7 @@
     </div>
   </div>
 
-  <!-- FIM: erro — passo 2 (sugestão de novo jogador) -->
+  <!-- passo 2 (sugestão de novo jogador) -->
   <div class="ak-state" id="state-fim-sugestao">
     <div class="ak-question-card ak-form-sugestao">
       <p class="ak-form-titulo">Ajude a expandir a base!</p>
@@ -118,6 +118,22 @@
         <option value="2010">2010</option>
         <option value="2006">2006</option>
         <option value="2002">2002</option>
+        <option value="1998">1998</option>
+        <option value="1994">1994</option>
+        <option value="1990">1990</option>
+        <option value="1986">1986</option>
+        <option value="1982">1982</option>
+        <option value="1978">1978</option>
+        <option value="1974">1974</option>
+        <option value="1970">1970</option>
+        <option value="1966">1966</option>
+        <option value="1962">1962</option>
+        <option value="1958">1958</option>
+        <option value="1954">1954</option>
+        <option value="1950">1950</option>
+        <option value="1938">1938</option>
+        <option value="1934">1934</option>
+        <option value="1930">1930</option>
       </select>
       <select id="sug-posicao" class="ak-input ak-select">
         <option value="">Posição...</option>
@@ -142,6 +158,14 @@
       </div>
       <textarea id="sug-obs" class="ak-input ak-textarea"
                 placeholder="Informações extras (opcional)" rows="2"></textarea>
+      <textarea id="sug-curiosidade1" class="ak-input ak-textarea"
+                placeholder="Curiosidade 1 (ex: foi artilheiro da Copa)" rows="2"></textarea>
+      <textarea id="sug-curiosidade2" class="ak-input ak-textarea"
+                placeholder="Curiosidade 2 (opcional)" rows="2"></textarea>
+
+      <div id="sug-login-aviso" class="ak-login-aviso" style="display:none">
+        <a href="/cadastro?modo=login">Faça login</a> para contribuir com o dataset.
+      </div>
 
       <div class="ak-form-acoes">
         <button class="ak-resp ak-sim"    onclick="enviarSugestao()">Enviar sugestão</button>
@@ -181,11 +205,14 @@ function setLoading(on) {
 }
 
 function buildCard(palpite) {
+  const imgHtml = palpite.imagem
+    ? `<img src="/static/img/img-figurinhas/${palpite.imagem}" class="ak-palpite-img" alt="${palpite.apelido}">`
+    : `<div class="ak-placeholder-img"></div>`;
   return `
     <div class="slot ${palpite.rarity} ak-palpite-slot">
       <div class="colada ak-colada-palpite">
         <div class="ak-silhueta-wrap">
-          <div class="ak-placeholder-img"></div>
+          ${imgHtml}
         </div>
         <div class="fig-info ak-fig-info-palpite">
           <strong>${palpite.apelido}</strong>
@@ -326,14 +353,16 @@ async function registrarErro() {
 
 async function enviarSugestao() {
   const dados = {
-    nome:        document.getElementById('sug-nome').value.trim(),
-    apelido:     document.getElementById('sug-apelido').value.trim(),
-    ano_copa:    document.getElementById('sug-copa').value,
-    posicao:     document.getElementById('sug-posicao').value,
-    clube:       document.getElementById('sug-clube').value.trim(),
-    titular:     document.getElementById('sug-titular').value,
-    gols:        document.getElementById('sug-gols').value || '0',
-    observacoes: document.getElementById('sug-obs').value.trim(),
+    nome:          document.getElementById('sug-nome').value.trim(),
+    apelido:       document.getElementById('sug-apelido').value.trim(),
+    ano_copa:      document.getElementById('sug-copa').value,
+    posicao:       document.getElementById('sug-posicao').value,
+    clube:         document.getElementById('sug-clube').value.trim(),
+    titular:       document.getElementById('sug-titular').value,
+    gols:          document.getElementById('sug-gols').value || '0',
+    observacoes:   document.getElementById('sug-obs').value.trim(),
+    curiosidade_1: document.getElementById('sug-curiosidade1').value.trim(),
+    curiosidade_2: document.getElementById('sug-curiosidade2').value.trim(),
   };
 
   setLoading(true);
@@ -345,6 +374,10 @@ async function enviarSugestao() {
   const data = await res.json();
   setLoading(false);
 
+  if (data.login_required) {
+    document.getElementById('sug-login-aviso').style.display = 'block';
+    return;
+  }
   if (data.erro) { alert(data.erro); return; }
   mostrarObrigado(data.mensagem);
 }
