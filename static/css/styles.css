@@ -2103,6 +2103,64 @@ html{
     }
 }
 
+.curiosidades{
+  padding:40px 20px;
+}
+
+.curiosidades h2{
+  margin-top:70px;
+  margin-bottom:20px;
+  font-size:2rem;
+  color:var(--amarelo);
+}
+
+.curiosidades table{
+  width:100%;
+  margin-top:10px;
+  margin-bottom:40px;
+  border-collapse:collapse;
+  background:var(--card);
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.curiosidades th,
+.curiosidades td{
+  padding:16px;
+  text-align:center;
+  border-bottom:1px solid #1f2937;
+  color:var(--text);
+}
+
+.curiosidades tr:hover{
+  background:rgba(255, 216, 77, 0.08);
+  transition:0.2s;
+}
+
+.curiosidades ul{
+  list-style:none;
+  margin-top:10px;
+  padding:0;
+  display:flex;
+  flex-direction:column;
+  gap:12px; 
+}
+
+.curiosidades li{
+  background:var(--card);
+  padding:16px;
+  border-left:4px solid var(--amarelo);
+  border-radius:6px;
+  color:var(--text);
+  line-height:1.5;
+  transition:0.2s;
+}
+
+.curiosidades li:hover{
+  transform:translateX(5px);
+  border-left-color:var(--azul2);
+}
+
 .footer{
     background:#0b1f3a;
     color:#fff;
