@@ -1,156 +1,57 @@
 from flask import render_template, redirect, url_for, request, session, jsonify
 from . import akinator_motor as motor
-from app.copa.utils import carregar_figurinhas
-from functools import wraps
-from datetime import datetime
+from app.copa.utils import (
+    carregar_figurinhas,
+    atualizar_pacotes,
+    inicializar_csv,
+    salvar_usuario,
+    usuario_existe,
+    salvar_album,
+    verificar_login,
+    obter_usuario,
+    atualizar_usuario,
+    excluir_usuario,
+    salvar_pendente,
+    extensao_permitida,
+    login_required,
+    SELECOES,
+    UPLOAD_FOLDER,
+)
+from datetime import datetime, timedelta
 import random
-import csv
-import uuid
 import os
-
-PACOTES_DISPONIVEIS = 2
-NUMERO_FIGURINHAS = 7
-
-pacotes_disponiveis = PACOTES_DISPONIVEIS
-sorteadas = []
-coladas = []
-tem_bonus = False
-repetidas_usadas = 0
+from app.copa.config import PACOTES_DISPONIVEIS, NUMERO_FIGURINHAS
 
 figurinhas = carregar_figurinhas()
 
-CSV_PATH = "data/usuarios.csv"
-CSV_HEADER = ["nome", "email", "usuario", "senha", "foto_perfil", "selecao_favorita", "data_cadastro"]
+from datetime import datetime, timedelta
 
-UPLOAD_FOLDER = os.path.join("static", "img", "perfil")
-EXTENSOES_PERMITIDAS = {"jpg", "jpeg", "png", "gif", "webp"}
+def atualizar_pacotes(usuario):
+    dados = obter_usuario(usuario)
 
-SELECOES = [
-    "Brasil", "Argentina", "França", "Alemanha", "Espanha", "Inglaterra",
-    "Portugal", "Itália", "Holanda", "Bélgica", "Croácia", "Marrocos",
-    "Japão", "Coreia do Sul", "Austrália", "Estados Unidos", "México",
-    "Colômbia", "Uruguai", "Equador", "Senegal", "Nigéria", "Costa Rica",
-    "Polônia", "Suíça", "Dinamarca", "Turquia", "Canadá", "Peru", "Chile",
-]
+    if not dados:
+        return
 
-CSV_PENDING_PATH = "data/pending.csv"
-CSV_PENDING_HEADER = [
-    "id_contribuicao", "data_hora", "usuario_contribuinte",
-    "nome", "apelido", "ano_copa", "posicao",
-    "clube", "titular", "gols", "observacoes",
-    "curiosidade_1", "curiosidade_2",
-    "status",
-]
+    ultimo = dados.get("ultimo_bonus", "")
 
-
-
-# CSV HELPERS
-
-def _ler_usuarios():
-    if not os.path.exists(CSV_PATH):
-        return []
-    with open(CSV_PATH, "r", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        return [{campo: row.get(campo, "") for campo in CSV_HEADER} for row in reader]
-
-
-def _salvar_usuarios(rows):
-    with open(CSV_PATH, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=CSV_HEADER)
-        writer.writeheader()
-        writer.writerows(rows)
-
-
-def inicializar_csv():
-    if not os.path.exists(CSV_PATH):
-        with open(CSV_PATH, "w", newline="", encoding="utf-8") as f:
-            csv.DictWriter(f, fieldnames=CSV_HEADER).writeheader()
+    if ultimo:
+        ultimo = datetime.fromisoformat(ultimo)
     else:
-        # migra CSV antigo adicionando colunas novas com valor vazio
-        _salvar_usuarios(_ler_usuarios())
+        ultimo = datetime.min
 
+    if datetime.now() - ultimo >= timedelta(seconds=7):
 
-def salvar_usuario(nome, email, usuario, senha):
-    rows = _ler_usuarios()
-    rows.append({
-        "nome": nome, "email": email, "usuario": usuario,
-        "senha": senha, "foto_perfil": "", "selecao_favorita": "", "data_cadastro": "",
-    })
-    _salvar_usuarios(rows)
+        novos_pacotes = int(dados["pacotes"]) + 2
 
+        atualizar_usuario(
+            usuario,
+            pacotes=novos_pacotes,
+            ultimo_bonus=datetime.now().isoformat()
+        )
 
-def usuario_existe(email, usuario):
-    return any(r["email"] == email or r["usuario"] == usuario for r in _ler_usuarios())
+        session["pacotes"] = novos_pacotes
+        session["ultimo_bonus"] = datetime.now().isoformat()
 
-
-def verificar_login(usuario, senha):
-    for row in _ler_usuarios():
-        if row["usuario"] == usuario and row["senha"] == senha:
-            return row
-    return None
-
-
-def obter_usuario(usuario):
-    return next((r for r in _ler_usuarios() if r["usuario"] == usuario), None)
-
-
-def atualizar_usuario(usuario_alvo, **campos):
-    rows = _ler_usuarios()
-    for row in rows:
-        if row["usuario"] == usuario_alvo:
-            row.update(campos)
-            break
-    _salvar_usuarios(rows)
-
-
-def excluir_usuario(usuario_alvo):
-    _salvar_usuarios([r for r in _ler_usuarios() if r["usuario"] != usuario_alvo])
-
-
-def salvar_pendente(dados: dict, usuario: str) -> tuple[bool, str]:
-    existe = os.path.exists(CSV_PENDING_PATH) and os.path.getsize(CSV_PENDING_PATH) > 0
-    try:
-        with open(CSV_PENDING_PATH, "a", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(f, fieldnames=CSV_PENDING_HEADER)
-            if not existe:
-                writer.writeheader()
-            writer.writerow({
-                "id_contribuicao":     str(uuid.uuid4())[:8],
-                "data_hora":           datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                "usuario_contribuinte": usuario,
-                "nome":        dados.get("nome", "").strip(),
-                "apelido":     dados.get("apelido", "").strip(),
-                "ano_copa":    dados.get("ano_copa", ""),
-                "posicao":     dados.get("posicao", "").strip(),
-                "clube":       dados.get("clube", "").strip(),
-                "titular":     dados.get("titular", "").strip(),
-                "gols":        dados.get("gols", "0"),
-                "observacoes": dados.get("observacoes", "").strip(),
-                "curiosidade_1": dados.get("curiosidade_1", "").strip(),
-                "curiosidade_2": dados.get("curiosidade_2", "").strip(),
-                "status":      "pendente",
-            })
-        return True, "Contribuição registrada! Avaliaremos para incluir na base."
-    except OSError as e:
-        return False, f"Não foi possível salvar a contribuição: {e}"
-
-
-def extensao_permitida(filename):
-    return "." in filename and filename.rsplit(".", 1)[1].lower() in EXTENSOES_PERMITIDAS
-
-
-# LOGIN REQUIRED
-
-def login_required(f):
-    @wraps(f)
-    def decorated(*args, **kwargs):
-        if not session.get("logado"):
-            return redirect(url_for("cadastro"))
-        return f(*args, **kwargs)
-    return decorated
-
-
-# ROTAS
 
 def registrar_rotas(app):
 
@@ -168,7 +69,27 @@ def registrar_rotas(app):
             session["usuario"] = encontrado["usuario"]
             session["foto"] = encontrado["foto_perfil"]
             session["selecao"] = encontrado["selecao_favorita"]
+            session["pacotes"] = int(encontrado["pacotes"])
+            session["repetidas"] = int(encontrado["repetidas"])
+
+            session["coladas"] = (
+                [int(x) for x in encontrado["coladas"].split(";")]
+                if encontrado["coladas"]
+                else []
+            )
+
+            session["sorteadas"] = (
+                [int(x) for x in encontrado["sorteadas"].split(";")]
+                if encontrado["sorteadas"]
+                else []
+            )
+
+            session["bonus"] = False
+
+            session["ultimo_bonus"] = encontrado["ultimo_bonus"]
             return redirect(url_for("index"))
+        
+            
 
         return "Usuário ou senha inválidos!", 401
 
@@ -179,16 +100,16 @@ def registrar_rotas(app):
 
     @app.route("/")
     def index():
+        if session.get("logado"):
+            atualizar_pacotes(session["usuario"])
+
         return render_template(
             "index.html",
-            pacotes_disponiveis=session.get(
-                "pacotes",
-                PACOTES_DISPONIVEIS
-            ),
+            pacotes_disponiveis=session.get("pacotes", PACOTES_DISPONIVEIS),
             sorteadas=session.get("sorteadas", []),
             figurinhas=figurinhas,
-            coladas=coladas,
-            tem_bonus=tem_bonus,
+            coladas=session.get("coladas", []),
+            tem_bonus=session.get("bonus", False),
         )
 
     @app.route("/abrir_pacote")
@@ -200,8 +121,8 @@ def registrar_rotas(app):
         coladas = session.get("coladas", [])
         repetidas_usadas = session.get("repetidas", 0)
 
-        if pacotes_disponiveis > 0:
-            pacotes_disponiveis -= 1
+        if pacotes > 0:
+            pacotes -= 1
             nova = random.sample(figurinhas, k=NUMERO_FIGURINHAS)
             sorteadas.extend([int(f["numero"]) for f in nova])
 
@@ -267,13 +188,31 @@ def registrar_rotas(app):
         if repetidas - repetidas_usadas >= 20:
 
             faltantes = [
-                int(f["numero"]) for f in figurinhas if int(f["numero"]) not in coladas
+                int(f["numero"])
+                for f in figurinhas
+                if int(f["numero"]) not in sorteadas and int(f["numero"]) not in coladas
             ]
+
             if faltantes:
-                coladas.append(random.choice(faltantes))
+                sorteadas.append(random.choice(faltantes))
+
             repetidas_usadas += 20
 
-        tem_bonus = (repetidas - repetidas_usadas) >= 20
+        tudo = sorteadas + coladas
+        repetidas = len(tudo) - len(set(tudo))
+        bonus = (repetidas - repetidas_usadas) >= 20
+
+        session["coladas"] = coladas
+        session["repetidas"] = repetidas_usadas
+        session["bonus"] = bonus
+
+        salvar_album(
+            session["usuario"],
+            session["pacotes"],
+            repetidas_usadas,
+            coladas,
+            sorteadas
+        )
         return redirect(url_for("index") + "#ponto-retorno")
     
     #FINAL - ERIC
@@ -384,6 +323,11 @@ def registrar_rotas(app):
             session["usuario"] = usuario
             session["foto"] = ""
             session["selecao"] = ""
+            session["pacotes"] = PACOTES_DISPONIVEIS
+            session["repetidas"] = 0
+            session["coladas"] = []
+            session["sorteadas"] = []
+            session["bonus"] = False
 
             return redirect(url_for("index"))
 
